@@ -330,6 +330,14 @@ h6 {
   pointer-events: none;
 }
 
+.section-subtitle {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #f7f7f7;
+  margin-bottom: 20px;
+}
+
 /*-------------------- RX Lazy Load Script ------------------------*/
 .rx-lazy_item {
   opacity: 1;
@@ -2728,9 +2736,9 @@ blockquote:before {
 .club-card-col {
   transform: translateY(40px);
 }
-.club-card-col:nth-child(2) {
+/* .club-card-col:nth-child(2) {
   transform: translateY(0);
-}
+} */
 
 .club-card-item {
   display: flex;
@@ -2765,10 +2773,10 @@ blockquote:before {
 }
 .club-card-item .price-cover {
   display: flex;
-  justify-content: flex-start;
-  font-family: "Black Ops One", sans-serif;
-  text-transform: uppercase;
-  position: relative;
+
+  flex-direction: column; /* Stack price and date vertically */
+  align-items: center; /* Center align the content horizontally */
+  text-align: center; /* Center align text within the content */
   padding-bottom: 22px;
 }
 .club-card-item .price-cover:before {
@@ -2783,7 +2791,6 @@ blockquote:before {
 }
 .club-card-item .price-cover .price {
   font-size: 72px;
-  padding-right: 6px;
   line-height: 0.75;
 }
 .club-card-item .price-cover .date {
@@ -2815,8 +2822,8 @@ blockquote:before {
 
 .club-cards-lite .club-card-item {
   background-image: none;
-  padding-top: 98px;
-  padding-bottom: 98px;
+  padding-top: 58px;
+  padding-bottom: 18px;
 }
 .club-cards-lite .club-card-item .price-cover {
   display: block;
@@ -2826,8 +2833,10 @@ blockquote:before {
 .club-cards-lite .club-card-item .price-cover .price {
   padding-right: 0;
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
   margin-bottom: 19px;
+  color: #fad437;
 }
 .club-cards-lite .club-card-item .price-cover .price span {
   color: #fad437;
@@ -5192,7 +5201,7 @@ blockquote:before {
   }
 
   .club-cards-lite .club-card-item .club-card-text {
-    margin-bottom: 34px;
+    margin-bottom: 0px;
   }
 
   .s-related-posts .post-item-cover .post-thumbnail img {
@@ -5922,5 +5931,14 @@ blockquote:before {
 
   .widget-instagram li img {
     height: 100px;
+  }
+
+  /* Custom CSS */
+  .spaced-card {
+    margin-bottom: 30px; /* Adds vertical spacing between cards */
+    padding: 20px; /* Internal spacing for better readability */
+    border: 1px solid #ddd; /* Optional: Visual separation */
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
 }
