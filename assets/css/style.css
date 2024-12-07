@@ -3655,9 +3655,9 @@ blockquote:before {
 .out-trainer-col {
   margin-bottom: 30px;
 }
-.out-trainer-col:nth-child(2n) {
+/* .out-trainer-col:nth-child(2n) {
   transform: translateY(30px);
-}
+} */
 
 .out-trainer-item {
   display: flex;
