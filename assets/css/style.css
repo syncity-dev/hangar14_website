@@ -931,18 +931,22 @@ header:after {
   }
 }
 /*-------------------------- FORMS --------------------------*/
-button, input[type=button], input[type=submit] {
+button,
+input[type=button],
+input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
   font-family: "Black Ops One", sans-serif;
   transition: 0.25s ease-in;
 }
 
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default;
 }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
