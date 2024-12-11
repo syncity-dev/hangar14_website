@@ -671,8 +671,10 @@ header:after {
 .header-cont li {
   display: flex;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-right: 47px;
-  font-size: 12px;
+  font-size: 18px;
   font-family: "Black Ops One", sans-serif;
 }
 .header-cont li:last-child {
