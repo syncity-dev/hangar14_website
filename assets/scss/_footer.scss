@@ -1,7 +1,7 @@
 /*--------------------- FOOTER ---------------------*/
 footer {
   background-color: #000;
-  padding-top: 55px;
+  padding-top: 30px;
   position: relative;
   z-index: 6;
   .social-list li {
@@ -11,7 +11,8 @@ footer {
 .footer-item-logo {
   .logo-footer {
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
+    max-width: 100px;
   }
   p {
     margin-bottom: 34px;
@@ -84,7 +85,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 26px 0;
-  margin-top: 52px;
+  margin-top: 30px;
   border-top: 1px solid #333;
   .copyright {
     font-size: 14px;
@@ -185,6 +186,9 @@ footer {
   .footer-menu li {
     margin-right: 23px;
   }
+  .logo-footer img {
+    max-width: 100px;
+  }
   .footer-fitness .footer-item-link,
   .footer-fitness .footer-item-logo {
     flex: 0 0 40%;
@@ -212,7 +216,7 @@ footer {
     margin-right: 36px;
   }
   .logo-footer img {
-    max-width: 150px;
+    max-width: 80px;
   }
   .header-fitness .header-menu .container {
     padding-top: 9px;
