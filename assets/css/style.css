@@ -131,7 +131,7 @@ a {
   transition: 0.25s ease-in;
 }
 a:hover {
-  color: #f23849;
+  color: #fad437;
 }
 
 h1,
@@ -1117,7 +1117,7 @@ textarea::placeholder {
 .checkbox-cover p:before {
   content: "";
   display: inline-block;
-  border: 1px solid #f23849;
+  border: 1px solid #fad437;
   width: 26px;
   height: 26px;
   line-height: 24px;
@@ -2150,7 +2150,7 @@ blockquote:before {
 }
 
 .navigation-item:hover .title {
-  color: #f23849;
+  color: #fad437;
 }
 
 /*----------------------- REVIEWS -----------------------*/
@@ -2235,10 +2235,10 @@ blockquote:before {
   transition: 0.25s ease-in;
 }
 .review-btn:hover {
-  color: #f23849;
+  color: #fad437;
 }
 .review-btn:hover i {
-  color: #f23849;
+  color: #fad437;
 }
 
 /*----------------- S-RELATED-POSTS -----------------*/
@@ -2356,7 +2356,7 @@ blockquote:before {
 
 /*-------------------- S-CROSSFIT --------------------*/
 .s-crossfit {
-  padding: 128px 0 140px;
+  padding: 30px 0 30px;
 }
 .s-crossfit .container {
   position: relative;
@@ -2407,8 +2407,8 @@ blockquote:before {
 }
 .crossfit-item p {
   color: #bebebe;
-  font-size: 15px;
-  margin-bottom: 45px;
+  font-size: 16px;
+  margin-top: 30px;
 }
 
 .crossfit-icon-1 {
@@ -2568,7 +2568,7 @@ blockquote:before {
 
 /*-------------------- S-CLUB-CARDS --------------------*/
 .s-club-cards {
-  padding: 128px 0 180px;
+  padding: 30px 0 30px;
 }
 .s-club-cards.club-cards-fitness {
   padding-bottom: 128px;
@@ -2855,12 +2855,14 @@ blockquote:before {
   background-color: #191a1f;
   text-transform: uppercase;
 }
-.training-schedule-table th, .training-schedule-table td {
+.training-schedule-table th,
+.training-schedule-table td {
   width: 12.5%;
   text-align: center;
   border-right: 1px solid #3c3e4a;
 }
-.training-schedule-table th:last-child, .training-schedule-table td:last-child {
+.training-schedule-table th:last-child,
+.training-schedule-table td:last-child {
   border-right: none;
 }
 .training-schedule-table th {
@@ -3490,7 +3492,7 @@ blockquote:before {
 
 /*------------------- S-OUT-TRAINER -------------------*/
 .s-out-trainer {
-  padding: 128px 0 140px;
+  padding: 30px 0 30px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -4432,7 +4434,7 @@ blockquote:before {
 }
 @media (max-width: 1199px) {
   .s-club-cards {
-    padding: 88px 0 140px;
+    padding: 30px 0 30px;
   }
   .s-fitness-gallery,
   .s-our-trainer,
@@ -4442,7 +4444,7 @@ blockquote:before {
   .s-training-schedule,
   .s-our-programs,
   .s-crossfit {
-    padding: 88px 0 100px;
+    padding: 30px 0 30px;
   }
   .s-news,
   .s-about-information,
@@ -4773,10 +4775,12 @@ blockquote:before {
     padding-top: 96px;
     padding-bottom: 102px;
   }
-  .fitness-program-col:nth-child(2), .fitness-program-col:nth-child(5) {
+  .fitness-program-col:nth-child(2),
+  .fitness-program-col:nth-child(5) {
     transform: translateY(30px);
   }
-  .fitness-program-col:nth-child(1), .fitness-program-col:nth-child(4) {
+  .fitness-program-col:nth-child(1),
+  .fitness-program-col:nth-child(4) {
     -webkit-transform: translateY(60px);
     transform: translateY(60px);
   }
@@ -5339,7 +5343,8 @@ blockquote:before {
   .fitness-post-col .post-footer .meta span {
     width: calc(50% - 5px);
   }
-  .grid-sizer, .gallery-item {
+  .grid-sizer,
+  .gallery-item {
     width: 33.33%;
   }
 }
@@ -5483,7 +5488,8 @@ blockquote:before {
   .autor-cover p {
     font-size: 12px;
   }
-  .grid-sizer, .gallery-item {
+  .grid-sizer,
+  .gallery-item {
     width: 50%;
   }
   .fitness-banner-left,
