@@ -238,7 +238,7 @@
     padding: 15px 20px;
     line-height: 1.7;
     background-color: rgba(0, 0, 0, 0.5);
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 .crossfit-slider-effect {
@@ -1185,6 +1185,7 @@ blockquote:before {
     .price {
       font-size: 72px;
       padding-right: 6px;
+      text-align: right;
       line-height: 0.75;
     }
     .date {
@@ -1227,8 +1228,10 @@ blockquote:before {
       .price {
         padding-right: 0;
         display: flex;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 19px;
+        color: $accent_color;
         span {
           color: $accent_color;
           font-size: 36px;
@@ -1245,9 +1248,16 @@ blockquote:before {
       max-width: 330px;
       text-align: center;
       color: $secondary_color;
-      margin: 30px auto 46px;
+      margin: 30px auto 0px;
     }
   }
+}
+
+.section-subtitle {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*----------------- S-CROSSFIT-BANNER -----------------*/
@@ -3500,6 +3510,7 @@ blockquote:before {
     .price-cover {
       .price {
         font-size: 50px;
+        text-align: center;
       }
       .date {
         font-size: 14px;
@@ -3537,7 +3548,7 @@ blockquote:before {
     padding-bottom: 58px;
   }
   .club-cards-lite .club-card-item .club-card-text {
-    margin-bottom: 34px;
+    margin-bottom: 0px;
   }
   .s-related-posts .post-item-cover .post-thumbnail img {
     height: 190px;
