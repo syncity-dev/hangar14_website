@@ -54,7 +54,7 @@ body.page-loaded {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f23849;
+  background-color: $accent_color;
   animation: cube-loader 2.76s infinite linear both;
   transform-origin: 100% 100%;
 }
