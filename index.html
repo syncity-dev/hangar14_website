@@ -1097,10 +1097,34 @@
     <!-- ================== FOOTER ================== -->
 
     <!-- ================== S-MAP ================== -->
-	  <section class="s-map">
+    <section class="s-map">
       <h2 class="title-decor">Our <span>Location</span></h2>
-		  <div id="map" class="cont-map google-map"></div>
-	  </section>
+      <div id="map" class="cont-map google-map" style="width: 100%; height: 400px;"></div>
+    </section>
+    
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location (replace with your desired coordinates)
+        const location = { lat: 45.7790104, lng: 15.976685 };
+    
+        // The map, centered at the specified location
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15, // Adjust the zoom level
+          center: location,
+        });
+    
+        // Add a marker at the specified location
+        const marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          title: "Hangar 14",
+        });
+      }
+    
+      // Load the map after the page loads
+      window.onload = initMap;
+    </script>
 	  <!-- ================ S-MAP END ================ -->
 
 
@@ -1225,7 +1249,7 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/rx-lazy.js"></script>
     <script src="assets/js/parallax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=your_api_key"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEYlXYZPkj9r6mA5tn3-bKLS6rh0YBfe8"></script>
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>
