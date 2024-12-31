@@ -28,7 +28,8 @@ footer {
 }
 .footer-link {
   li {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -36,7 +37,8 @@ footer {
 }
 .footer-cont {
   li {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
   }
   i {
     font-size: 18px;
@@ -178,7 +180,7 @@ footer {
 @media (max-width: 991px) {
   .footer-item-logo,
   .footer-item {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   .footer-bottom {
     margin-top: 0;

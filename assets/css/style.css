@@ -1206,14 +1206,15 @@ footer .social-list li {
 
 .footer-link li {
   margin-bottom: 16px;
+  font-size: 16px;
 }
 .footer-link li:last-child {
   margin-bottom: 0;
 }
 
 .footer-cont li {
-  font-size: 16px;
   margin-bottom: 16px;
+  font-size: 16px;
 }
 .footer-cont i {
   font-size: 18px;
@@ -4424,6 +4425,17 @@ blockquote:before {
   .fitness-post-col .post-footer .meta span {
     font-size: 14px;
   }
+  .out-trainer-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .out-trainer-img {
+    max-width: 100%;
+  }
+  .out-trainer-info {
+    max-width: 100%;
+    padding: 20px;
+  }
 }
 @media (max-width: 1280px) {
   .crossfit-banner-right .text-bottom {
@@ -5051,17 +5063,6 @@ blockquote:before {
   .blog-cover {
     margin-top: 88px;
   }
-  .out-trainer-item {
-    flex-direction: column;
-    align-items: center;
-  }
-  .out-trainer-img {
-    max-width: 100%;
-  }
-  .out-trainer-info {
-    max-width: 100%;
-    padding: 20px;
-  }
 }
 @media (max-width: 767px) {
   .testimonials-border .testimonial-slide p {
@@ -5571,3 +5572,5 @@ blockquote:before {
     height: 100px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
