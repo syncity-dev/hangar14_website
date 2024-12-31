@@ -5051,6 +5051,17 @@ blockquote:before {
   .blog-cover {
     margin-top: 88px;
   }
+  .out-trainer-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .out-trainer-img {
+    max-width: 100%;
+  }
+  .out-trainer-info {
+    max-width: 100%;
+    padding: 20px;
+  }
 }
 @media (max-width: 767px) {
   .testimonials-border .testimonial-slide p {
