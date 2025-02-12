@@ -1019,28 +1019,29 @@
     </section>
     
     <script>
-      // Initialize and add the map
+      const CONFIGURATION = {
+          location: { lat: 45.7796301, lng: 15.9766466 },
+          mapOptions: {
+              center: { lat: 45.7796301, lng: 15.9766466 },
+              zoom: 14,
+              fullscreenControl: true,
+              mapTypeControl: false,
+              streetViewControl: false,
+              zoomControl: true,
+              maxZoom: 17
+          }
+      };
+
       function initMap() {
-        // The location (replace with your desired coordinates)
-        const location = { lat: 45.7796316, lng: 15.9756009 };
-    
-        // The map, centered at the specified location
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 15, // Adjust the zoom level
-          center: location,
-        });
-    
-        // Add a marker at the specified location
-        const marker = new google.maps.Marker({
-          position: location,
-          map: map,
-          title: "Hangar 14",
-        });
+          const map = new google.maps.Map(document.getElementById('map'), CONFIGURATION.mapOptions);
+
+          new google.maps.Marker({
+              position: CONFIGURATION.location,
+              map: map,
+              title: "Hangar 14"
+          });
       }
-    
-      // Load the map after the page loads
-      window.onload = initMap;
-    </script>
+  </script>
 	  <!-- ================ S-MAP END ================ -->
 
 
@@ -1169,7 +1170,7 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/rx-lazy.js"></script>
     <script src="assets/js/parallax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEYlXYZPkj9r6mA5tn3-bKLS6rh0YBfe8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEYlXYZPkj9r6mA5tn3-bKLS6rh0YBfe8&callback=initMap"></script>
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>
