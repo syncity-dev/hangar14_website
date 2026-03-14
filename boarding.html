@@ -17,13 +17,15 @@
 
     <style>
         .boarding-hero {
-            padding: 34px 0 12px;
+            padding: 56px 0 28px;
         }
 
         .boarding-hero .title {
-            max-width: 620px;
+            max-width: 760px;
             margin: 0 auto;
             text-align: center;
+            font-size: 72px;
+            line-height: 0.96;
         }
 
         .boarding-hero .title span {
@@ -31,10 +33,10 @@
         }
 
         .boarding-subtitle-wrap {
-            max-width: 540px;
-            margin: 12px auto 0;
-            padding: 11px 15px;
-            background: rgba(0, 0, 0, 0.42);
+            max-width: 620px;
+            margin: 20px auto 0;
+            padding: 0;
+            background: transparent;
         }
 
         .boarding-subtitle {
@@ -43,24 +45,38 @@
             color: #f1f1f1;
             font-size: 1.14rem;
             font-weight: 700;
-            line-height: 1.62;
+            line-height: 1.68;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .boarding-buttons {
-            margin-top: 24px;
+            max-width: 1240px;
+            margin: 36px auto 0;
+        }
+
+        .boarding-buttons .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: -14px;
+            margin-right: -14px;
         }
 
         .boarding-buttons .col-md-6 {
-            margin-bottom: 18px;
+            margin-bottom: 22px;
+            padding-left: 14px;
+            padding-right: 14px;
         }
 
         .boarding-card {
-            display: block;
-            height: 100%;
-            margin-bottom: 0;
-            padding: 20px 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 170px;
+            padding: 28px 24px;
             border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 20px;
+            border-radius: 24px;
             background: rgba(255, 255, 255, 0.035);
             text-align: center;
             transition: 0.25s ease;
@@ -72,66 +88,63 @@
             background: rgba(255, 255, 255, 0.06);
         }
 
-        .boarding-card.is-primary {
-            border-color: rgba(249, 183, 1, 0.55);
-            background: rgba(249, 183, 1, 0.06);
-        }
-
         .boarding-card i {
             display: block;
-            margin-bottom: 10px;
-            font-size: 2rem;
+            margin-bottom: 14px;
+            font-size: 2.2rem;
             color: #f9b701;
         }
 
         .boarding-card h3 {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             color: #fff;
-            font-size: 1.28rem;
-            line-height: 1.28;
+            font-size: 1.45rem;
+            line-height: 1.2;
         }
 
         .boarding-card p {
             margin: 0;
             color: #d8d8d8;
-            font-size: 0.96rem;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 700;
             line-height: 1.55;
         }
 
         .boarding-info {
-            margin: 24px 0 18px;
+            max-width: 960px;
+            margin: 28px auto 24px;
         }
 
         .boarding-benefits {
-            max-width: 700px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px 18px;
-            border-radius: 20px;
+            padding: 22px 28px;
+            border-radius: 24px;
             background: rgba(255, 255, 255, 0.04);
+            text-align: center;
         }
 
         .boarding-benefits h4 {
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             color: #fff;
             text-align: center;
-            font-size: 1.25rem;
+            font-size: 1.45rem;
         }
 
         .boarding-benefits ul {
             list-style: disc;
             margin: 0 auto;
-            padding-left: 22px;
+            padding-left: 24px;
             max-width: 360px;
             text-align: left;
         }
 
         .boarding-benefits li {
-            margin: 8px 0;
+            margin: 10px 0;
             color: #dedede;
-            font-size: 0.98rem;
+            font-size: 1rem;
             font-weight: 700;
-            line-height: 1.5;
+            line-height: 1.55;
         }
 
         .boarding-benefits li::marker {
@@ -140,16 +153,17 @@
 
         .boarding-small-text {
             max-width: 760px;
-            margin: 20px auto 0;
+            margin: 22px auto 0;
             text-align: center;
             color: #d3d3d3;
-            font-size: 0.98rem;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 700;
             line-height: 1.65;
         }
 
         .boarding-footer-links {
-            margin-top: 8px;
+            max-width: 440px;
+            margin: 14px auto 0;
         }
 
         .boarding-footer-links li {
@@ -158,13 +172,88 @@
 
         .boarding-footer-links a,
         .boarding-footer-links span {
-            font-size: 0.96rem;
+            font-size: 1.02rem;
             font-weight: 700;
         }
 
         .boarding-footer-links i {
             color: #f9b701;
-            font-size: 0.92em;
+            font-size: 1em;
+        }
+
+        @media (max-width: 1199px) {
+            .boarding-hero {
+                padding: 46px 0 24px;
+            }
+
+            .boarding-hero .title {
+                max-width: 640px;
+                font-size: 58px;
+            }
+
+            .boarding-subtitle-wrap {
+                max-width: 540px;
+                margin-top: 18px;
+            }
+
+            .boarding-subtitle {
+                font-size: 1.08rem;
+            }
+
+            .boarding-buttons {
+                max-width: 1080px;
+            }
+
+            .boarding-card {
+                min-height: 160px;
+                padding: 24px 20px;
+            }
+
+            .boarding-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .boarding-card p {
+                font-size: 0.96rem;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .boarding-hero {
+                padding: 40px 0 24px;
+            }
+
+            .boarding-hero .title {
+                max-width: 520px;
+                font-size: 50px;
+            }
+
+            .boarding-subtitle-wrap {
+                max-width: 500px;
+                margin-top: 16px;
+            }
+
+            .boarding-subtitle {
+                font-size: 1.02rem;
+            }
+
+            .boarding-buttons .row {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+            .boarding-buttons .col-md-6 {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .boarding-card {
+                min-height: 158px;
+            }
+
+            .boarding-benefits {
+                max-width: 100%;
+            }
         }
 
         @media (max-width: 767px) {
@@ -182,8 +271,6 @@
             .boarding-subtitle-wrap {
                 max-width: 300px;
                 margin-top: 10px;
-                padding: 9px 11px;
-                background: rgba(0, 0, 0, 0.46);
             }
 
             .boarding-subtitle {
@@ -195,12 +282,21 @@
                 margin-top: 18px;
             }
 
+            .boarding-buttons .row {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
             .boarding-buttons .col-md-6 {
                 margin-bottom: 16px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
 
             .boarding-card {
+                min-height: auto;
                 padding: 18px 16px;
+                border-radius: 20px;
             }
 
             .boarding-card i {
@@ -211,6 +307,7 @@
             .boarding-card h3 {
                 font-size: 1.12rem;
                 line-height: 1.22;
+                margin-bottom: 8px;
             }
 
             .boarding-card p,
@@ -226,17 +323,23 @@
             }
 
             .boarding-benefits {
+                max-width: 100%;
                 padding: 18px 16px;
                 border-radius: 18px;
             }
 
             .boarding-benefits h4 {
                 font-size: 1.12rem;
+                margin-bottom: 12px;
             }
 
             .boarding-benefits ul {
                 max-width: 280px;
                 padding-left: 20px;
+            }
+
+            .boarding-footer-links {
+                max-width: 100%;
             }
         }
     </style>
@@ -247,11 +350,13 @@
 <section class="s-crossfit-slider">
     <div class="crossfit-slider">
         <div class="crossfit-slide">
-            <div class="crossfit-slide-bg" style="background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), url(assets/img/slide-1.webp)"></div>
+            <div class="crossfit-slide-bg"
+                 style="background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), url(assets/img/slide-1.webp)">
+            </div>
             <div class="container">
-                <div class="crossfit-slide-cover boarding-hero" style="padding-top: 18px; padding-bottom: 6px;">
+                <div class="crossfit-slide-cover boarding-hero">
                     <h2 class="title">Preuzmi svoj<span>Boarding Pass 14</span></h2>
-                    <div class="boarding-subtitle-wrap" style="max-width: 460px;">
+                    <div class="boarding-subtitle-wrap">
                         <p class="boarding-subtitle">
                             14 dana besplatnog treninga u Hangaru 14. Javi nam se putem Instagrama ili WhatsAppa.
                         </p>
@@ -272,7 +377,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a class="boarding-card is-primary" target="_blank" href="https://wa.me/385915609234?text=Boarding%20Pass">
+            <a class="boarding-card" target="_blank" href="https://wa.me/385915609234?text=Boarding%20Pass">
                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 <h3>Pošalji poruku na WhatsApp</h3>
                 <p>Otvori WhatsApp i aktiviraj Boarding Pass.</p>
@@ -282,7 +387,7 @@
 </div>
 
 <div class="container boarding-info">
-    <div class="boarding-benefits" style="padding-top: 16px; padding-bottom: 16px;">
+    <div class="boarding-benefits">
         <h4>Što te čeka? ✈️</h4>
         <ul>
             <li>14 dana besplatnog treninga</li>
