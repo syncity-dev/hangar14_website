@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hangar 14 Boarding</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="assets/img/favicon.webp" />
+
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+        .boarding-hero {
+            padding: 34px 0 12px;
+        }
+
+        .boarding-hero .title {
+            max-width: 620px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .boarding-hero .title span {
+            display: block;
+        }
+
+        .boarding-subtitle-wrap {
+            max-width: 540px;
+            margin: 12px auto 0;
+            padding: 11px 15px;
+            background: rgba(0, 0, 0, 0.42);
+        }
+
+        .boarding-subtitle {
+            margin: 0;
+            text-align: center;
+            color: #f1f1f1;
+            font-size: 1.14rem;
+            font-weight: 700;
+            line-height: 1.62;
+        }
+
+        .boarding-buttons {
+            margin-top: 24px;
+        }
+
+        .boarding-buttons .col-md-6 {
+            margin-bottom: 18px;
+        }
+
+        .boarding-card {
+            display: block;
+            height: 100%;
+            margin-bottom: 0;
+            padding: 20px 18px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.035);
+            text-align: center;
+            transition: 0.25s ease;
+        }
+
+        .boarding-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(249, 183, 1, 0.6);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .boarding-card.is-primary {
+            border-color: rgba(249, 183, 1, 0.55);
+            background: rgba(249, 183, 1, 0.06);
+        }
+
+        .boarding-card i {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: #f9b701;
+        }
+
+        .boarding-card h3 {
+            margin-bottom: 8px;
+            color: #fff;
+            font-size: 1.28rem;
+            line-height: 1.28;
+        }
+
+        .boarding-card p {
+            margin: 0;
+            color: #d8d8d8;
+            font-size: 0.96rem;
+            font-weight: 600;
+            line-height: 1.55;
+        }
+
+        .boarding-info {
+            margin: 24px 0 18px;
+        }
+
+        .boarding-benefits {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px 18px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .boarding-benefits h4 {
+            margin-bottom: 12px;
+            color: #fff;
+            text-align: center;
+            font-size: 1.25rem;
+        }
+
+        .boarding-benefits ul {
+            list-style: disc;
+            margin: 0 auto;
+            padding-left: 22px;
+            max-width: 360px;
+            text-align: left;
+        }
+
+        .boarding-benefits li {
+            margin: 8px 0;
+            color: #dedede;
+            font-size: 0.98rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .boarding-benefits li::marker {
+            color: #f9b701;
+        }
+
+        .boarding-small-text {
+            max-width: 760px;
+            margin: 20px auto 0;
+            text-align: center;
+            color: #d3d3d3;
+            font-size: 0.98rem;
+            font-weight: 600;
+            line-height: 1.65;
+        }
+
+        .boarding-footer-links {
+            margin-top: 8px;
+        }
+
+        .boarding-footer-links li {
+            margin: 12px 0;
+        }
+
+        .boarding-footer-links a,
+        .boarding-footer-links span {
+            font-size: 0.96rem;
+            font-weight: 700;
+        }
+
+        .boarding-footer-links i {
+            color: #f9b701;
+            font-size: 0.92em;
+        }
+
+        @media (max-width: 767px) {
+            .boarding-hero {
+                padding-top: 24px;
+                padding-bottom: 8px;
+            }
+
+            .boarding-hero .title {
+                max-width: 340px;
+                font-size: 34px;
+                line-height: 1.02;
+            }
+
+            .boarding-subtitle-wrap {
+                max-width: 300px;
+                margin-top: 10px;
+                padding: 9px 11px;
+                background: rgba(0, 0, 0, 0.46);
+            }
+
+            .boarding-subtitle {
+                font-size: 1rem;
+                line-height: 1.56;
+            }
+
+            .boarding-buttons {
+                margin-top: 18px;
+            }
+
+            .boarding-buttons .col-md-6 {
+                margin-bottom: 16px;
+            }
+
+            .boarding-card {
+                padding: 18px 16px;
+            }
+
+            .boarding-card i {
+                margin-bottom: 8px;
+                font-size: 1.85rem;
+            }
+
+            .boarding-card h3 {
+                font-size: 1.12rem;
+                line-height: 1.22;
+            }
+
+            .boarding-card p,
+            .boarding-benefits li,
+            .boarding-small-text,
+            .boarding-footer-links a,
+            .boarding-footer-links span {
+                font-size: 0.9rem;
+            }
+
+            .boarding-info {
+                margin-top: 22px;
+            }
+
+            .boarding-benefits {
+                padding: 18px 16px;
+                border-radius: 18px;
+            }
+
+            .boarding-benefits h4 {
+                font-size: 1.12rem;
+            }
+
+            .boarding-benefits ul {
+                max-width: 280px;
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body id="home">
+
+<section class="s-crossfit-slider">
+    <div class="crossfit-slider">
+        <div class="crossfit-slide">
+            <div class="crossfit-slide-bg" style="background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), url(assets/img/slide-1.webp)"></div>
+            <div class="container">
+                <div class="crossfit-slide-cover boarding-hero" style="padding-top: 18px; padding-bottom: 6px;">
+                    <h2 class="title">Preuzmi svoj<span>Boarding Pass 14</span></h2>
+                    <div class="boarding-subtitle-wrap" style="max-width: 460px;">
+                        <p class="boarding-subtitle">
+                            14 dana besplatnog treninga u Hangaru 14. Javi nam se putem Instagrama ili WhatsAppa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container boarding-buttons">
+    <div class="row">
+        <div class="col-md-6">
+            <a class="boarding-card" target="_blank" href="https://ig.me/m/hangar14.fit">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <h3>Pošalji poruku na Instagram</h3>
+                <p>Otvori DM i aktiviraj Boarding Pass.</p>
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a class="boarding-card is-primary" target="_blank" href="https://wa.me/385915609234?text=Boarding%20Pass">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <h3>Pošalji poruku na WhatsApp</h3>
+                <p>Otvori WhatsApp i aktiviraj Boarding Pass.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container boarding-info">
+    <div class="boarding-benefits" style="padding-top: 16px; padding-bottom: 16px;">
+        <h4>Što te čeka? ✈️</h4>
+        <ul>
+            <li>14 dana besplatnog treninga</li>
+            <li>Male grupe</li>
+            <li>Trener je uvijek uz tebe</li>
+        </ul>
+    </div>
+
+    <p class="boarding-small-text">Ne koristiš Instagram ni WhatsApp? Javi nam se direktno.</p>
+
+    <div class="row justify-content-center">
+        <ul class="footer-cont boarding-footer-links">
+            <li>
+                <a target="_blank" href="https://maps.app.goo.gl/2svGmUUykSerrmfe8">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Avenija Dubrovnik 15, Zagreb</span>
+                </a>
+            </li>
+            <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+385 91 560 9234</span>
+            </li>
+            <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:team@hangar14.fit">team@hangar14.fit</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="assets/js/jquery-2.2.4.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
