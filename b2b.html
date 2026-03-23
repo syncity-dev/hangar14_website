@@ -18,61 +18,36 @@
 
     <style>
         .boarding-hero {
-            padding: 72px 0 58px;
-        }
-
-        .boarding-hero-inner {
-            max-width: 920px;
-            margin: 0 auto;
-            text-align: center;
+            padding: 56px 0 28px;
         }
 
         .boarding-hero .title {
-            max-width: 920px;
+            max-width: 760px;
             margin: 0 auto;
             text-align: center;
-            font-size: 50px;
-            line-height: 1;
-            color: #fff;
-            text-shadow: 0 6px 24px rgba(0, 0, 0, 0.55);
-            letter-spacing: 0.02em;
+            font-size: 72px;
+            line-height: 0.96;
         }
 
-        .boarding-hero .title-accent {
-            color: #fad437;
-        }
-
-        .boarding-title-bar {
-            width: 102px;
-            height: 4px;
-            margin: 18px auto 0;
-            background: #fad437;
-            border-radius: 999px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+        .boarding-hero .title span {
+            display: block;
         }
 
         .boarding-subtitle-wrap {
-            max-width: 500px;
-            margin: 22px auto 0;
-            padding: 10px 14px;
-            background: rgba(10, 10, 10, 0.24);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 12px;
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
+            max-width: 620px;
+            margin: 20px auto 0;
+            padding: 0;
+            background: transparent;
         }
 
         .boarding-subtitle {
             margin: 0;
-            padding: 0;
-            max-width: none;
-            background: transparent;
             text-align: center;
-            color: #f7f7f7;
-            font-size: 0.92rem;
+            color: #f1f1f1;
+            font-size: 1.14rem;
             font-weight: 700;
-            line-height: 1.56;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.42);
+            line-height: 1.68;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .boarding-subtitle .subtitle-accent {
@@ -369,57 +344,65 @@
         }
 
         @media (max-width: 1199px) {
+            .boarding-hero {
+                padding: 46px 0 24px;
+            }
+
             .boarding-hero .title {
-                font-size: 48px;
+                max-width: 640px;
+                font-size: 58px;
+            }
+
+            .boarding-subtitle-wrap {
+                max-width: 540px;
+                margin-top: 18px;
+            }
+
+            .boarding-subtitle {
+                font-size: 1.08rem;
             }
         }
 
         @media (max-width: 991px) {
             .boarding-hero {
-                padding: 54px 0 18px;
+                padding: 40px 0 24px;
             }
 
             .boarding-hero .title {
-                font-size: 40px;
-            }
-
-            .boarding-title-bar {
-                width: 96px;
+                max-width: 520px;
+                font-size: 50px;
             }
 
             .boarding-subtitle-wrap {
                 max-width: 500px;
+                margin-top: 16px;
+            }
+
+            .boarding-subtitle {
+                font-size: 1.02rem;
             }
         }
 
         @media (max-width: 767px) {
             .boarding-hero {
-                padding-top: 30px;
-                padding-bottom: 14px;
+                padding-top: 24px;
+                padding-bottom: 8px;
             }
 
             .boarding-hero .title {
-                font-size: 30px;
-                line-height: 1.04;
-                max-width: 320px;
-            }
-
-            .boarding-title-bar {
-                width: 74px;
-                height: 4px;
-                margin-top: 14px;
+                max-width: 340px;
+                font-size: 34px;
+                line-height: 1.02;
             }
 
             .boarding-subtitle-wrap {
-                max-width: 286px;
-                margin-top: 14px;
-                padding: 9px 12px;
-                border-radius: 10px;
+                max-width: 300px;
+                margin-top: 10px;
             }
 
             .boarding-subtitle {
-                font-size: 0.88rem;
-                line-height: 1.5;
+                font-size: 1rem;
+                line-height: 1.56;
             }
 
             .boarding-card h3,
@@ -477,20 +460,14 @@
     <div class="crossfit-slider">
         <div class="crossfit-slide">
             <div class="crossfit-slide-bg"
-                 style="background-image: linear-gradient(rgba(0,0,0,0.54), rgba(0,0,0,0.54)), url(assets/img/slide-1.webp)">
+                 style="background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), url(assets/img/slide-1.webp)">
             </div>
             <div class="container">
                 <div class="crossfit-slide-cover boarding-hero">
-                    <div class="boarding-hero-inner">
-                        <h1 class="title">
-                            B2B Boarding Pass <span class="title-accent">14</span>
-                        </h1>
-
-                        <div class="boarding-title-bar"></div>
-
+                    <h1 class="title">B2B Boarding Pass<span>14</span></h1>
+                    <div class="boarding-subtitle-wrap">
                         <p class="boarding-subtitle">
-                            Za firme i timove od <span class="subtitle-accent">5–10 ljudi</span>: privatni intro
-                            trening, 14 dana iskustva i završni company challenge.
+                            Za firme i timove od <span class="subtitle-accent">5–10 ljudi</span>: privatni intro trening, 14 dana iskustva i završni company challenge.
                         </p>
                     </div>
                 </div>
