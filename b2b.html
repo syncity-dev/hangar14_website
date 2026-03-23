@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hangar 14 | B2B Boarding Pass 14</title>
+    <meta name="keywords" content="b2b fitness, corporate fitness, team training, boarding pass, hangar 14"/>
+    <meta name="description"
+          content="B2B Boarding Pass 14 — privatni intro trening, 14 dana za tim od 5–10 ljudi i završni company challenge u Hangaru 14."/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="assets/img/favicon.webp"/>
+
+    <link rel="stylesheet" href="assets/css/slick.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <style>
+        .boarding-hero {
+            padding: 42px 0 40px;
+        }
+
+        .boarding-hero-inner {
+            max-width: 980px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .boarding-hero-logo {
+            display: inline-block;
+            margin-bottom: 24px;
+        }
+
+        .boarding-hero-logo img {
+            display: block;
+            width: 110px;
+            max-width: 100%;
+            margin: 0 auto;
+            filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.35));
+        }
+
+        .boarding-hero .title {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 54px;
+            line-height: 0.94;
+            color: #fff;
+            text-shadow: 0 6px 24px rgba(0, 0, 0, 0.55);
+            letter-spacing: 0.02em;
+        }
+
+        .boarding-hero .title-line {
+            display: block;
+        }
+
+        .boarding-hero .title-accent {
+            color: #fad437;
+        }
+
+        .boarding-title-bar {
+            width: 132px;
+            height: 4px;
+            margin: 22px auto 0;
+            background: #fad437;
+            border-radius: 999px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+        }
+
+        .boarding-subtitle-wrap {
+            max-width: 520px;
+            margin: 28px auto 0;
+            padding: 12px 16px;
+            background: rgba(10, 10, 10, 0.42);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+        }
+
+        .boarding-subtitle {
+            margin: 0;
+            padding: 0;
+            max-width: none;
+            background: transparent;
+            text-align: center;
+            color: #f6f6f6;
+            font-size: 0.95rem;
+            font-weight: 700;
+            line-height: 1.62;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+        }
+
+        .boarding-subtitle .subtitle-accent {
+            color: #fad437;
+        }
+
+        .boarding-hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .boarding-hero-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 250px;
+            padding: 15px 24px;
+            border-radius: 999px;
+            border: 2px solid #fad437;
+            background: rgba(0, 0, 0, 0.35);
+            color: #fff;
+            font-size: 0.98rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            transition: 0.25s ease;
+        }
+
+        .boarding-hero-btn i {
+            margin-right: 10px;
+            color: #fad437;
+            font-size: 1rem;
+        }
+
+        .boarding-hero-btn:hover {
+            transform: translateY(-2px);
+            background: #fad437;
+            color: #202020;
+        }
+
+        .boarding-hero-btn:hover i {
+            color: #202020;
+        }
+
+        .boarding-section {
+            padding: 18px 0 12px;
+        }
+
+        .boarding-section .title-decor {
+            margin-bottom: 18px;
+        }
+
+        .boarding-intro {
+            max-width: 840px;
+            margin: 0 auto 22px;
+            text-align: center;
+            color: #d7d7d7;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.7;
+        }
+
+        .boarding-feature {
+            height: 100%;
+            width: 100%;
+            padding: 28px 24px;
+            border-radius: 22px;
+            background: #272a31;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .boarding-feature i {
+            display: block;
+            margin-bottom: 14px;
+            color: #f9b701;
+            font-size: 2rem;
+        }
+
+        .boarding-feature h3 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            color: #fff;
+        }
+
+        .boarding-feature p {
+            margin: 0;
+            color: #cfcfcf;
+            font-size: 0.96rem;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        .boarding-process {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .boarding-process-step {
+            margin-bottom: 14px;
+            padding: 18px 20px;
+            border-left: 4px solid #f9b701;
+            background: #272a31;
+        }
+
+        .boarding-process-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .boarding-process-step h3 {
+            margin-bottom: 6px;
+            color: #fff;
+            font-size: 1.08rem;
+        }
+
+        .boarding-process-step p {
+            margin: 0;
+            color: #d1d1d1;
+            font-weight: 700;
+            line-height: 1.65;
+        }
+
+        .boarding-hof-simple {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 24px 26px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.04);
+            text-align: center;
+        }
+
+        .boarding-hof-simple p {
+            max-width: 720px;
+            margin: 0 auto 18px;
+            color: #d6d6d6;
+            font-weight: 700;
+            line-height: 1.7;
+        }
+
+        .boarding-hof-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px 18px;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .boarding-hof-grid li {
+            position: relative;
+            padding-left: 20px;
+            color: #fff;
+            font-size: 0.98rem;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .boarding-hof-grid li:before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fad437;
+        }
+
+        .boarding-next-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .boarding-next-card {
+            height: 100%;
+            width: 100%;
+            padding: 28px 22px;
+            background: #272a31;
+            border-radius: 22px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .boarding-next-card .boarding-next-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 12px;
+            border-radius: 50%;
+            background: #f9b701;
+            color: #202020;
+            font-size: 1.1rem;
+        }
+
+        .boarding-next-card h3 {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 1.12rem;
+        }
+
+        .boarding-next-card p {
+            margin: 0;
+            color: #d2d2d2;
+            font-size: 0.95rem;
+            font-weight: 700;
+            line-height: 1.65;
+        }
+
+        .boarding-final-box {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 24px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.04);
+            text-align: center;
+        }
+
+        .boarding-final-box h3 {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 1.35rem;
+        }
+
+        .boarding-final-box p {
+            margin: 0;
+            color: #d6d6d6;
+            font-weight: 700;
+            line-height: 1.7;
+        }
+
+        .boarding-final-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 22px;
+        }
+
+        .boarding-final-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 230px;
+            padding: 14px 22px;
+            border-radius: 999px;
+            border: 2px solid #fad437;
+            background: transparent;
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            transition: 0.25s ease;
+        }
+
+        .boarding-final-btn i {
+            margin-right: 10px;
+            color: #fad437;
+        }
+
+        .boarding-final-btn:hover {
+            background: #fad437;
+            color: #202020;
+        }
+
+        .boarding-final-btn:hover i {
+            color: #202020;
+        }
+
+        .boarding-small-text {
+            max-width: 760px;
+            margin: 22px auto 0;
+            text-align: center;
+            color: #d3d3d3;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.65;
+        }
+
+        .boarding-footer-links {
+            max-width: 460px;
+            margin: 14px auto 0;
+        }
+
+        .boarding-footer-links li {
+            margin: 12px 0;
+        }
+
+        .boarding-footer-links a,
+        .boarding-footer-links span {
+            font-size: 1.02rem;
+            font-weight: 700;
+        }
+
+        .boarding-footer-links i {
+            color: #f9b701;
+            font-size: 1em;
+        }
+
+        .boarding-final-cta {
+            padding-bottom: 30px;
+        }
+
+        .boarding-section .row {
+            align-items: stretch;
+        }
+
+        .boarding-section .crossfit-col,
+        .boarding-section .club-card-col,
+        .boarding-section .out-trainer-col {
+            display: flex;
+            padding-top: 0 !important;
+            transform: none !important;
+        }
+
+        .boarding-section .crossfit-col:nth-child(2),
+        .boarding-section .club-card-col:nth-child(2),
+        .boarding-section .out-trainer-col:nth-child(2n) {
+            padding-top: 0 !important;
+            transform: none !important;
+        }
+
+        @media (max-width: 1199px) {
+            .boarding-hero .title {
+                font-size: 48px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .boarding-hero .title {
+                font-size: 40px;
+            }
+
+            .boarding-title-bar {
+                width: 104px;
+            }
+
+            .boarding-subtitle-wrap {
+                max-width: 520px;
+            }
+
+            .boarding-hero-actions {
+                gap: 12px;
+            }
+
+            .boarding-hero-btn,
+            .boarding-final-btn {
+                min-width: 220px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .boarding-hero {
+                padding-top: 26px;
+                padding-bottom: 10px;
+            }
+
+            .boarding-hero-logo {
+                margin-bottom: 18px;
+            }
+
+            .boarding-hero-logo img {
+                width: 84px;
+            }
+
+            .boarding-hero .title {
+                font-size: 28px;
+                line-height: 1.02;
+            }
+
+            .boarding-title-bar {
+                width: 78px;
+                height: 4px;
+                margin-top: 16px;
+            }
+
+            .boarding-subtitle-wrap {
+                max-width: 290px;
+                margin-top: 16px;
+                padding: 10px 12px;
+                border-radius: 10px;
+            }
+
+            .boarding-subtitle {
+                font-size: 0.9rem;
+                line-height: 1.52;
+            }
+
+            .boarding-hero-actions {
+                margin-top: 20px;
+                gap: 10px;
+            }
+
+            .boarding-hero-btn,
+            .boarding-final-btn {
+                min-width: 100%;
+                font-size: 0.9rem;
+                padding: 14px 18px;
+            }
+
+            .boarding-card h3,
+            .boarding-feature h3,
+            .boarding-next-card h3,
+            .boarding-process-step h3,
+            .boarding-final-box h3 {
+                font-size: 1.05rem;
+            }
+
+            .boarding-card p,
+            .boarding-feature p,
+            .boarding-next-card p,
+            .boarding-process-step p,
+            .boarding-final-box p,
+            .boarding-intro,
+            .boarding-small-text,
+            .boarding-footer-links a,
+            .boarding-footer-links span,
+            .boarding-hof-grid li {
+                font-size: 0.9rem;
+            }
+
+            .boarding-feature,
+            .boarding-next-card,
+            .boarding-process-step,
+            .boarding-hof-simple,
+            .boarding-final-box {
+                padding: 20px 16px;
+            }
+
+            .boarding-hof-grid {
+                grid-template-columns: 1fr;
+                max-width: 100%;
+            }
+
+            .boarding-section .crossfit-col,
+            .boarding-section .club-card-col,
+            .boarding-section .out-trainer-col {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body id="home">
+
+<section class="s-crossfit-slider">
+    <div class="crossfit-slider">
+        <div class="crossfit-slide">
+            <div class="crossfit-slide-bg"
+                 style="background-image: linear-gradient(rgba(0,0,0,0.54), rgba(0,0,0,0.54)), url(assets/img/slide-1.webp)">
+            </div>
+            <div class="container">
+                <div class="crossfit-slide-cover boarding-hero">
+                    <div class="boarding-hero-inner">
+                        <a class="boarding-hero-logo" href="index.html" aria-label="Hangar 14">
+                            <img src="assets/img/logo.webp" alt="Hangar 14 logo"/>
+                        </a>
+
+                        <h1 class="title">
+                            <span class="title-line"><span class="title-accent">B2B</span> Boarding Pass</span>
+                            <span class="title-line"><span class="title-accent">14</span></span>
+                        </h1>
+
+                        <div class="boarding-title-bar"></div>
+
+                        <p class="boarding-subtitle">
+                            Za firme i timove od <span class="subtitle-accent">5–10 ljudi</span>: privatni intro
+                            trening, 14 dana iskustva i završni company challenge.
+                        </p>
+
+                        <div class="boarding-hero-actions">
+                            <a class="boarding-hero-btn"
+                               href="mailto:team@hangar14.fit?subject=B2B%20Boarding%20Pass%2014">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                Pošalji upit emailom
+                            </a>
+                            <a class="boarding-hero-btn" target="_blank"
+                               href="https://wa.me/385915609234?text=Pozdrav!%20Zanima%20nas%20B2B%20Boarding%20Pass%2014.">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                Javi nam se na WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s-crossfit boarding-section">
+    <div class="container">
+        <h2 class="title-decor">Što uključuje <span>B2B Boarding Pass 14?</span></h2>
+        <p class="boarding-intro">
+            Jednostavan format za firme koje žele timsko iskustvo bez kompliciranog starta.
+        </p>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 crossfit-col">
+                <div class="boarding-feature">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <h3>Tim 5–10 ljudi</h3>
+                    <p>Format za grupu koja kreće zajedno.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 crossfit-col">
+                <div class="boarding-feature">
+                    <i class="fa fa-flag" aria-hidden="true"></i>
+                    <h3>Privatni intro</h3>
+                    <p>Uvodni trening i upoznavanje načina rada.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 crossfit-col">
+                <div class="boarding-feature">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <h3>14 dana iskustva</h3>
+                    <p>Jasan početak bez velike početne odluke.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 crossfit-col">
+                <div class="boarding-feature">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <h3>Company challenge</h3>
+                    <p>Zajednički završetak s konkretnim rezultatom.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s-club-cards boarding-section">
+    <div class="container">
+        <h2 class="title-decor">Kako izgleda <span>proces?</span></h2>
+        <div class="boarding-process">
+            <div class="boarding-process-step">
+                <h3>1. Javljanje</h3>
+                <p>Dogovaramo termin i format za vaš tim.</p>
+            </div>
+            <div class="boarding-process-step">
+                <h3>2. Intro trening</h3>
+                <p>Ekipa dolazi na privatni uvod.</p>
+            </div>
+            <div class="boarding-process-step">
+                <h3>3. 14 dana</h3>
+                <p>Tim prolazi zajedničko iskustvo treninga.</p>
+            </div>
+            <div class="boarding-process-step">
+                <h3>4. Challenge</h3>
+                <p>Boarding pass završava zajedničkim izazovom.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s-training-schedule boarding-section">
+    <div class="container">
+        <h2 class="title-decor">Hall of Fame <span>za vaš tim</span></h2>
+        <div class="boarding-hof-simple">
+            <p>
+                Nakon završetka, vaš tim može imati svoj rezultat unutar Hall of Fame formata.
+            </p>
+            <ul class="boarding-hof-grid">
+                <li>Ukupno podignuta kilaža tima</li>
+                <li>Broj odrađenih treninga</li>
+                <li>Završeni company challenge</li>
+                <li>Zajednički rezultat ekipe nakon 14 dana</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="s-out-trainer boarding-section">
+    <div class="container">
+        <h2 class="title-decor">Kome je <span>namijenjeno?</span></h2>
+        <p class="boarding-intro">
+            Za firme koje žele okupiti tim od 5–10 ljudi i ponuditi zajedničko, jednostavno iskustvo.
+        </p>
+        <div class="row">
+            <div class="col-md-4 out-trainer-col">
+                <div class="boarding-feature">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    <h3>Za aktivaciju tima</h3>
+                    <p>Jednostavan format za pokretanje ekipe.</p>
+                </div>
+            </div>
+            <div class="col-md-4 out-trainer-col">
+                <div class="boarding-feature">
+                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                    <h3>Za zajednički start</h3>
+                    <p>Privatni intro čini prvi dolazak lakšim.</p>
+                </div>
+            </div>
+            <div class="col-md-4 out-trainer-col">
+                <div class="boarding-feature">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <h3>Za rezultat ekipe</h3>
+                    <p>Boarding pass završava zajedničkim ishodom.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s-club-cards club-cards-lite boarding-section">
+    <div class="container">
+        <h2 class="title-decor">Kako dalje nakon <span>Boarding Passa?</span></h2>
+        <div class="row boarding-next-grid">
+            <div class="col-md-4 club-card-col">
+                <div class="boarding-next-card">
+                    <div class="boarding-next-number">1</div>
+                    <h3>B2B ugovor</h3>
+                    <p>Za firme koje žele nastaviti kao tim.</p>
+                </div>
+            </div>
+            <div class="col-md-4 club-card-col">
+                <div class="boarding-next-card">
+                    <div class="boarding-next-number">2</div>
+                    <h3>Članarina</h3>
+                    <p>Za članove koji žele nastaviti individualno.</p>
+                </div>
+            </div>
+            <div class="col-md-4 club-card-col">
+                <div class="boarding-next-card">
+                    <div class="boarding-next-number">3</div>
+                    <h3>Privatni sati</h3>
+                    <p>Za dodatni individualni fokus s Gabrijelom.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s-crossfit boarding-section boarding-final-cta">
+    <div class="container">
+        <div class="boarding-final-box">
+            <h3>Želite aktivirati svoj tim?</h3>
+            <p>Javite nam se i dogovorit ćemo format za vašu grupu od 5–10 ljudi.</p>
+
+            <div class="boarding-final-actions">
+                <a class="boarding-final-btn" href="mailto:team@hangar14.fit?subject=B2B%20Boarding%20Pass%2014">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    Pošalji upit emailom
+                </a>
+                <a class="boarding-final-btn" target="_blank"
+                   href="https://wa.me/385915609234?text=Pozdrav!%20Zanima%20nas%20B2B%20Boarding%20Pass%2014.">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    Javi nam se na WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <p class="boarding-small-text">Preferirate direktan kontakt? Javite nam se putem emaila, telefona ili WhatsAppa.</p>
+
+    <div class="row justify-content-center">
+        <ul class="footer-cont boarding-footer-links">
+            <li>
+                <a target="_blank" href="https://maps.app.goo.gl/2svGmUUykSerrmfe8">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Avenija Dubrovnik 15, Zagreb</span>
+                </a>
+            </li>
+            <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+385 91 560 9234</span>
+            </li>
+            <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:team@hangar14.fit">team@hangar14.fit</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="assets/js/jquery-2.2.4.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
