@@ -18,40 +18,24 @@
 
     <style>
         .boarding-hero {
-            padding: 42px 0 40px;
+            padding: 72px 0 58px;
         }
 
         .boarding-hero-inner {
-            max-width: 980px;
+            max-width: 920px;
             margin: 0 auto;
             text-align: center;
-        }
-
-        .boarding-hero-logo {
-            display: inline-block;
-            margin-bottom: 24px;
-        }
-
-        .boarding-hero-logo img {
-            display: block;
-            width: 110px;
-            max-width: 100%;
-            margin: 0 auto;
-            filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.35));
         }
 
         .boarding-hero .title {
+            max-width: 920px;
             margin: 0 auto;
             text-align: center;
-            font-size: 54px;
-            line-height: 0.94;
+            font-size: 50px;
+            line-height: 1;
             color: #fff;
             text-shadow: 0 6px 24px rgba(0, 0, 0, 0.55);
             letter-spacing: 0.02em;
-        }
-
-        .boarding-hero .title-line {
-            display: block;
         }
 
         .boarding-hero .title-accent {
@@ -59,24 +43,23 @@
         }
 
         .boarding-title-bar {
-            width: 132px;
+            width: 102px;
             height: 4px;
-            margin: 22px auto 0;
+            margin: 18px auto 0;
             background: #fad437;
             border-radius: 999px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
         }
 
         .boarding-subtitle-wrap {
-            max-width: 520px;
-            margin: 28px auto 0;
-            padding: 12px 16px;
-            background: rgba(10, 10, 10, 0.42);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 14px;
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+            max-width: 500px;
+            margin: 22px auto 0;
+            padding: 10px 14px;
+            background: rgba(10, 10, 10, 0.24);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
         }
 
         .boarding-subtitle {
@@ -85,58 +68,15 @@
             max-width: none;
             background: transparent;
             text-align: center;
-            color: #f6f6f6;
-            font-size: 0.95rem;
+            color: #f7f7f7;
+            font-size: 0.92rem;
             font-weight: 700;
-            line-height: 1.62;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+            line-height: 1.56;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.42);
         }
 
         .boarding-subtitle .subtitle-accent {
             color: #fad437;
-        }
-
-        .boarding-hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 16px;
-            margin-top: 28px;
-        }
-
-        .boarding-hero-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 250px;
-            padding: 15px 24px;
-            border-radius: 999px;
-            border: 2px solid #fad437;
-            background: rgba(0, 0, 0, 0.35);
-            color: #fff;
-            font-size: 0.98rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            transition: 0.25s ease;
-        }
-
-        .boarding-hero-btn i {
-            margin-right: 10px;
-            color: #fad437;
-            font-size: 1rem;
-        }
-
-        .boarding-hero-btn:hover {
-            transform: translateY(-2px);
-            background: #fad437;
-            color: #202020;
-        }
-
-        .boarding-hero-btn:hover i {
-            color: #202020;
         }
 
         .boarding-section {
@@ -148,19 +88,19 @@
         }
 
         .boarding-intro {
-            max-width: 840px;
-            margin: 0 auto 22px;
+            max-width: 820px;
+            margin: 0 auto 20px;
             text-align: center;
             color: #d7d7d7;
-            font-size: 1rem;
+            font-size: 0.98rem;
             font-weight: 700;
-            line-height: 1.7;
+            line-height: 1.65;
         }
 
         .boarding-feature {
             height: 100%;
             width: 100%;
-            padding: 28px 24px;
+            padding: 26px 22px;
             border-radius: 22px;
             background: #272a31;
             text-align: center;
@@ -171,33 +111,33 @@
 
         .boarding-feature i {
             display: block;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
             color: #f9b701;
-            font-size: 2rem;
+            font-size: 1.95rem;
         }
 
         .boarding-feature h3 {
-            margin-bottom: 10px;
-            font-size: 1.15rem;
+            margin-bottom: 8px;
+            font-size: 1.08rem;
             color: #fff;
         }
 
         .boarding-feature p {
             margin: 0;
             color: #cfcfcf;
-            font-size: 0.96rem;
+            font-size: 0.93rem;
             font-weight: 700;
-            line-height: 1.6;
+            line-height: 1.55;
         }
 
         .boarding-process {
-            max-width: 900px;
+            max-width: 860px;
             margin: 0 auto;
         }
 
         .boarding-process-step {
-            margin-bottom: 14px;
-            padding: 18px 20px;
+            margin-bottom: 12px;
+            padding: 16px 18px;
             border-left: 4px solid #f9b701;
             background: #272a31;
         }
@@ -207,40 +147,42 @@
         }
 
         .boarding-process-step h3 {
-            margin-bottom: 6px;
+            margin-bottom: 5px;
             color: #fff;
-            font-size: 1.08rem;
+            font-size: 1.03rem;
         }
 
         .boarding-process-step p {
             margin: 0;
             color: #d1d1d1;
             font-weight: 700;
-            line-height: 1.65;
+            line-height: 1.58;
+            font-size: 0.94rem;
         }
 
         .boarding-hof-simple {
-            max-width: 980px;
+            max-width: 920px;
             margin: 0 auto;
-            padding: 24px 26px;
+            padding: 22px 24px;
             border-radius: 24px;
             background: rgba(255, 255, 255, 0.04);
             text-align: center;
         }
 
         .boarding-hof-simple p {
-            max-width: 720px;
-            margin: 0 auto 18px;
+            max-width: 700px;
+            margin: 0 auto 16px;
             color: #d6d6d6;
             font-weight: 700;
-            line-height: 1.7;
+            line-height: 1.65;
+            font-size: 0.95rem;
         }
 
         .boarding-hof-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 12px 18px;
-            max-width: 760px;
+            gap: 10px 18px;
+            max-width: 720px;
             margin: 0 auto;
             padding: 0;
             list-style: none;
@@ -249,33 +191,33 @@
 
         .boarding-hof-grid li {
             position: relative;
-            padding-left: 20px;
+            padding-left: 18px;
             color: #fff;
-            font-size: 0.98rem;
+            font-size: 0.94rem;
             font-weight: 700;
-            line-height: 1.55;
+            line-height: 1.5;
         }
 
         .boarding-hof-grid li:before {
             content: "";
             position: absolute;
-            top: 9px;
+            top: 8px;
             left: 0;
-            width: 10px;
-            height: 10px;
+            width: 9px;
+            height: 9px;
             border-radius: 50%;
             background: #fad437;
         }
 
         .boarding-next-grid {
-            max-width: 1100px;
+            max-width: 1040px;
             margin: 0 auto;
         }
 
         .boarding-next-card {
             height: 100%;
             width: 100%;
-            padding: 28px 22px;
+            padding: 24px 20px;
             background: #272a31;
             border-radius: 22px;
             text-align: center;
@@ -288,33 +230,33 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 48px;
-            height: 48px;
-            margin: 0 auto 12px;
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 10px;
             border-radius: 50%;
             background: #f9b701;
             color: #202020;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .boarding-next-card h3 {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             color: #fff;
-            font-size: 1.12rem;
+            font-size: 1.06rem;
         }
 
         .boarding-next-card p {
             margin: 0;
             color: #d2d2d2;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: 700;
-            line-height: 1.65;
+            line-height: 1.58;
         }
 
         .boarding-final-box {
-            max-width: 900px;
+            max-width: 860px;
             margin: 0 auto;
-            padding: 30px 24px;
+            padding: 28px 22px;
             border-radius: 24px;
             background: rgba(255, 255, 255, 0.04);
             text-align: center;
@@ -323,14 +265,15 @@
         .boarding-final-box h3 {
             margin-bottom: 10px;
             color: #fff;
-            font-size: 1.35rem;
+            font-size: 1.28rem;
         }
 
         .boarding-final-box p {
             margin: 0;
             color: #d6d6d6;
             font-weight: 700;
-            line-height: 1.7;
+            line-height: 1.65;
+            font-size: 0.95rem;
         }
 
         .boarding-final-actions {
@@ -338,20 +281,20 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 14px;
-            margin-top: 22px;
+            margin-top: 20px;
         }
 
         .boarding-final-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            min-width: 230px;
-            padding: 14px 22px;
+            min-width: 220px;
+            padding: 13px 20px;
             border-radius: 999px;
             border: 2px solid #fad437;
             background: transparent;
             color: #fff;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.03em;
@@ -374,26 +317,26 @@
 
         .boarding-small-text {
             max-width: 760px;
-            margin: 22px auto 0;
+            margin: 20px auto 0;
             text-align: center;
             color: #d3d3d3;
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 700;
-            line-height: 1.65;
+            line-height: 1.6;
         }
 
         .boarding-footer-links {
             max-width: 460px;
-            margin: 14px auto 0;
+            margin: 12px auto 0;
         }
 
         .boarding-footer-links li {
-            margin: 12px 0;
+            margin: 10px 0;
         }
 
         .boarding-footer-links a,
         .boarding-footer-links span {
-            font-size: 1.02rem;
+            font-size: 1rem;
             font-weight: 700;
         }
 
@@ -432,75 +375,51 @@
         }
 
         @media (max-width: 991px) {
+            .boarding-hero {
+                padding: 54px 0 18px;
+            }
+
             .boarding-hero .title {
                 font-size: 40px;
             }
 
             .boarding-title-bar {
-                width: 104px;
+                width: 96px;
             }
 
             .boarding-subtitle-wrap {
-                max-width: 520px;
-            }
-
-            .boarding-hero-actions {
-                gap: 12px;
-            }
-
-            .boarding-hero-btn,
-            .boarding-final-btn {
-                min-width: 220px;
+                max-width: 500px;
             }
         }
 
         @media (max-width: 767px) {
             .boarding-hero {
-                padding-top: 26px;
-                padding-bottom: 10px;
-            }
-
-            .boarding-hero-logo {
-                margin-bottom: 18px;
-            }
-
-            .boarding-hero-logo img {
-                width: 84px;
+                padding-top: 30px;
+                padding-bottom: 14px;
             }
 
             .boarding-hero .title {
-                font-size: 28px;
-                line-height: 1.02;
+                font-size: 30px;
+                line-height: 1.04;
+                max-width: 320px;
             }
 
             .boarding-title-bar {
-                width: 78px;
+                width: 74px;
                 height: 4px;
-                margin-top: 16px;
+                margin-top: 14px;
             }
 
             .boarding-subtitle-wrap {
-                max-width: 290px;
-                margin-top: 16px;
-                padding: 10px 12px;
+                max-width: 286px;
+                margin-top: 14px;
+                padding: 9px 12px;
                 border-radius: 10px;
             }
 
             .boarding-subtitle {
-                font-size: 0.9rem;
-                line-height: 1.52;
-            }
-
-            .boarding-hero-actions {
-                margin-top: 20px;
-                gap: 10px;
-            }
-
-            .boarding-hero-btn,
-            .boarding-final-btn {
-                min-width: 100%;
-                font-size: 0.9rem;
-                padding: 14px 18px;
+                font-size: 0.88rem;
+                line-height: 1.5;
             }
 
             .boarding-card h3,
@@ -508,7 +427,7 @@
             .boarding-next-card h3,
             .boarding-process-step h3,
             .boarding-final-box h3 {
-                font-size: 1.05rem;
+                font-size: 1.02rem;
             }
 
             .boarding-card p,
@@ -537,6 +456,12 @@
                 max-width: 100%;
             }
 
+            .boarding-final-btn {
+                min-width: 100%;
+                font-size: 0.9rem;
+                padding: 14px 18px;
+            }
+
             .boarding-section .crossfit-col,
             .boarding-section .club-card-col,
             .boarding-section .out-trainer-col {
@@ -557,13 +482,8 @@
             <div class="container">
                 <div class="crossfit-slide-cover boarding-hero">
                     <div class="boarding-hero-inner">
-                        <a class="boarding-hero-logo" href="index.html" aria-label="Hangar 14">
-                            <img src="assets/img/logo.webp" alt="Hangar 14 logo"/>
-                        </a>
-
                         <h1 class="title">
-                            <span class="title-line"><span class="title-accent">B2B</span> Boarding Pass</span>
-                            <span class="title-line"><span class="title-accent">14</span></span>
+                            B2B Boarding Pass <span class="title-accent">14</span>
                         </h1>
 
                         <div class="boarding-title-bar"></div>
@@ -572,19 +492,6 @@
                             Za firme i timove od <span class="subtitle-accent">5–10 ljudi</span>: privatni intro
                             trening, 14 dana iskustva i završni company challenge.
                         </p>
-
-                        <div class="boarding-hero-actions">
-                            <a class="boarding-hero-btn"
-                               href="mailto:team@hangar14.fit?subject=B2B%20Boarding%20Pass%2014">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                Pošalji upit emailom
-                            </a>
-                            <a class="boarding-hero-btn" target="_blank"
-                               href="https://wa.me/385915609234?text=Pozdrav!%20Zanima%20nas%20B2B%20Boarding%20Pass%2014.">
-                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                Javi nam se na WhatsApp
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -726,7 +633,7 @@
                 <div class="boarding-next-card">
                     <div class="boarding-next-number">3</div>
                     <h3>Privatni sati</h3>
-                    <p>Za dodatni individualni fokus s Gabrijelom.</p>
+                    <p>Za dodatni individualni fokus s Gabrijelom</p>
                 </div>
             </div>
         </div>
