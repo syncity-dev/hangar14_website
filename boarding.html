@@ -14,41 +14,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap-grid.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/boarding-pages.css" />
 
     <style>
-        .boarding-hero {
-            padding: 56px 0 28px;
-        }
-
-        .boarding-hero .title {
-            max-width: 760px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 72px;
-            line-height: 0.96;
-        }
-
-        .boarding-hero .title span {
-            display: block;
-        }
-
-        .boarding-subtitle-wrap {
-            max-width: 620px;
-            margin: 20px auto 0;
-            padding: 0;
-            background: transparent;
-        }
-
-        .boarding-subtitle {
-            margin: 0;
-            text-align: center;
-            color: #f1f1f1;
-            font-size: 1.14rem;
-            font-weight: 700;
-            line-height: 1.68;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        }
-
         .boarding-buttons {
             max-width: 1240px;
             margin: 36px auto 0;
@@ -151,55 +119,7 @@
             color: #f9b701;
         }
 
-        .boarding-small-text {
-            max-width: 760px;
-            margin: 22px auto 0;
-            text-align: center;
-            color: #d3d3d3;
-            font-size: 1rem;
-            font-weight: 700;
-            line-height: 1.65;
-        }
-
-        .boarding-footer-links {
-            max-width: 440px;
-            margin: 14px auto 0;
-        }
-
-        .boarding-footer-links li {
-            margin: 12px 0;
-        }
-
-        .boarding-footer-links a,
-        .boarding-footer-links span {
-            font-size: 1.02rem;
-            font-weight: 700;
-        }
-
-        .boarding-footer-links i {
-            color: #f9b701;
-            font-size: 1em;
-        }
-
         @media (max-width: 1199px) {
-            .boarding-hero {
-                padding: 46px 0 24px;
-            }
-
-            .boarding-hero .title {
-                max-width: 640px;
-                font-size: 58px;
-            }
-
-            .boarding-subtitle-wrap {
-                max-width: 540px;
-                margin-top: 18px;
-            }
-
-            .boarding-subtitle {
-                font-size: 1.08rem;
-            }
-
             .boarding-buttons {
                 max-width: 1080px;
             }
@@ -219,24 +139,6 @@
         }
 
         @media (max-width: 991px) {
-            .boarding-hero {
-                padding: 40px 0 24px;
-            }
-
-            .boarding-hero .title {
-                max-width: 520px;
-                font-size: 50px;
-            }
-
-            .boarding-subtitle-wrap {
-                max-width: 500px;
-                margin-top: 16px;
-            }
-
-            .boarding-subtitle {
-                font-size: 1.02rem;
-            }
-
             .boarding-buttons .row {
                 margin-left: -15px;
                 margin-right: -15px;
@@ -257,27 +159,6 @@
         }
 
         @media (max-width: 767px) {
-            .boarding-hero {
-                padding-top: 24px;
-                padding-bottom: 8px;
-            }
-
-            .boarding-hero .title {
-                max-width: 340px;
-                font-size: 34px;
-                line-height: 1.02;
-            }
-
-            .boarding-subtitle-wrap {
-                max-width: 300px;
-                margin-top: 10px;
-            }
-
-            .boarding-subtitle {
-                font-size: 1rem;
-                line-height: 1.56;
-            }
-
             .boarding-buttons {
                 margin-top: 18px;
             }
@@ -311,10 +192,7 @@
             }
 
             .boarding-card p,
-            .boarding-benefits li,
-            .boarding-small-text,
-            .boarding-footer-links a,
-            .boarding-footer-links span {
+            .boarding-benefits li {
                 font-size: 0.9rem;
             }
 
@@ -336,10 +214,6 @@
             .boarding-benefits ul {
                 max-width: 280px;
                 padding-left: 20px;
-            }
-
-            .boarding-footer-links {
-                max-width: 100%;
             }
         }
     </style>
@@ -395,27 +269,60 @@
         </ul>
     </div>
 
-    <p class="boarding-small-text">Ne koristiš Instagram ni WhatsApp? Javi nam se direktno.</p>
+    <div class="boarding-bottom-wrap">
+        <p class="boarding-small-text">Ne koristiš Instagram ni WhatsApp? Javi nam se direktno.</p>
 
-    <div class="row justify-content-center">
-        <ul class="footer-cont boarding-footer-links">
+        <div class="row justify-content-center">
+            <ul class="footer-cont boarding-footer-links">
+                <li>
+                    <a target="_blank" href="https://maps.app.goo.gl/2svGmUUykSerrmfe8">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Avenija Dubrovnik 15, Zagreb</span>
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>+385 91 560 9234</span>
+                </li>
+                <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:team@hangar14.fit">team@hangar14.fit</a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="boarding-social-note">Želiš prvo upoznati Hangar 14? Pogledaj nas i na društvenim mrežama.</p>
+
+        <ul class="boarding-social-links">
             <li>
-                <a target="_blank" href="https://maps.app.goo.gl/2svGmUUykSerrmfe8">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Avenija Dubrovnik 15, Zagreb</span>
+                <a target="_blank" href="https://www.instagram.com/hangar14.fit">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>@hangar14.fit</span>
                 </a>
             </li>
             <li>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>+385 91 560 9234</span>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61571803554327">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
             </li>
             <li>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:team@hangar14.fit">team@hangar14.fit</a>
+                <a target="_blank" href="https://www.youtube.com/@Hangar14-y1m">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <span>YouTube</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://hangar14.fit">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <span>hangar14.fit</span>
+                </a>
             </li>
         </ul>
     </div>
 </div>
+
+<div class="boarding-page-end-space"></div>
 
 <script src="assets/js/jquery-2.2.4.min.js"></script>
 <script src="assets/js/slick.min.js"></script>
