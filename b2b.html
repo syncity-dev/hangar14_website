@@ -205,13 +205,18 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 44px;
-            height: 44px;
-            margin: 0 auto 10px;
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 12px;
             border-radius: 50%;
             background: #f9b701;
             color: #202020;
-            font-size: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .boarding-next-card .boarding-next-number i {
+            color: #202020;
+            font-size: 1.2rem;
         }
 
         .boarding-next-card h3 {
@@ -290,9 +295,18 @@
             color: #202020;
         }
 
-        .boarding-small-text {
+        .boarding-bottom-wrap {
             max-width: 760px;
-            margin: 20px auto 0;
+            margin: 26px auto 0;
+            padding: 24px 20px 34px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.025);
+            text-align: center;
+        }
+
+        .boarding-small-text {
+            max-width: 700px;
+            margin: 0 auto;
             text-align: center;
             color: #d3d3d3;
             font-size: 0.95rem;
@@ -300,8 +314,12 @@
             line-height: 1.6;
         }
 
+        .boarding-benefits-outro {
+            margin-top: 34px;
+        }
+
         .boarding-footer-links {
-            max-width: 460px;
+            max-width: 420px;
             margin: 12px auto 0;
         }
 
@@ -320,8 +338,55 @@
             font-size: 1em;
         }
 
+        .boarding-social-note {
+            max-width: 680px;
+            margin: 20px auto 0;
+            text-align: center;
+            color: #d3d3d3;
+            font-size: 0.92rem;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .boarding-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 16px;
+            max-width: 700px;
+            margin: 14px auto 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .boarding-social-links li {
+            margin: 0;
+        }
+
+        .boarding-social-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #fff;
+            font-size: 0.94rem;
+            font-weight: 700;
+        }
+
+        .boarding-social-links a:hover {
+            color: #fad437;
+        }
+
+        .boarding-social-links i {
+            color: #f9b701;
+            font-size: 1rem;
+        }
+
+        .boarding-page-end-space {
+            height: 46px;
+        }
+
         .boarding-final-cta {
-            padding-bottom: 30px;
+            padding-bottom: 18px;
         }
 
         .boarding-section .row {
@@ -422,7 +487,9 @@
             .boarding-small-text,
             .boarding-footer-links a,
             .boarding-footer-links span,
-            .boarding-hof-grid li {
+            .boarding-hof-grid li,
+            .boarding-social-note,
+            .boarding-social-links a {
                 font-size: 0.9rem;
             }
 
@@ -430,7 +497,8 @@
             .boarding-next-card,
             .boarding-process-step,
             .boarding-hof-simple,
-            .boarding-final-box {
+            .boarding-final-box,
+            .boarding-bottom-wrap {
                 padding: 20px 16px;
             }
 
@@ -443,6 +511,27 @@
                 min-width: 100%;
                 font-size: 0.9rem;
                 padding: 14px 18px;
+            }
+
+            .boarding-bottom-wrap {
+                margin-top: 20px;
+                padding-bottom: 28px;
+            }
+
+            .boarding-benefits-outro {
+                margin-top: 26px;
+            }
+
+            .boarding-social-note {
+                margin-top: 18px;
+            }
+
+            .boarding-social-links {
+                margin-top: 12px;
+            }
+
+            .boarding-page-end-space {
+                height: 34px;
             }
 
             .boarding-section .crossfit-col,
@@ -515,6 +604,48 @@
     </div>
 </section>
 
+<section class="s-club-cards club-cards-lite boarding-section">
+    <div class="container">
+        <h2 class="title-decor">Zašto ovaj format daje bolje <span>rezultate?</span></h2>
+        <p class="boarding-intro">
+            Strukturiran pristup za više fokusa, kontinuiteta i angažmana.
+        </p>
+        <div class="row boarding-next-grid">
+            <div class="col-md-3 col-sm-6 club-card-col">
+                <div class="boarding-next-card">
+                    <div class="boarding-next-number"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    <h3>Mala grupa</h3>
+                    <p>Do 10 ljudi za lakšu organizaciju i zajednički start.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 club-card-col">
+                <div class="boarding-next-card">
+                    <div class="boarding-next-number"><i class="fa fa-crosshairs" aria-hidden="true"></i></div>
+                    <h3>Poluindividualni pristup</h3>
+                    <p>Više fokusa i pažnje za svakog člana tima.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 club-card-col">
+                <div class="boarding-next-card">
+                    <div class="boarding-next-number"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                    <h3>Strukturirani treninzi</h3>
+                    <p>Vodstvo trenera potiče redovitost i kontinuitet.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 club-card-col">
+                <div class="boarding-next-card">
+                    <div class="boarding-next-number"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+                    <h3>Fokus i produktivnost</h3>
+                    <p>Više energije, mentalnog reseta i boljeg fokusa za posao.</p>
+                </div>
+            </div>
+        </div>
+        <p class="boarding-small-text boarding-benefits-outro">
+            U Hangaru 14 ne radimo samo na formi, nego i na fokusu. Ne trenirate samo da biste bili fit — trenirate da biste bili bolji i na poslu.
+        </p>
+    </div>
+</section>
+
 <section class="s-club-cards boarding-section">
     <div class="container">
         <h2 class="title-decor">Kako izgleda <span>proces?</span></h2>
@@ -535,23 +666,6 @@
                 <h3>4. Challenge</h3>
                 <p>Boarding pass završava zajedničkim izazovom.</p>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="s-training-schedule boarding-section">
-    <div class="container">
-        <h2 class="title-decor">Hall of Fame <span>za vaš tim</span></h2>
-        <div class="boarding-hof-simple">
-            <p>
-                Nakon završetka, vaš tim može imati svoj rezultat unutar Hall of Fame formata.
-            </p>
-            <ul class="boarding-hof-grid">
-                <li>Ukupno podignuta kilaža tima</li>
-                <li>Broj odrađenih treninga</li>
-                <li>Završeni company challenge</li>
-                <li>Zajednički rezultat ekipe nakon 14 dana</li>
-            </ul>
         </div>
     </div>
 </section>
@@ -584,6 +698,23 @@
                     <p>Boarding pass završava zajedničkim ishodom.</p>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="s-training-schedule boarding-section">
+    <div class="container">
+        <h2 class="title-decor">Hall of Fame <span>za vaš tim</span></h2>
+        <div class="boarding-hof-simple">
+            <p>
+                Nakon završetka, vaš tim može imati svoj rezultat unutar Hall of Fame formata.
+            </p>
+            <ul class="boarding-hof-grid">
+                <li>Ukupno podignuta kilaža tima</li>
+                <li>Broj odrađenih treninga</li>
+                <li>Završeni company challenge</li>
+                <li>Zajednički rezultat ekipe nakon 14 dana</li>
+            </ul>
         </div>
     </div>
 </section>
@@ -639,27 +770,60 @@
 </section>
 
 <div class="container">
-    <p class="boarding-small-text">Preferirate direktan kontakt? Javite nam se putem emaila, telefona ili WhatsAppa.</p>
+    <div class="boarding-bottom-wrap">
+        <p class="boarding-small-text">Preferirate direktan kontakt? Javite nam se putem emaila, telefona ili WhatsAppa.</p>
 
-    <div class="row justify-content-center">
-        <ul class="footer-cont boarding-footer-links">
+        <div class="row justify-content-center">
+            <ul class="footer-cont boarding-footer-links">
+                <li>
+                    <a target="_blank" href="https://maps.app.goo.gl/2svGmUUykSerrmfe8">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Avenija Dubrovnik 15, Zagreb</span>
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>+385 91 560 9234</span>
+                </li>
+                <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:team@hangar14.fit">team@hangar14.fit</a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="boarding-social-note">Želite prvo upoznati Hangar 14? Pogledajte nas i na društvenim mrežama.</p>
+
+        <ul class="boarding-social-links">
             <li>
-                <a target="_blank" href="https://maps.app.goo.gl/2svGmUUykSerrmfe8">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Avenija Dubrovnik 15, Zagreb</span>
+                <a target="_blank" href="https://www.instagram.com/hangar14.fit">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>@hangar14.fit</span>
                 </a>
             </li>
             <li>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>+385 91 560 9234</span>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61571803554327">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
             </li>
             <li>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:team@hangar14.fit">team@hangar14.fit</a>
+                <a target="_blank" href="https://www.youtube.com/@Hangar14-y1m">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <span>YouTube</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://hangar14.fit">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <span>hangar14.fit</span>
+                </a>
             </li>
         </ul>
     </div>
 </div>
+
+<div class="boarding-page-end-space"></div>
 
 <script src="assets/js/jquery-2.2.4.min.js"></script>
 <script src="assets/js/slick.min.js"></script>
