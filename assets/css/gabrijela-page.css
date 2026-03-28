@@ -46,19 +46,6 @@
     padding: 42px 40px 40px;
 }
 
-.gabriela-hero-kicker {
-    display: inline-block;
-    margin-bottom: 16px;
-    padding: 8px 13px;
-    border-radius: 999px;
-    background: rgba(249, 183, 1, 0.1);
-    color: #fad437;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
 .gabriela-hero .title {
     max-width: 620px;
     margin: 0 0 14px;
