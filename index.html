@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap-grid.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/boarding-pages.css" />
+    <link rel="stylesheet" href="assets/css/index-page.css" />
 
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -206,18 +208,18 @@
 <!-- ========== S-CROSSFIT-SLIDER END ========== -->
 
 <!-- ================ S-CROSSFIT ================ -->
-<section class="s-crossfit">
+<section class="s-crossfit boarding-section homepage-programs-section">
     <div class="container">
         <h2 class="title-decor">Naši <span> programi</span></h2>
+        <p class="boarding-intro homepage-programs-intro">
+            Tri jasna formata treninga u Hangaru 14, svaki s istim ciljem: više fokusa, bolja izvedba i stvarni napredak.
+        </p>
         <div class="row">
             <div class="col-md-4 crossfit-col">
-                <div class="crossfit-item">
-                    <img
-                            class="rx-lazy"
-                            src="assets/img/placeholder-all.png"
-                            data-src="assets/img/serv-1.svg"
-                            alt="HangarCross"
-                    />
+                <div class="boarding-next-card homepage-program-card">
+                    <div class="boarding-next-number">
+                        <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    </div>
                     <h3>HangarCross</h3>
                     <p>
                         Funkcionalni trening visokog intenziteta osmišljen za razvoj snage, otpornosti i performansi.
@@ -225,13 +227,10 @@
                 </div>
             </div>
             <div class="col-md-4 crossfit-col">
-                <div class="crossfit-item">
-                    <img
-                            class="rx-lazy"
-                            src="assets/img/placeholder-all.png"
-                            data-src="assets/img/serv-2.svg"
-                            alt="Team Cross"
-                    />
+                <div class="boarding-next-card homepage-program-card">
+                    <div class="boarding-next-number">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
                     <h3>Team Cross</h3>
                     <p>
                         Energičan timski trening koji spaja funkcionalni fitness, intenzitet i snažnu grupnu motivaciju.
@@ -239,13 +238,10 @@
                 </div>
             </div>
             <div class="col-md-4 crossfit-col">
-                <div class="crossfit-item">
-                    <img
-                            class="rx-lazy"
-                            src="assets/img/placeholder-all.png"
-                            data-src="assets/img/serv-3.svg"
-                            alt="Girls Only Class"
-                    />
+                <div class="boarding-next-card homepage-program-card">
+                    <div class="boarding-next-number">
+                        <i class="fa fa-female" aria-hidden="true"></i>
+                    </div>
                     <h3>Girls Only Class</h3>
                     <p>
                         Funkcionalni trening u maloj grupi isključivo za žene, osmišljen za jačanje i oblikovanje cijelog tijela, s posebnim fokusom na donji dio tijela.
@@ -395,6 +391,9 @@
                         <p>
                             Vidimo se na treningu! 💪❤️
                         </p>
+                        <p>
+                            <a class="btn" href="gabrijela.html">Privatni treninzi s Gabrijelom</a>
+                        </p>
                         <ul class="social-list">
                             <li>
                                 <a target="_blank" href="https://www.facebook.com/najvise.filipa"
@@ -432,43 +431,75 @@
 <!-- ========== S-CROSSFIT-BANNER END ========== -->
 
 <!-- ============== S-CLUB-CARDS ============== -->
-<section class="s-club-cards club-cards-lite">
+<section class="s-club-cards club-cards-lite homepage-memberships">
     <div class="container">
         <h2 class="title-decor">Cijene <span>članarina</span></h2>
 
-        <h3 class="section-subtitle">Mjesečno</h3>
-        <div class="row">
-            <div class="col-md-4 club-card-col">
-                <div class="club-card-item spaced-card">
-                    <div class="price-cover">
-                        <div class="price">€7</div>
-                        <div class="date">Drop-In trening</div>
+        <p class="homepage-memberships-intro">
+            Jasne opcije za pojedinačni dolazak, mjesečni ritam treninga, referral i partner format te tromjesečni kontinuitet.
+        </p>
+
+        <div class="row homepage-pricing-grid">
+            <div class="col-lg-3 col-md-6 club-card-col homepage-pricing-col homepage-pricing-col--dropin">
+                <div class="homepage-pricing-card homepage-pricing-card--dropin">
+                    <div class="homepage-pricing-top">
+                        <div class="homepage-pricing-price">10€</div>
+                        <div class="homepage-pricing-title">Drop-In trening</div>
+                        <div class="homepage-pricing-subtitle">Jednokratni dolazak bez članarine.</div>
                     </div>
-                    <div class="club-card-text">
+                    <p class="homepage-pricing-desc">
                         Prisustvuj jednom treningu po pristupačnoj cijeni.
-                    </div>
+                    </p>
                 </div>
             </div>
-            <div class="col-md-4 club-card-col">
-                <div class="club-card-item spaced-card">
-                    <div class="price-cover">
-                        <div class="price">€60</div>
-                        <div class="date">Mjesečna članarina (3x tjedno)</div>
+            <div class="col-lg-3 col-md-6 club-card-col homepage-pricing-col">
+                <div class="homepage-pricing-card homepage-pricing-card--featured">
+                    <div class="homepage-pricing-top">
+                        <div class="homepage-pricing-plan">Mjesečna</div>
+                        <div class="homepage-pricing-subtitle">Najbolje za redovit tjedni ritam.</div>
                     </div>
-                    <div class="club-card-text">
-                        Uživaj u tri treninga tjedno kroz cijeli mjesec.
-                    </div>
+                    <ul class="homepage-pricing-rows">
+                        <li><span>Studentska unlimited</span><strong>55€</strong></li>
+                        <li><span>3x tjedno</span><strong>70€</strong></li>
+                        <li><span>Unlimited članarina</span><strong>85€</strong></li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-4 club-card-col">
-                <div class="club-card-item spaced-card">
-                    <div class="price-cover">
-                        <div class="price">€75</div>
-                        <div class="date">Mjesečna neograničena članarina</div>
+            <div class="col-lg-3 col-md-6 club-card-col homepage-pricing-col">
+                <div class="homepage-pricing-card">
+                    <div class="homepage-pricing-top">
+                        <div class="homepage-pricing-plan">Referral članarina</div>
+                        <div class="homepage-pricing-subtitle">Namijenjena članovima koji dolaze kroz referral preporuku.</div>
                     </div>
-                    <div class="club-card-text">
-                        Treniraj bez ograničenja tijekom cijelog mjeseca.
+                    <ul class="homepage-pricing-rows">
+                        <li><span>3x tjedno</span><strong>126€</strong></li>
+                        <li><span>Unlimited članarina</span><strong>153€</strong></li>
+                    </ul>
+                    <p class="homepage-pricing-note">Cijene vrijede samo za prvi mjesec.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 club-card-col homepage-pricing-col">
+                <div class="homepage-pricing-card">
+                    <div class="homepage-pricing-top">
+                        <div class="homepage-pricing-plan">Partner članarina</div>
+                        <div class="homepage-pricing-subtitle">Format za trening u paru.</div>
                     </div>
+                    <ul class="homepage-pricing-rows">
+                        <li><span>3x tjedno</span><strong>133€</strong></li>
+                        <li><span>Unlimited članarina</span><strong>153€</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 club-card-col homepage-pricing-col">
+                <div class="homepage-pricing-card">
+                    <div class="homepage-pricing-top">
+                        <div class="homepage-pricing-plan">Tromjesečna članarina</div>
+                        <div class="homepage-pricing-subtitle">Za kontinuitet i dugoročniji napredak.</div>
+                    </div>
+                    <ul class="homepage-pricing-rows">
+                        <li><span>3x tjedno</span><strong>189€</strong></li>
+                        <li><span>Unlimited članarina</span><strong>229€</strong></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -595,46 +626,63 @@
 <footer>
     <div class="container">
         <h2 class="title-decor">Kontaktiraj <span>nas</span></h2>
-        <div class="row">
-            <div class="col-sm-12 col-lg-12 footer-item">
-                <ul class="footer-cont">
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/hangar14.fit">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span>@hangar14.fit</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61571803554327">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span>Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.youtube.com/@Hangar14-y1m">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                            <span>YouTube</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://wa.me/385915609234">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                            <span>+385 91 560 9234</span>
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <a href="tel:+385915609234">+385 91 560 9234</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:team@hangar14.fit">team@hangar14.fit</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>Pon - Pet:
-                        16:00 - 21:00 | Sub - Ned: Zatvoreno
-                    </li>
-                </ul>
+        <p class="homepage-memberships-intro homepage-contact-intro">
+            Za direktan upit javi se telefonom, WhatsAppom, e-poštom ili kroz društvene mreže.
+        </p>
+        <div class="homepage-contact-panel">
+            <div class="homepage-contact-grid">
+                <div class="homepage-contact-block homepage-contact-block--primary">
+                    <div class="homepage-contact-label">Direktan kontakt</div>
+                    <ul class="footer-cont homepage-contact-list homepage-contact-list--primary">
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://wa.me/385915609234">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                <span>+385 91 560 9234</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+385915609234">+385 91 560 9234</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:team@hangar14.fit">team@hangar14.fit</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="homepage-contact-block homepage-contact-block--secondary">
+                    <div class="homepage-contact-label">Info</div>
+                    <ul class="footer-cont homepage-contact-list homepage-contact-list--secondary">
+                        <li>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/2svGmUUykSerrmfe8">Avenija Dubrovnik 15, Paviljon 14, 10000, Zagreb</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span>Pon - Pet: 17:00 - 20:00</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>Sub - Ned: Zatvoreno</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="homepage-social-row">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hangar14.fit">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>@hangar14.fit</span>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61571803554327">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@Hangar14-y1m">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <span>YouTube</span>
+                </a>
             </div>
         </div>
         <div class="footer-bottom">
