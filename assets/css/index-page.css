@@ -4,6 +4,7 @@
 
 .homepage-programs-section,
 .s-out-trainer,
+.homepage-paths-section,
 .homepage-memberships,
 .s-training-schedule {
     padding-top: 18px;
@@ -23,6 +24,20 @@ footer {
     padding-top: 20px;
 }
 
+.btn {
+    color: #111 !important;
+}
+
+.btn:hover {
+    color: #fad437 !important;
+}
+
+.btn:focus,
+.btn:focus-visible {
+    outline: 3px solid rgba(250, 212, 55, 0.45);
+    outline-offset: 3px;
+}
+
 .homepage-memberships-intro {
     max-width: 780px;
     margin: 0 auto 22px;
@@ -31,6 +46,10 @@ footer {
     font-size: 0.98rem;
     font-weight: 700;
     line-height: 1.65;
+}
+
+.homepage-paths-intro {
+    max-width: 820px;
 }
 
 .homepage-pricing-grid {
@@ -177,7 +196,8 @@ footer {
     align-items: stretch;
 }
 
-.homepage-programs-section .crossfit-col {
+.homepage-programs-section .crossfit-col,
+.homepage-paths-section .crossfit-col {
     display: flex;
     padding-top: 0 !important;
     transform: none !important;
@@ -185,6 +205,24 @@ footer {
 
 .homepage-program-card {
     width: 100%;
+}
+
+.homepage-path-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+
+.homepage-path-card p {
+    flex-grow: 1;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homepage-path-card .btn {
+    margin-top: 18px;
 }
 
 .homepage-program-card .boarding-next-number {
@@ -318,6 +356,7 @@ footer {
 @media (max-width: 767px) {
     .homepage-programs-section,
     .s-out-trainer,
+    .homepage-paths-section,
     .homepage-memberships,
     .s-training-schedule {
         padding-top: 16px;
@@ -334,7 +373,8 @@ footer {
     }
 
     .homepage-memberships .club-card-col,
-    .homepage-programs-section .crossfit-col {
+    .homepage-programs-section .crossfit-col,
+    .homepage-paths-section .crossfit-col {
         display: block;
     }
 
