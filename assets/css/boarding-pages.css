@@ -41,8 +41,12 @@
 }
 
 .boarding-hero-actions {
-    gap: 14px;
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
 }
 
 .boarding-info {
@@ -54,6 +58,10 @@
     min-width: 214px;
     min-height: 56px;
     padding: 12px 22px;
+}
+
+.boarding-hero-actions .boarding-final-btn + .boarding-final-btn {
+    margin-left: 18px;
 }
 
 .boarding-hero-actions .boarding-final-btn--primary {
@@ -161,7 +169,7 @@
 
 @media (max-width: 1199px) {
     .boarding-hero-actions {
-        margin-top: 18px;
+        margin-top: 24px;
     }
 }
 
@@ -184,14 +192,18 @@
     }
 
     .boarding-hero-actions {
-        gap: 10px;
-        margin-top: 16px;
+        gap: 12px;
+        margin-top: 22px;
     }
 
     .boarding-hero-actions .boarding-final-btn {
         min-width: 100%;
         min-height: 52px;
         padding: 12px 16px;
+    }
+
+    .boarding-hero-actions .boarding-final-btn + .boarding-final-btn {
+        margin-left: 0;
     }
 
     .boarding-hero-note {
