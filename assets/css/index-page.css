@@ -212,17 +212,24 @@ footer {
     flex-direction: column;
     width: 100%;
     min-height: 100%;
+    padding: 30px 26px 26px;
 }
 
 .homepage-path-card p {
     flex-grow: 1;
-    max-width: 300px;
+    max-width: 280px;
+    margin-top: 4px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .homepage-path-card .btn {
-    margin-top: 18px;
+    align-self: center;
+    min-width: 220px;
+    min-height: 54px;
+    margin-top: 22px;
+    padding: 12px 30px;
+    font-weight: 700;
 }
 
 .homepage-program-card .boarding-next-number {

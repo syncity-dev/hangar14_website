@@ -2,6 +2,246 @@
     padding: 56px 0 28px;
 }
 
+/* Boarding landing page overrides */
+.boarding-hero {
+    padding: 40px 0 28px;
+}
+
+.boarding-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    padding: 9px 16px;
+    border: 1px solid rgba(250, 212, 55, 0.55);
+    border-radius: 999px;
+    background: rgba(13, 13, 13, 0.68);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.26);
+    color: #fad437;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.boarding-hero .title {
+    max-width: 680px;
+}
+
+.boarding-hero-note {
+    max-width: 460px;
+    margin-top: 14px;
+    color: #e0e0e0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.boarding-hero-note-accent {
+    color: #fad437;
+}
+
+.boarding-hero-actions {
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.boarding-info {
+    max-width: 960px;
+    margin: 20px auto 24px;
+}
+
+.boarding-hero-actions .boarding-final-btn {
+    min-width: 214px;
+    min-height: 56px;
+    padding: 12px 22px;
+}
+
+.boarding-hero-actions .boarding-final-btn--primary {
+    box-shadow: 0 14px 28px rgba(249, 183, 1, 0.18);
+}
+
+.boarding-benefits-section {
+    margin: 34px auto 0;
+    text-align: center;
+}
+
+.boarding-benefits-section .title-decor {
+    margin-bottom: 14px;
+}
+
+.boarding-value-intro {
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.boarding-value-card {
+    min-height: 100%;
+    width: 100%;
+    padding: 30px 24px 26px;
+    border-radius: 24px;
+    background: #292b34;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.boarding-value-card i {
+    margin-bottom: 16px;
+    color: #f9b701;
+    font-size: 2rem;
+}
+
+.boarding-value-card h3 {
+    max-width: 200px;
+    margin: 0 auto 12px;
+    line-height: 1.35;
+}
+
+.boarding-value-card p {
+    max-width: 210px;
+    margin: 0 auto;
+    line-height: 1.72;
+}
+
+.boarding-benefits-section .row {
+    align-items: stretch;
+}
+
+.boarding-benefits-section .crossfit-col {
+    display: flex;
+    padding-top: 0 !important;
+    transform: none !important;
+}
+
+.boarding-bottom-wrap {
+    max-width: 660px;
+    margin-top: 34px;
+    padding: 26px 24px 24px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.boarding-footer-links {
+    max-width: 420px;
+    margin-top: 16px;
+}
+
+.boarding-footer-links li:first-child span {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.boarding-footer-links li:nth-child(2) a {
+    color: #fff;
+}
+
+.boarding-footer-links li:last-child span {
+    color: #bcbcbc;
+    font-size: 0.92rem;
+}
+
+.boarding-social-note {
+    max-width: 500px;
+    margin-top: 20px;
+    color: #bcbcbc;
+    font-size: 0.85rem;
+}
+
+.boarding-social-links {
+    margin-top: 12px;
+    gap: 8px 14px;
+}
+
+.boarding-social-links a {
+    color: #cfcfcf;
+    font-size: 0.88rem;
+}
+
+.boarding-social-links i {
+    color: #d5a900;
+}
+
+@media (max-width: 1199px) {
+    .boarding-hero-actions {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .boarding-benefits-section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .boarding-hero {
+        padding: 26px 0 22px;
+    }
+
+    .boarding-hero-badge {
+        margin-bottom: 14px;
+        padding: 8px 14px;
+        font-size: 0.66rem;
+        letter-spacing: 0.12em;
+    }
+
+    .boarding-hero-actions {
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    .boarding-hero-actions .boarding-final-btn {
+        min-width: 100%;
+        min-height: 52px;
+        padding: 12px 16px;
+    }
+
+    .boarding-hero-note {
+        max-width: 100%;
+        margin-top: 12px;
+        font-size: 0.84rem;
+    }
+
+    .boarding-info {
+        margin-top: 22px;
+    }
+
+    .boarding-bottom-wrap {
+        max-width: 100%;
+        margin-top: 26px;
+        padding: 18px 16px;
+        border-radius: 18px;
+    }
+
+    .boarding-benefits-section {
+        margin-top: 18px;
+    }
+
+    .boarding-benefits-section .title-decor {
+        margin-bottom: 16px;
+    }
+
+    .boarding-value-intro {
+        margin-bottom: 16px;
+    }
+
+    .boarding-benefits-section .crossfit-col {
+        display: block;
+    }
+
+    .boarding-value-card {
+        padding: 24px 18px 22px;
+    }
+
+    .boarding-value-card i {
+        margin-bottom: 14px;
+        font-size: 1.8rem;
+    }
+
+    .boarding-value-card h3,
+    .boarding-value-card p {
+        max-width: 100%;
+    }
+}
+
 .boarding-hero .title {
     max-width: 760px;
     margin: 0 auto;
@@ -138,15 +378,16 @@
     align-items: center;
     justify-content: center;
     min-width: 220px;
-    padding: 13px 20px;
+    min-height: 54px;
+    padding: 12px 30px;
     border-radius: 999px;
     border: 2px solid #fad437;
     background: transparent;
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     transition: 0.25s ease;
 }
 
