@@ -684,6 +684,19 @@
     line-height: 1.55;
 }
 
+.gabriela-pricing-note p {
+    margin: 0;
+}
+
+.gabriela-pricing-note p + p {
+    margin-top: 8px;
+}
+
+.gabriela-pricing-note-emphasis {
+    color: #fad437;
+    font-weight: 800;
+}
+
 @media (max-width: 1199px) {
     .gabriela-hero {
         padding: 46px 0 24px;
