@@ -167,6 +167,34 @@
     color: #d5a900;
 }
 
+.boarding-page-links {
+    margin: 22px auto 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.86rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.boarding-page-links span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.boarding-page-links a {
+    color: #bdbdbd;
+    transition: 0.25s ease;
+}
+
+.boarding-page-links a:hover {
+    color: #fad437;
+}
+
+.boarding-page-links-current {
+    color: #f1f1f1;
+}
+
 @media (max-width: 1199px) {
     .boarding-hero-actions {
         margin-top: 24px;
@@ -251,6 +279,12 @@
     .boarding-value-card h3,
     .boarding-value-card p {
         max-width: 100%;
+    }
+
+    .boarding-page-links {
+        margin-top: 18px;
+        font-size: 0.8rem;
+        line-height: 1.8;
     }
 }
 

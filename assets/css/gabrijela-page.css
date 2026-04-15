@@ -46,6 +46,27 @@
     padding: 36px 40px 24px;
 }
 
+.gabriela-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    color: #d8d8d8;
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.gabriela-back-link i {
+    color: #fad437;
+    font-size: 0.95rem;
+}
+
+.gabriela-back-link:hover {
+    color: #fad437;
+}
+
 .gabriela-hero .title {
     max-width: 620px;
     margin: 0 0 14px;
@@ -497,6 +518,30 @@
     line-height: 1.6;
 }
 
+.gabriela-page-links {
+    margin: 22px auto 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.86rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.gabriela-page-links span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.gabriela-page-links a {
+    color: #bdbdbd;
+    transition: 0.25s ease;
+}
+
+.gabriela-page-links a:hover {
+    color: #fad437;
+}
+
 .boarding-footer-links {
     max-width: 420px;
     margin: 16px auto 0;
@@ -788,6 +833,11 @@
         padding: 22px 20px 20px;
     }
 
+    .gabriela-back-link {
+        margin-bottom: 14px;
+        font-size: 0.84rem;
+    }
+
     .gabriela-subtitle-wrap {
         max-width: 100%;
         margin-bottom: 18px;
@@ -826,6 +876,12 @@
         min-width: 100%;
         min-height: 52px;
         padding: 12px 16px;
+    }
+
+    .gabriela-page-links {
+        margin-top: 18px;
+        font-size: 0.8rem;
+        line-height: 1.8;
     }
 
     .boarding-social-links {
