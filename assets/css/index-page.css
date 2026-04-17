@@ -364,10 +364,6 @@ footer {
     color: #f5c442;
 }
 
-.homepage-social-row a:hover {
-    color: #f5c442;
-}
-
 @media (max-width: 1199px) {
     .homepage-pricing-col {
         flex: 0 0 50%;

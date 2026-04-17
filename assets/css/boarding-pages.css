@@ -191,12 +191,67 @@
     transition: 0.25s ease;
 }
 
-.boarding-page-links a:hover {
-    color: #fad437;
-}
-
 .boarding-page-links-current {
     color: #f1f1f1;
+}
+
+/* Shared footer/contact interaction styles */
+.ui-contact-list i {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.ui-contact-list a,
+.ui-contact-list span {
+    transition: color 0.25s ease;
+}
+
+.ui-social-links a {
+    transition: color 0.25s ease;
+}
+
+.ui-social-links i {
+    font-size: 1.18rem;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.ui-page-links a {
+    transition: color 0.25s ease;
+}
+
+@media (hover: hover) {
+    .ui-contact-list li:hover i,
+    .ui-contact-list li:focus-within i,
+    .boarding-footer-links.ui-contact-list li:hover i,
+    .boarding-footer-links.ui-contact-list li:focus-within i {
+        color: #fad437;
+        transform: translateY(-1px);
+    }
+
+    .ui-contact-list li:hover a,
+    .ui-contact-list li:focus-within a,
+    .ui-contact-list li:hover span,
+    .ui-contact-list li:focus-within span,
+    .boarding-footer-links.ui-contact-list li:hover > a,
+    .boarding-footer-links.ui-contact-list li:focus-within > a,
+    .boarding-footer-links.ui-contact-list li:hover > span,
+    .boarding-footer-links.ui-contact-list li:focus-within > span,
+    .boarding-footer-links.ui-contact-list li:hover a span,
+    .boarding-footer-links.ui-contact-list li:focus-within a span {
+        color: #fad437;
+    }
+
+    .ui-social-links a:hover,
+    .ui-social-links a:focus-visible,
+    .ui-page-links a:hover,
+    .ui-page-links a:focus-visible {
+        color: #fad437;
+    }
+
+    .ui-social-links a:hover i,
+    .ui-social-links a:focus-visible i {
+        color: #fad437;
+        transform: translateY(-1px);
+    }
 }
 
 /* Shared interactive card treatment used across landing pages */

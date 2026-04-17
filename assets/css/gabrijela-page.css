@@ -538,10 +538,6 @@
     transition: 0.25s ease;
 }
 
-.gabriela-page-links a:hover {
-    color: #fad437;
-}
-
 .boarding-footer-links {
     max-width: 420px;
     margin: 16px auto 0;

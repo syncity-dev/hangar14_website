@@ -180,10 +180,6 @@
     transition: 0.25s ease;
 }
 
-.boarding-page-links a:hover {
-    color: #fad437;
-}
-
 .boarding-page-links-current {
     color: #f1f1f1;
 }
