@@ -2,6 +2,14 @@
     max-width: 760px;
 }
 
+#homepage-hero .crossfit-slide:before {
+    background-color: rgba(0, 0, 0, 0.62);
+}
+
+#homepage-hero .crossfit-slide p {
+    background-color: rgba(0, 0, 0, 0.42);
+}
+
 .homepage-programs-section,
 .s-out-trainer,
 .homepage-paths-section,
