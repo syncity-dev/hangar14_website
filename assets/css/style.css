@@ -1694,6 +1694,7 @@ footer .social-list li {
   max-width: 660px;
   margin: 8px auto 40px;
   padding: 15px 20px;
+  font-size: 1.1rem;
   line-height: 1.7;
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
