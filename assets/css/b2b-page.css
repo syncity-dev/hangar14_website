@@ -128,6 +128,14 @@
     color: #202020;
 }
 
+.boarding-hero-meta {
+    display: block;
+    margin-top: 10px;
+    color: #d3d3d3;
+    font-size: inherit;
+    line-height: inherit;
+}
+
 .boarding-bottom-wrap {
     max-width: 720px;
     padding: 22px 20px 28px;
