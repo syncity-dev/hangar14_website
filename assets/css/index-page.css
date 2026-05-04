@@ -204,6 +204,13 @@ footer {
     align-items: stretch;
 }
 
+.homepage-programs-grid {
+    justify-content: center;
+    gap: 16px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .homepage-programs-section .crossfit-col,
 .homepage-paths-section .crossfit-col {
     display: flex;
@@ -211,8 +218,17 @@ footer {
     transform: none !important;
 }
 
+.homepage-programs-grid .crossfit-col {
+    flex: 0 1 320px;
+    max-width: 360px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .homepage-program-card {
     width: 100%;
+    min-height: 100%;
+    padding: 28px 24px 24px;
 }
 
 .homepage-path-card {
@@ -254,14 +270,23 @@ footer {
 
 .homepage-program-card h3 {
     max-width: 240px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .homepage-program-card p {
-    max-width: 300px;
+    max-width: 290px;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+#trenerica .out-trainer-item {
+    border-radius: 14px;
+    overflow: hidden;
 }
 
 @media (hover: hover) {
@@ -394,6 +419,20 @@ footer {
     .homepage-programs-section .crossfit-col,
     .homepage-paths-section .crossfit-col {
         display: block;
+    }
+
+    .homepage-programs-grid {
+        gap: 12px;
+    }
+
+    .homepage-programs-grid .crossfit-col {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .homepage-programs-grid .crossfit-col:last-child {
+        margin-bottom: 0;
     }
 
     .homepage-pricing-col,
