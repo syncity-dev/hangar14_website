@@ -37,16 +37,6 @@ footer#contact {
     margin-bottom: 44px;
 }
 
-.homepage-section-eyebrow {
-    display: block;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgba(250, 212, 55, 0.6);
-    margin-bottom: 12px;
-    font-weight: 400;
-}
-
 .homepage-section-title {
     font-size: clamp(27px, 6vw, 40px);
     color: #fff;
@@ -92,8 +82,8 @@ footer#contact {
 @media (min-width: 992px) {
     .homepage-section-header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 0;
+        grid-template-columns: auto 1fr;
+        column-gap: 48px;
         align-items: center;
     }
 
@@ -108,8 +98,8 @@ footer#contact {
     .homepage-section-meta {
         flex-direction: column;
         gap: 0;
-        border-left: 2px solid rgba(250, 212, 55, 0.4);
-        padding-left: 60px;
+        border-left: 3px solid #fad437;
+        padding-left: 48px;
     }
 
     .homepage-section-desc {
@@ -950,10 +940,6 @@ html.show-cta .float-cta {
 
     .homepage-section-header {
         margin-bottom: 28px;
-    }
-
-    .homepage-section-eyebrow {
-        text-align: center;
     }
 
     .homepage-section-title {
