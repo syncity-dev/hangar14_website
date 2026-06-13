@@ -214,10 +214,13 @@
             <div class="trainer-bio">
                 <h3 class="trainer-name">Gabrijela Bađun</h3>
                 <div class="trainer-role">Functional Fitness / CrossFit</div>
-                <p>Bok, ja sam Gabrijela — magistrica sam kineziologije u području edukacije i fitnessa te certificirana Functional Fitness trenerica.</p>
-                <p>Posebno me privlače CrossFit i hybrid stil treninga. Aktivno treniram i natječem se više od 8 godina, što mi je omogućilo da razvijem snažno razumijevanje i bogatu bazu znanja u treningu snage, eksplozivnosti i izdržljivosti.</p>
-                <p>To iskustvo mi je također pomoglo usavršiti sposobnost učinkovitog planiranja i programiranja treninga, prepoznavanja tehničkih detalja te razumijevanja važnosti individualnog pristupa i prilagodbe različitim razinama forme.</p>
-                <p>Moj cilj u Hangaru 14 je prenijeti svoju strast i motivaciju na druge — pomoći ljudima da zavole proces treninga i da se osjećaju zdravije i sretnije.</p>
+                <div class="trainer-bio-text">
+                    <p>Bok, ja sam Gabrijela — magistrica sam kineziologije u području edukacije i fitnessa te certificirana Functional Fitness trenerica.</p>
+                    <p>Posebno me privlače CrossFit i hybrid stil treninga. Aktivno treniram i natječem se više od 8 godina, što mi je omogućilo da razvijem snažno razumijevanje i bogatu bazu znanja u treningu snage, eksplozivnosti i izdržljivosti.</p>
+                    <p>To iskustvo mi je također pomoglo usavršiti sposobnost učinkovitog planiranja i programiranja treninga, prepoznavanja tehničkih detalja te razumijevanja važnosti individualnog pristupa i prilagodbe različitim razinama forme.</p>
+                    <p>Moj cilj u Hangaru 14 je prenijeti svoju strast i motivaciju na druge — pomoći ljudima da zavole proces treninga i da se osjećaju zdravije i sretnije.</p>
+                </div>
+                <button class="trainer-bio-toggle" aria-expanded="false">Pročitaj više</button>
                 <p class="trainer-sign">Vidimo se na treningu!</p>
                 <div class="trainer-actions">
                     <a class="hero-btn-primary" href="gabrijela.html">Privatni treninzi s Gabi</a>
@@ -560,6 +563,17 @@
     }
     window.addEventListener('scroll', onScroll, { passive: true });
     setTimeout(onScroll, 120);
+}());
+
+(function() {
+    var bioText = document.querySelector('.trainer-bio-text');
+    var bioToggle = document.querySelector('.trainer-bio-toggle');
+    if (!bioText || !bioToggle) return;
+    bioToggle.addEventListener('click', function() {
+        var expanded = bioText.classList.toggle('expanded');
+        bioToggle.textContent = expanded ? 'Zatvori' : 'Pročitaj više';
+        bioToggle.setAttribute('aria-expanded', expanded);
+    });
 }());
 </script>
 </body>

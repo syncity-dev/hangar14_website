@@ -336,6 +336,10 @@ footer#contact {
     text-transform: uppercase;
 }
 
+.trainer-bio-toggle {
+    display: none;
+}
+
 .trainer-bio p {
     font-size: 15px;
     line-height: 1.9;
@@ -912,10 +916,69 @@ html.show-cta .float-cta {
 
     .homepage-section-title {
         font-size: 26px;
+        text-align: center;
+    }
+
+    .homepage-section-meta {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .homepage-section-desc {
+        max-width: 100%;
     }
 
     .trainer-photo {
-        min-height: 340px;
+        min-height: 0;
+        aspect-ratio: 1 / 1;
+    }
+
+    .trainer-bio-text {
+        max-height: 108px;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.4s ease;
+    }
+
+    .trainer-bio-text::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: linear-gradient(to bottom, transparent, #16171b);
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .trainer-bio-text.expanded {
+        max-height: 800px;
+    }
+
+    .trainer-bio-text.expanded::after {
+        opacity: 0;
+    }
+
+    .trainer-bio-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fad437;
+        background: none;
+        border: none;
+        padding: 10px 0 16px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    #homepage-hero .crossfit-slide p {
+        display: none;
     }
 
     .hero-btn-primary,
