@@ -408,6 +408,34 @@ html.show-cta .float-cta {
 /* =====================================================
    RESPONSIVE
    ===================================================== */
+@media (min-width: 992px) {
+    .bp-section-header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 48px;
+        align-items: center;
+    }
+
+    .bp-section-title {
+        margin: 0;
+    }
+
+    .bp-section-bar {
+        display: none;
+    }
+
+    .bp-section-meta {
+        flex-direction: column;
+        gap: 0;
+        border-left: 3px solid #fad437;
+        padding-left: 48px;
+    }
+
+    .bp-section-desc {
+        max-width: none;
+    }
+}
+
 @media (max-width: 991px) {
     #boarding-benefits .bp-cards-grid {
         grid-template-columns: repeat(2, 1fr);
