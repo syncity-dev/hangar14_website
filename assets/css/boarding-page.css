@@ -184,6 +184,10 @@
     gap: 18px;
 }
 
+#boarding-benefits .bp-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .bp-card {
     position: relative;
     background: #16171b;
@@ -405,6 +409,10 @@ html.show-cta .float-cta {
    RESPONSIVE
    ===================================================== */
 @media (max-width: 991px) {
+    #boarding-benefits .bp-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .bp-contact-panel {
         padding: 32px 28px;
     }
@@ -498,7 +506,8 @@ html.show-cta .float-cta {
         justify-content: center;
     }
 
-    .bp-cards-grid {
+    .bp-cards-grid,
+    #boarding-benefits .bp-cards-grid {
         grid-template-columns: 1fr;
     }
 

@@ -1,0 +1,16 @@
+#!/bin/sh
+echo ""
+echo "┌─────────────────────────────────────────────────┐"
+echo "│           Pre-push verification check           │"
+echo "└─────────────────────────────────────────────────┘"
+echo ""
+echo "Did you visually verify the changed pages in the browser?"
+echo "(desktop + tablet + mobile breakpoints)"
+echo ""
+printf "Proceed with push? [y/N] "
+read answer </dev/tty
+
+case "$answer" in
+  [yY]) echo "Pushing..."; exit 0 ;;
+  *)    echo "Push aborted. Run /verify to check the changes first."; exit 1 ;;
+esac

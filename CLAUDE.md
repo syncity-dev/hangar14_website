@@ -45,6 +45,15 @@ The page-specific CSS files (`index-page.css`, `boarding-pages.css`, etc.) are w
 - Instagram: `@hangar14.fit`
 - Analytics: Microsoft Clarity tag `pq6kf678a9` — present in `<head>` of every page
 
+## Verification before pushing
+
+**Always run `/verify` on every page affected by a change before suggesting or making a `git push`.** This is a visual marketing site — layout regressions are only caught by eyes, not by tests or type checks.
+
+Verification checklist:
+- Open the changed page(s) via a local server (`python3 -m http.server 8080`)
+- Check the modified section at desktop (≥1200px), tablet (~900px), and mobile (~375px)
+- Confirm no other sections on the page are broken
+
 ## Deployment
 
 Push to `main` → GitHub Actions deploys automatically to GitHub Pages → live at `hangar14.fit`. No manual deploy step needed. The `CNAME` file must not be deleted.
