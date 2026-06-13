@@ -10,12 +10,10 @@
 /* ---- Section backgrounds ---- */
 #boarding-benefits { background-color: #202020; }
 #boarding-process  { background-color: #1a1a1c; }
-#boarding-contact  { background-color: #000; }
 
 /* ---- Section padding ---- */
 #boarding-benefits,
-#boarding-process,
-#boarding-contact {
+#boarding-process {
     padding-top: 66px;
     padding-bottom: 66px;
 }
@@ -182,7 +180,7 @@
    ===================================================== */
 .bp-cards-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
 
@@ -204,8 +202,8 @@
 
 .bp-card-num {
     position: absolute;
-    top: -14px;
-    right: 8px;
+    top: 14px;
+    right: 16px;
     font-size: 100px;
     color: rgba(255, 255, 255, 0.045);
     line-height: 1;
@@ -216,7 +214,7 @@
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     position: relative;
 }
 
@@ -229,7 +227,7 @@
     align-items: center;
     justify-content: center;
     color: #141414;
-    font-size: 20px;
+    font-size: 22px;
     flex: none;
 }
 
@@ -360,140 +358,8 @@
     justify-content: flex-start;
 }
 
-/* =====================================================
-   CONTACT / FOOTER
-   ===================================================== */
-.bp-contact-panel {
-    background: #0d0d0f;
-    border: 2px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
-    padding: 44px;
-}
-
-.bp-contact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    align-items: start;
-}
-
-.bp-contact-label {
-    font-size: 12px;
-    letter-spacing: 2px;
-    color: #fad437;
-    text-transform: uppercase;
-    margin-bottom: 22px;
-}
-
-.bp-contact-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.bp-contact-list li {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    margin-bottom: 18px;
-}
-
-.bp-contact-list li:last-child {
-    margin-bottom: 0;
-}
-
-.bp-contact-list i {
-    color: #fad437;
-    flex: none;
-    width: 18px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.bp-contact-list a,
-.bp-contact-list span {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: 400;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.bp-contact-list a:hover {
-    color: #fad437;
-}
-
-.bp-contact-divider {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    margin: 38px 0 28px;
-}
-
-.bp-social-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    flex-wrap: wrap;
-}
-
-.bp-social-row a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.bp-social-row a i {
-    color: #fad437;
-    font-size: 20px;
-}
-
-.bp-social-row a:hover {
-    color: #fad437;
-}
-
-.bp-footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 28px;
-    margin-top: 36px;
-}
-
-.bp-copyright {
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    color: rgba(255, 255, 255, 0.4);
-}
-
-.bp-footer-nav {
-    display: flex;
-    gap: 22px;
-    flex-wrap: wrap;
-}
-
-.bp-footer-nav a {
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.8);
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.bp-footer-nav a:hover {
-    color: #fad437;
-}
-
-.bp-footer-nav--current {
+/* ---- Active nav link on this page ---- */
+.footer-nav--current {
     color: #fad437 !important;
 }
 
@@ -539,10 +405,6 @@ html.show-cta .float-cta {
    RESPONSIVE
    ===================================================== */
 @media (max-width: 991px) {
-    .bp-cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .bp-contact-panel {
         padding: 32px 28px;
     }
@@ -555,10 +417,17 @@ html.show-cta .float-cta {
 @media (max-width: 767px) {
     #boarding-benefits,
     #boarding-process,
-    #boarding-closing,
-    #boarding-contact {
+    #boarding-closing {
         padding-top: 44px;
         padding-bottom: 44px;
+    }
+
+    #boarding-process {
+        padding-bottom: 24px;
+    }
+
+    #boarding-closing {
+        padding-top: 24px;
     }
 
     .bp-closing-cta {
@@ -612,7 +481,7 @@ html.show-cta .float-cta {
     }
 
     .boarding-hero-desc {
-        font-size: 16px;
+        display: none;
     }
 
     .hero-cta-buttons {
