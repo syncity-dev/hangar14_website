@@ -323,7 +323,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 20px;
-    border: 1px solid rgba(250, 212, 55, 0.3);
+    border: 2px solid rgba(250, 212, 55, 0.3);
     background: #0d0e11;
     padding: 52px 44px;
     display: flex;
