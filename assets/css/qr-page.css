@@ -1,0 +1,180 @@
+/* =====================================================
+   QR PAGE (qr-page.css)
+   ===================================================== */
+
+/* ---- Hero image position ---- */
+#qr-hero .crossfit-slide-bg {
+    background-position: center 35%;
+}
+
+/* ---- Section backgrounds ---- */
+#qr-cta     { background-color: #202020; }
+#qr-contact { background-color: #000; }
+
+/* ---- Section padding ---- */
+#qr-cta,
+#qr-contact {
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+
+/* =====================================================
+   HERO CONTENT
+   ===================================================== */
+.qr-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-hero-title {
+    font-size: clamp(40px, 8vw, 72px);
+    color: #fff;
+    line-height: 1.04;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+}
+
+.qr-hero-accent {
+    color: #fad437;
+}
+
+.qr-hero-desc {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 520px;
+    margin: 0 0 32px;
+    font-weight: 400;
+}
+
+/* =====================================================
+   CTA PANEL
+   ===================================================== */
+.qr-cta-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.qr-cta-card {
+    background: #16171b;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+.qr-cta-card:hover {
+    transform: translateY(-5px);
+    border-color: #fad437;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+.qr-cta-card--primary {
+    background: #fad437;
+    border-color: #fad437;
+}
+
+.qr-cta-card--primary:hover {
+    border-color: #f0c41a;
+    box-shadow: 0 18px 40px rgba(250, 212, 55, 0.25);
+}
+
+.qr-cta-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fad437;
+    margin-bottom: 20px;
+    flex: none;
+}
+
+.qr-cta-card--primary .qr-cta-icon {
+    background: rgba(0, 0, 0, 0.12);
+    color: #141414;
+}
+
+.qr-cta-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #fad437;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.qr-cta-card--primary .qr-cta-label {
+    color: rgba(20, 20, 20, 0.6);
+}
+
+.qr-cta-title {
+    font-size: 19px;
+    color: #fff;
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+
+.qr-cta-card--primary .qr-cta-title {
+    color: #141414;
+}
+
+.qr-cta-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
+    font-weight: 400;
+}
+
+.qr-cta-card--primary .qr-cta-desc {
+    color: rgba(20, 20, 20, 0.7);
+}
+
+/* ---- Active nav link ---- */
+.footer-nav--current {
+    color: #fad437 !important;
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+@media (max-width: 991px) {
+    .qr-cta-panel {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    #qr-cta,
+    #qr-contact {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+
+    .qr-hero-desc {
+        display: none;
+    }
+
+    .hero-cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .hero-btn-primary,
+    .hero-btn-secondary {
+        width: 100%;
+        justify-content: center;
+        font-size: 13px;
+        padding: 14px 22px;
+    }
+}
