@@ -3,10 +3,6 @@
    ===================================================== */
 
 /* ---- Hero overlay ---- */
-#boarding-hero .crossfit-slide:before {
-    background-color: rgba(0, 0, 0, 0.42);
-}
-
 #boarding-hero .crossfit-slide-bg {
     background-position: center 30%;
 }
