@@ -79,6 +79,28 @@ footer#contact {
     font-weight: 400;
 }
 
+@media (min-width: 992px) {
+    .homepage-section-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 60px;
+        align-items: center;
+    }
+
+    .homepage-section-title {
+        margin: 0;
+    }
+
+    .homepage-section-meta {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .homepage-section-desc {
+        max-width: none;
+    }
+}
+
 /* =====================================================
    HERO BADGE + CTA OVERLAY
    ===================================================== */
