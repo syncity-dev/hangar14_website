@@ -301,17 +301,17 @@
 
 .gab-pack-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(250, 212, 55, 0.4);
+    border-color: #fad437;
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 .gab-pack-card--featured {
-    border: 1.5px solid #fad437;
+    border: 1px solid #fad437;
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
 }
 
 .gab-pack-card--featured:hover {
-    border-color: #f0c41a;
+    border-color: #fad437;
 }
 
 .gab-pack-circle {
@@ -435,6 +435,7 @@
 
 .gab-process-row:hover {
     transform: translateX(4px);
+    border-color: #fad437;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 

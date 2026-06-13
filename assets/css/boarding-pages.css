@@ -278,13 +278,13 @@
     .ui-hover-card:hover,
     .ui-hover-card:focus-within {
         transform: translateY(-8px);
-        border-color: rgba(250, 212, 55, 0.42);
+        border-color: #fad437;
         box-shadow: 0 20px 44px rgba(0, 0, 0, 0.32), 0 0 0 1px rgba(250, 212, 55, 0.22);
     }
 
     .ui-hover-card--pricing:hover,
     .ui-hover-card--pricing:focus-within {
-        border-color: rgba(250, 212, 55, 0.72);
+        border-color: #fad437;
         box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34), 0 0 0 1px rgba(250, 212, 55, 0.42);
     }
 
