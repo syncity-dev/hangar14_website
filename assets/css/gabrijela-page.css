@@ -516,7 +516,8 @@
 
     .gab-hero-media {
         max-width: 100%;
-        min-height: 300px;
+        min-height: unset;
+        aspect-ratio: 4 / 5;
     }
 
     .gab-hero-content {
