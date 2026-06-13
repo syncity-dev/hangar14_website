@@ -99,7 +99,7 @@ footer#contact {
         flex-direction: column;
         gap: 0;
         border-left: 3px solid #fad437;
-        padding-left: 48px;
+        padding-left: 64px;
     }
 
     .homepage-section-desc {

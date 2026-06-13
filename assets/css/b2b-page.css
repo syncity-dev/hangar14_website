@@ -164,29 +164,6 @@
 /* =====================================================
    RESPONSIVE
    ===================================================== */
-@media (min-width: 992px) {
-    .bp-section-header {
-        display: block;
-    }
-
-    .bp-section-title {
-        margin: 0 0 16px;
-    }
-
-    .bp-section-bar {
-        display: block;
-    }
-
-    .bp-section-meta {
-        flex-direction: row;
-        border-left: none;
-        padding-left: 0;
-    }
-
-    .bp-section-desc {
-        max-width: none;
-    }
-}
 
 @media (max-width: 991px) {
     #b2b-includes .bp-cards-grid,
