@@ -168,7 +168,7 @@ footer#contact {
     position: relative;
     background: #16171b;
     border: 2px solid rgba(255, 255, 255, 0.06);
-    border-radius: 14px;
+    border-radius: 12px;
     padding: 32px 28px;
     overflow: hidden;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
@@ -286,7 +286,7 @@ footer#contact {
 
 .trainer-photo {
     position: relative;
-    border-radius: 16px;
+    border-radius: 12px;
     overflow: hidden;
     border: 2px solid rgba(255, 255, 255, 0.08);
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
@@ -310,7 +310,7 @@ footer#contact {
 .trainer-bio {
     background: #16171b;
     border: 2px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 40px;
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
@@ -397,7 +397,7 @@ footer#contact {
 .path-card {
     background: #16171b;
     border: 2px solid transparent;
-    border-radius: 14px;
+    border-radius: 12px;
     padding: 36px 30px;
     display: flex;
     flex-direction: column;
@@ -499,7 +499,7 @@ footer#contact {
 
 .homepage-pricing-card {
     background: #0f0f10;
-    border-radius: 22px;
+    border-radius: 12px;
     padding: 30px 24px;
     display: flex;
     flex-direction: column;
@@ -623,7 +623,7 @@ footer#contact {
    ===================================================== */
 .schedule-scroll {
     overflow-x: auto;
-    border-radius: 14px;
+    border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -707,7 +707,7 @@ footer#contact {
    LOCATION MAP
    ===================================================== */
 .location-map-wrap {
-    border-radius: 16px;
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -718,7 +718,7 @@ footer#contact {
 .homepage-contact-panel {
     background: #0d0d0f;
     border: 2px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
+    border-radius: 12px;
     padding: 44px;
     margin-bottom: 36px;
 }
@@ -1004,7 +1004,7 @@ html.show-cta .float-cta {
 
     .homepage-contact-panel {
         padding: 24px 18px;
-        border-radius: 16px;
+        border-radius: 12px;
     }
 
     .homepage-contact-grid {

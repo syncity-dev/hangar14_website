@@ -13,8 +13,8 @@
 
 /* ---- Section padding ---- */
 #gab-hero {
-    padding-top: 48px;
-    padding-bottom: 60px;
+    padding-top: 66px;
+    padding-bottom: 66px;
 }
 
 #gab-pricing,
@@ -42,7 +42,7 @@
 .gab-hero-card {
     background: #16171b;
     border: 2px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -164,8 +164,8 @@
     text-transform: uppercase;
     color: #fff !important;
     background: transparent;
-    border: 1.5px solid rgba(250, 212, 55, 0.55);
-    padding: 16.5px 32px;
+    border: 2px solid rgba(250, 212, 55, 0.55);
+    padding: 16px 32px;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 400;
@@ -186,8 +186,8 @@
     text-transform: uppercase;
     color: #fff !important;
     background: transparent;
-    border: 1.5px solid rgba(255, 255, 255, 0.18);
-    padding: 16.5px 32px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    padding: 16px 32px;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 400;
@@ -211,7 +211,7 @@
 .gab-pricing-card {
     background: #0f0f10;
     border: 2px solid rgba(255, 255, 255, 0.07);
-    border-radius: 22px;
+    border-radius: 12px;
     padding: 32px 28px;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -261,9 +261,9 @@
     margin-top: 28px;
     background: #16171b;
     border: 2px solid rgba(255, 255, 255, 0.07);
-    border-left: 3px solid #fad437;
     border-radius: 12px;
     padding: 24px 28px;
+    box-shadow: inset 3px 0 0 0 #fad437;
 }
 
 .gab-pricing-note p {
@@ -292,7 +292,7 @@
 .gab-pack-card {
     background: #16171b;
     border: 2px solid rgba(255, 255, 255, 0.06);
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 40px 30px 32px;
     display: flex;
     flex-direction: column;
