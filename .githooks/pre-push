@@ -1,4 +1,10 @@
 #!/bin/sh
+
+# Skip prompt in non-interactive environments (CI, Claude Code, etc.)
+if [ ! -t 1 ] && [ ! -e /dev/tty ]; then
+    exit 0
+fi
+
 echo ""
 echo "┌─────────────────────────────────────────────────┐"
 echo "│           Pre-push verification check           │"
