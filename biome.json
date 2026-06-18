@@ -1,7 +1,17 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
   "files": {
-    "includes": ["**/*.html", "**/*.css", "assets/js/scripts.js"],
+    "includes": [
+      "*.html",
+      "qr.html",
+      "assets/css/b2b-page.css",
+      "assets/css/boarding-page.css",
+      "assets/css/boarding-pages.css",
+      "assets/css/gabrijela-page.css",
+      "assets/css/index-page.css",
+      "assets/css/qr-page.css",
+      "assets/js/scripts.js"
+    ],
     "ignoreUnknown": true
   },
   "formatter": {
