@@ -129,6 +129,20 @@
     });
   }
 
+  /* ---- Slick ARIA patch: remove the broken roles Slick injects ---- */
+  function fixSlickAria($container) {
+    $container
+      .find(".slick-track[role], .slick-list[role]")
+      .removeAttr("role");
+    $container.find(".slick-slide[role]").removeAttr("role aria-describedby");
+    $container
+      .find(".slick-dots[role]")
+      .removeAttr("role")
+      .children("li")
+      .removeAttr("role aria-selected aria-controls");
+    $container.find("[aria-controls]").removeAttr("aria-controls");
+  }
+
   /* ---------------- CROSSFIT-SLIDER --------------- */
   if ($(".crossfit-slider")[0]) {
     $(".crossfit-slider").slick({
@@ -272,6 +286,8 @@
       ],
     });
   }
+
+  fixSlickAria($("body"));
 
   /*---------------- COUNTER-ANIMATE ----------------*/
   if ($(".counter-animate.counter-active")[0]) {
