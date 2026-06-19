@@ -3,18 +3,32 @@
    ===================================================== */
 
 /* ---- Section backgrounds ---- */
-#gab-hero     { background-color: #202020; }
-#gab-pricing  { background-color: #1a1a1c; }
-#gab-formats  { background-color: #202020; }
-#gab-packages { background-color: #1a1a1c; }
-#gab-why      { background-color: #202020; }
-#gab-process  { background-color: #1a1a1c; }
-#gab-closing  { background-color: #202020; }
+#gab-hero {
+  background-color: #202020;
+}
+#gab-pricing {
+  background-color: #1a1a1c;
+}
+#gab-formats {
+  background-color: #202020;
+}
+#gab-packages {
+  background-color: #1a1a1c;
+}
+#gab-why {
+  background-color: #202020;
+}
+#gab-process {
+  background-color: #1a1a1c;
+}
+#gab-closing {
+  background-color: #202020;
+}
 
 /* ---- Section padding ---- */
 #gab-hero {
-    padding-top: 66px;
-    padding-bottom: 66px;
+  padding-top: 66px;
+  padding-bottom: 66px;
 }
 
 #gab-pricing,
@@ -23,531 +37,544 @@
 #gab-why,
 #gab-process,
 #gab-closing {
-    padding-top: 66px;
-    padding-bottom: 66px;
+  padding-top: 66px;
+  padding-bottom: 66px;
 }
 
 /* ---- Grid overrides for sections with different column counts ---- */
 #gab-formats .bp-cards-grid {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #gab-why .bp-cards-grid {
-    grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* =====================================================
    HERO CARD
    ===================================================== */
 .gab-hero-card {
-    background: #16171b;
-    border: 2px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+  background: #16171b;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .gab-hero-media {
-    flex: 1 1 300px;
-    max-width: 400px;
-    min-height: 540px;
-    background-image: url(../img/trainer-gabrijela.webp);
-    background-size: cover;
-    background-position: center top;
+  flex: 1 1 300px;
+  max-width: 400px;
+  min-height: 540px;
+  background-image: url(../img/trainer-gabrijela.webp);
+  background-size: cover;
+  background-position: center top;
 }
 
 .gab-hero-content {
-    flex: 2 1 460px;
-    min-width: 280px;
-    padding: 40px 44px;
+  flex: 2 1 460px;
+  min-width: 280px;
+  padding: 40px 44px;
 }
 
 .gab-back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #fad437;
-    text-decoration: none;
-    margin-bottom: 20px;
-    transition: opacity 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fad437;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: opacity 0.2s ease;
 }
 
 .gab-back-link:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .gab-hero-title {
-    font-size: clamp(30px, 6.5vw, 46px);
-    line-height: 1.06;
-    color: #fff;
-    margin: 0 0 16px;
+  font-size: clamp(30px, 6.5vw, 46px);
+  line-height: 1.06;
+  color: #fff;
+  margin: 0 0 16px;
 }
 
 .gab-hero-title span {
-    color: #fad437;
+  color: #fad437;
 }
 
 .gab-hero-subtitle {
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: 0.2px;
-    color: #fff;
-    margin: 0 0 18px;
-    font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin: 0 0 18px;
+  font-weight: 400;
 }
 
 .gab-hero-subtitle span {
-    color: #fad437;
+  color: #fad437;
 }
 
 .gab-hero-bio {
-    font-size: 13.5px;
-    line-height: 1.9;
-    letter-spacing: 0.4px;
-    color: rgba(255, 255, 255, 0.82);
-    margin: 0 0 28px;
-    max-width: 640px;
-    font-weight: 400;
+  font-size: 13.5px;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 28px;
+  max-width: 640px;
+  font-weight: 400;
 }
 
 .gab-hero-bio span {
-    color: #fad437;
+  color: #fad437;
 }
 
 /* ---- Stat chips ---- */
 .gab-hero-chips {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 14px;
-    margin-bottom: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
 }
 
 .gab-hero-chip {
-    background: #1f2127;
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    border-radius: 12px;
-    padding: 18px;
+  background: #1f2127;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 18px;
 }
 
 .gab-chip-title {
-    font-size: 15px;
-    color: #fff;
-    margin-bottom: 8px;
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 8px;
 }
 
 .gab-chip-desc {
-    font-size: 12px;
-    line-height: 1.6;
-    letter-spacing: 0.2px;
-    color: rgba(255, 255, 255, 0.64);
-    font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 400;
 }
 
 /* ---- Hero action buttons ---- */
 .gab-hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .hero-btn-email {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #fff !important;
-    background: transparent;
-    border: 2px solid rgba(250, 212, 55, 0.55);
-    padding: 16px 32px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 400;
-    transition: border-color 0.2s ease, color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff !important;
+  background: transparent;
+  border: 2px solid rgba(250, 212, 55, 0.55);
+  padding: 16px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 400;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .hero-btn-email:hover {
-    border-color: #fad437;
-    color: #fad437 !important;
+  border-color: #fad437;
+  color: #fad437 !important;
 }
 
 .hero-btn-social {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #fff !important;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    padding: 16px 32px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 400;
-    transition: border-color 0.2s ease, color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff !important;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  padding: 16px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 400;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .hero-btn-social:hover {
-    border-color: #fad437;
-    color: #fad437 !important;
+  border-color: #fad437;
+  color: #fad437 !important;
 }
 
 /* =====================================================
    PRICING CARDS
    ===================================================== */
 .gab-pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
 .gab-pricing-card {
-    background: #0f0f10;
-    border: 2px solid rgba(255, 255, 255, 0.07);
-    border-radius: 12px;
-    padding: 32px 28px;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #0f0f10;
+  border: 2px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 32px 28px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .gab-pricing-card:hover {
-    transform: translateY(-5px);
-    border-color: #fad437;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  transform: translateY(-5px);
+  border-color: #fad437;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 }
 
 .gab-pricing-format {
-    font-size: 34px;
-    color: #fff;
-    line-height: 1;
-    margin-bottom: 8px;
+  font-size: 34px;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 8px;
 }
 
 .gab-pricing-type {
-    font-size: 12px;
-    letter-spacing: 1.2px;
-    color: #fad437;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: #fad437;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .gab-pricing-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .gab-pricing-row-label {
-    font-size: 13.5px;
-    color: rgba(255, 255, 255, 0.82);
-    font-weight: 400;
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 400;
 }
 
 .gab-pricing-row-price {
-    font-size: 17px;
-    color: #fad437;
+  font-size: 17px;
+  color: #fad437;
 }
 
 .gab-pricing-note {
-    margin-top: 28px;
-    background: #16171b;
-    border: 2px solid rgba(255, 255, 255, 0.07);
-    border-radius: 12px;
-    padding: 24px 28px;
-    box-shadow: inset 3px 0 0 0 #fad437;
+  margin-top: 28px;
+  background: #16171b;
+  border: 2px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: inset 3px 0 0 0 #fad437;
 }
 
 .gab-pricing-note p {
-    font-size: 13px;
-    line-height: 1.9;
-    letter-spacing: 0.4px;
-    color: rgba(255, 255, 255, 0.78);
-    margin: 0;
-    font-weight: 400;
+  font-size: 13px;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+  font-weight: 400;
 }
 
 .gab-pricing-note-accent {
-    color: #fad437;
+  color: #fad437;
 }
 
 /* =====================================================
    PACKAGE CARDS
    ===================================================== */
 .gab-pack-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  align-items: stretch;
 }
 
 .gab-pack-card {
-    background: #16171b;
-    border: 2px solid rgba(255, 255, 255, 0.06);
-    border-radius: 12px;
-    padding: 40px 30px 32px;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #16171b;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 40px 30px 32px;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .gab-pack-card:hover {
-    transform: translateY(-5px);
-    border-color: #fad437;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  border-color: #fad437;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 .gab-pack-card--featured {
-    border: 2px solid #fad437;
-    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
+  border: 2px solid #fad437;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
 }
 
 .gab-pack-card--featured:hover {
-    border-color: #fad437;
+  border-color: #fad437;
 }
 
 .gab-pack-circle {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background: #fad437;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #141414;
-    font-size: 19px;
-    margin: 0 auto 18px;
-    flex: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fad437;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #141414;
+  font-size: 19px;
+  margin: 0 auto 18px;
+  flex: none;
 }
 
 .gab-pack-circle--small {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .gab-pack-badge {
-    align-self: center;
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    border-radius: 999px;
-    padding: 7px 16px;
-    margin-bottom: 18px;
-    font-weight: 400;
+  align-self: center;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 7px 16px;
+  margin-bottom: 18px;
+  font-weight: 400;
 }
 
 .gab-pack-badge--default {
-    color: #fad437;
-    background: rgba(250, 212, 55, 0.14);
+  color: #fad437;
+  background: rgba(250, 212, 55, 0.14);
 }
 
 .gab-pack-badge--featured {
-    color: #141414;
-    background: #fad437;
+  color: #141414;
+  background: #fad437;
 }
 
 .gab-pack-title {
-    font-size: 19px;
-    color: #fff;
-    margin: 0 0 10px;
-    text-align: center;
-    line-height: 1.2;
+  font-size: 19px;
+  color: #fff;
+  margin: 0 0 10px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .gab-pack-desc {
-    font-size: 13px;
-    line-height: 1.85;
-    letter-spacing: 0.4px;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0 0 24px;
-    text-align: center;
-    font-weight: 400;
+  font-size: 13px;
+  line-height: 1.85;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 24px;
+  text-align: center;
+  font-weight: 400;
 }
 
 .gab-pack-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 26px;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .gab-pack-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    font-size: 13px;
-    line-height: 1.6;
-    letter-spacing: 0.2px;
-    color: rgba(255, 255, 255, 0.82);
-    font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 400;
 }
 
 .gab-pack-list li::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #fad437;
-    flex: none;
-    margin-top: 6px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fad437;
+  flex: none;
+  margin-top: 6px;
 }
 
 .gab-pack-footer {
-    margin-top: auto;
-    text-align: center;
-    font-size: 13px;
-    letter-spacing: 0.3px;
-    color: #fad437;
-    font-weight: 400;
+  margin-top: auto;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: #fad437;
+  font-weight: 400;
 }
 
 /* =====================================================
    PROCESS — vertical list
    ===================================================== */
 .gab-process-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    max-width: 860px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .gab-process-row {
-    display: flex;
-    gap: 22px;
-    align-items: flex-start;
-    background: #16171b;
-    border: 2px solid rgba(255, 255, 255, 0.06);
-    border-radius: 12px;
-    padding: 26px 30px;
-    box-shadow: inset 3px 0 0 0 #fad437;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  background: #16171b;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 26px 30px;
+  box-shadow: inset 3px 0 0 0 #fad437;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .gab-process-row:hover {
-    transform: translateX(4px);
-    border-color: #fad437;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateX(4px);
+  border-color: #fad437;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .gab-process-num {
-    font-size: 30px;
-    color: #fad437;
-    line-height: 1;
-    flex: none;
-    min-width: 34px;
+  font-size: 30px;
+  color: #fad437;
+  line-height: 1;
+  flex: none;
+  min-width: 34px;
 }
 
 .gab-process-title {
-    font-size: 18px;
-    color: #fff;
-    margin: 0 0 8px;
-    line-height: 1.2;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 8px;
+  line-height: 1.2;
 }
 
 .gab-process-desc {
-    font-size: 13.5px;
-    line-height: 1.9;
-    letter-spacing: 0.4px;
-    color: rgba(255, 255, 255, 0.72);
-    margin: 0;
-    font-weight: 400;
+  font-size: 13.5px;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0;
+  font-weight: 400;
 }
 
 /* ---- Active nav link ---- */
 .footer-nav--current {
-    color: #fad437 !important;
+  color: #fad437 !important;
 }
 
 /* =====================================================
    RESPONSIVE
    ===================================================== */
 @media (max-width: 991px) {
-    #gab-formats .bp-cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  #gab-formats .bp-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    #gab-why .bp-cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  #gab-why .bp-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .gab-pricing-grid {
-        grid-template-columns: 1fr;
-    }
+  .gab-pricing-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .gab-pack-grid {
-        grid-template-columns: 1fr;
-    }
+  .gab-pack-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .gab-hero-content {
-        padding: 32px 32px 28px;
-    }
+  .gab-hero-content {
+    padding: 32px 32px 28px;
+  }
 }
 
 @media (max-width: 767px) {
-    #gab-hero {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+  #gab-hero {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-    #gab-pricing,
-    #gab-formats,
-    #gab-packages,
-    #gab-why,
-    #gab-process,
-    #gab-closing {
-        padding-top: 44px;
-        padding-bottom: 44px;
-    }
+  #gab-pricing,
+  #gab-formats,
+  #gab-packages,
+  #gab-why,
+  #gab-process,
+  #gab-closing {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
 
-    #gab-formats .bp-cards-grid,
-    #gab-why .bp-cards-grid {
-        grid-template-columns: 1fr;
-    }
+  #gab-formats .bp-cards-grid,
+  #gab-why .bp-cards-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .gab-hero-media {
-        max-width: 100%;
-        min-height: unset;
-        aspect-ratio: 4 / 5;
-    }
+  .gab-hero-media {
+    max-width: 100%;
+    min-height: unset;
+    aspect-ratio: 4 / 5;
+  }
 
-    .gab-hero-content {
-        padding: 24px 20px 28px;
-    }
+  .gab-hero-content {
+    padding: 24px 20px 28px;
+  }
 
-    .gab-hero-actions {
-        flex-direction: column;
-    }
+  .gab-hero-actions {
+    flex-direction: column;
+  }
 
-    .hero-btn-primary,
-    .hero-btn-email,
-    .hero-btn-social {
-        width: 100%;
-        justify-content: center;
-        font-size: 13px;
-        padding: 14px 22px;
-    }
+  .hero-btn-primary,
+  .hero-btn-email,
+  .hero-btn-social {
+    width: 100%;
+    justify-content: center;
+    font-size: 13px;
+    padding: 14px 22px;
+  }
 
-    .gab-hero-chips {
-        grid-template-columns: 1fr;
-    }
+  .gab-hero-chips {
+    grid-template-columns: 1fr;
+  }
 
-    .bp-closing-cta {
-        padding: 28px 22px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .bp-closing-cta {
+    padding: 28px 22px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .bp-closing-cta .hero-cta-buttons {
-        width: 100%;
-    }
+  .bp-closing-cta .hero-cta-buttons {
+    width: 100%;
+  }
 }
