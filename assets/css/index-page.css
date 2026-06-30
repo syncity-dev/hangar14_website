@@ -912,14 +912,14 @@ footer#contact {
 .copyright a {
   font-size: 11px;
   letter-spacing: 0.5px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-muted);
   text-decoration: none;
   font-weight: 400;
   transition: color 0.2s ease;
 }
 
 .copyright a:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text);
 }
 
 /* =====================================================
