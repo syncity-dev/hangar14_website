@@ -40,7 +40,7 @@
 }
 
 .qr-hero-accent {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .qr-hero-desc {
@@ -78,13 +78,13 @@
 
 .qr-cta-card:hover {
   transform: translateY(-5px);
-  border-color: #fad437;
+  border-color: var(--color-accent);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 .qr-cta-card--primary {
-  background: #fad437;
-  border-color: #fad437;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .qr-cta-card--primary:hover {
@@ -101,7 +101,7 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: #fad437;
+  color: var(--color-accent);
   margin-bottom: 20px;
   flex: none;
 }
@@ -114,7 +114,7 @@
 .qr-cta-label {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #fad437;
+  color: var(--color-accent);
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -148,7 +148,7 @@
 
 /* ---- Active nav link ---- */
 .footer-nav--current {
-  color: #fad437 !important;
+  color: var(--color-accent) !important;
 }
 
 /* =====================================================

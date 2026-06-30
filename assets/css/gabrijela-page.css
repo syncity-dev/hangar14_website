@@ -85,7 +85,7 @@
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #fad437;
+  color: var(--color-accent);
   text-decoration: none;
   margin-bottom: 20px;
   transition: opacity 0.2s ease;
@@ -103,7 +103,7 @@
 }
 
 .gab-hero-title span {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .gab-hero-subtitle {
@@ -116,7 +116,7 @@
 }
 
 .gab-hero-subtitle span {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .gab-hero-bio {
@@ -130,7 +130,7 @@
 }
 
 .gab-hero-bio span {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /* ---- Stat chips ---- */
@@ -189,8 +189,8 @@
 }
 
 .hero-btn-email:hover {
-  border-color: #fad437;
-  color: #fad437 !important;
+  border-color: var(--color-accent);
+  color: var(--color-accent) !important;
 }
 
 .hero-btn-social {
@@ -213,8 +213,8 @@
 }
 
 .hero-btn-social:hover {
-  border-color: #fad437;
-  color: #fad437 !important;
+  border-color: var(--color-accent);
+  color: var(--color-accent) !important;
 }
 
 /* =====================================================
@@ -239,7 +239,7 @@
 
 .gab-pricing-card:hover {
   transform: translateY(-5px);
-  border-color: #fad437;
+  border-color: var(--color-accent);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 }
 
@@ -253,7 +253,7 @@
 .gab-pricing-type {
   font-size: 12px;
   letter-spacing: 1.2px;
-  color: #fad437;
+  color: var(--color-accent);
   text-transform: uppercase;
   margin-bottom: 8px;
   font-weight: 400;
@@ -275,7 +275,7 @@
 
 .gab-pricing-row-price {
   font-size: 17px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .gab-pricing-note {
@@ -284,7 +284,7 @@
   border: 2px solid rgba(255, 255, 255, 0.07);
   border-radius: 12px;
   padding: 24px 28px;
-  box-shadow: inset 3px 0 0 0 #fad437;
+  box-shadow: inset 3px 0 0 0 var(--color-accent);
 }
 
 .gab-pricing-note p {
@@ -297,7 +297,7 @@
 }
 
 .gab-pricing-note-accent {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /* =====================================================
@@ -325,24 +325,24 @@
 
 .gab-pack-card:hover {
   transform: translateY(-5px);
-  border-color: #fad437;
+  border-color: var(--color-accent);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 .gab-pack-card--featured {
-  border: 2px solid #fad437;
+  border: 2px solid var(--color-accent);
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
 }
 
 .gab-pack-card--featured:hover {
-  border-color: #fad437;
+  border-color: var(--color-accent);
 }
 
 .gab-pack-circle {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: #fad437;
+  background: var(--color-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,13 +368,13 @@
 }
 
 .gab-pack-badge--default {
-  color: #fad437;
+  color: var(--color-accent);
   background: rgba(250, 212, 55, 0.14);
 }
 
 .gab-pack-badge--featured {
   color: #141414;
-  background: #fad437;
+  background: var(--color-accent);
 }
 
 .gab-pack-title {
@@ -420,7 +420,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #fad437;
+  background: var(--color-accent);
   flex: none;
   margin-top: 6px;
 }
@@ -430,7 +430,7 @@
   text-align: center;
   font-size: 13px;
   letter-spacing: 0.3px;
-  color: #fad437;
+  color: var(--color-accent);
   font-weight: 400;
 }
 
@@ -453,7 +453,7 @@
   border: 2px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 26px 30px;
-  box-shadow: inset 3px 0 0 0 #fad437;
+  box-shadow: inset 3px 0 0 0 var(--color-accent);
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
@@ -462,13 +462,13 @@
 
 .gab-process-row:hover {
   transform: translateX(4px);
-  border-color: #fad437;
+  border-color: var(--color-accent);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .gab-process-num {
   font-size: 30px;
-  color: #fad437;
+  color: var(--color-accent);
   line-height: 1;
   flex: none;
   min-width: 34px;
@@ -492,7 +492,7 @@
 
 /* ---- Active nav link ---- */
 .footer-nav--current {
-  color: #fad437 !important;
+  color: var(--color-accent) !important;
 }
 
 /* =====================================================

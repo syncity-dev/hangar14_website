@@ -18,6 +18,118 @@ Version: 1.0
 /*-------------------- RESETE STYLES --------------------*/
 @import url("https://fonts.googleapis.com/css?family=Black+Ops+One:300,400,400i,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap");
+
+/*----------------------- DESIGN TOKENS -----------------------*/
+/* Single permanently-dark theme — tokens live on :root.
+   Yellow + Sand are Radix-style 12-step scales. Semantic aliases
+   at the bottom are what page CSS should reference. */
+:root {
+  /* Yellow (brand accent) — yellow-9 (var(--color-accent)) is the brand color */
+  --yellow-1: #222019;
+  --yellow-2: #28251c;
+  --yellow-3: #372f14;
+  --yellow-4: #433702;
+  --yellow-5: #4e3f00;
+  --yellow-6: #5a4c13;
+  --yellow-7: #6c5d23;
+  --yellow-8: #85732c;
+  --yellow-9: #fad437;
+  --yellow-10: #f0ca26;
+  --yellow-11: #fed83d;
+  --yellow-12: #faebb5;
+
+  --yellow-a1: #a1200002;
+  --yellow-a2: #e8ae1c09;
+  --yellow-a3: #f9b4001a;
+  --yellow-a4: #fab30028;
+  --yellow-a5: #feb90034;
+  --yellow-a6: #feca0042;
+  --yellow-a7: #fdd33157;
+  --yellow-a8: #ffd84073;
+  --yellow-a9: #fed737fa;
+  --yellow-a10: #ffd627ee;
+  --yellow-a11: #ffd93dfe;
+  --yellow-a12: #feefb8fa;
+
+  --yellow-contrast: #282109;
+  --yellow-surface: #2f2a1c80;
+  --yellow-indicator: #fad437;
+  --yellow-track: #fad437;
+
+  /* Sand (neutral) — Radix sand, dark column */
+  --sand-1: #111110;
+  --sand-2: #191918;
+  --sand-3: #222221;
+  --sand-4: #2a2a28;
+  --sand-5: #31312e;
+  --sand-6: #3b3a37;
+  --sand-7: #494844;
+  --sand-8: #62605b;
+  --sand-9: #6f6d66;
+  --sand-10: #7c7b74;
+  --sand-11: #b5b3ad;
+  --sand-12: #eeeeec;
+
+  --sand-a1: #00000000;
+  --sand-a2: #f4f4f309;
+  --sand-a3: #f6f6f513;
+  --sand-a4: #fefef31b;
+  --sand-a5: #fbfbeb23;
+  --sand-a6: #fffaed2d;
+  --sand-a7: #fffbed3c;
+  --sand-a8: #fff9eb57;
+  --sand-a9: #fffae965;
+  --sand-a10: #fffdee73;
+  --sand-a11: #fffcf4b0;
+  --sand-a12: #fffffded;
+
+  /* Semantic aliases (replace the old SCSS $variables) */
+  --color-accent: var(--yellow-9);
+  --color-accent-hover: var(--yellow-10);
+  --color-text: #fff;
+  --color-text-secondary: var(--sand-11);
+  --color-text-muted: var(--sand-11);
+  --color-border: var(--sand-7);
+}
+
+/* Wide-gamut (P3) refinement of the yellow scale */
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root {
+      --yellow-1: oklch(24.3% 0.0125 94.45);
+      --yellow-2: oklch(26.5% 0.017 94.45);
+      --yellow-3: oklch(30.8% 0.0438 94.45);
+      --yellow-4: oklch(33.9% 0.0681 94.45);
+      --yellow-5: oklch(37.4% 0.0775 94.45);
+      --yellow-6: oklch(41.9% 0.0753 94.45);
+      --yellow-7: oklch(48% 0.0787 94.45);
+      --yellow-8: oklch(55.8% 0.0927 94.45);
+      --yellow-9: oklch(87.8% 0.1661 94.45);
+      --yellow-10: oklch(84.7% 0.1661 94.45);
+      --yellow-11: oklch(89.1% 0.1661 94.45);
+      --yellow-12: oklch(93.8% 0.0709 94.45);
+
+      --yellow-a1: color(display-p3 0.9137 0.1294 0 / 0.005);
+      --yellow-a2: color(display-p3 0.9725 0.8275 0.251 / 0.028);
+      --yellow-a3: color(display-p3 1 0.7451 0 / 0.095);
+      --yellow-a4: color(display-p3 0.9961 0.749 0 / 0.145);
+      --yellow-a5: color(display-p3 1 0.7725 0 / 0.194);
+      --yellow-a6: color(display-p3 1 0.8392 0.1451 / 0.248);
+      --yellow-a7: color(display-p3 1 0.8667 0.3137 / 0.329);
+      --yellow-a8: color(display-p3 1 0.8824 0.3608 / 0.437);
+      --yellow-a9: color(display-p3 0.9961 0.8706 0.3647 / 0.951);
+      --yellow-a10: color(display-p3 1 0.8667 0.3255 / 0.906);
+      --yellow-a11: color(display-p3 1 0.8745 0.3725 / 0.969);
+      --yellow-a12: color(display-p3 1 0.9569 0.7569 / 0.964);
+
+      --yellow-contrast: #282109;
+      --yellow-surface: color(display-p3 0.1725 0.1647 0.1176 / 0.5);
+      --yellow-indicator: oklch(87.8% 0.1661 94.45);
+      --yellow-track: oklch(87.8% 0.1661 94.45);
+    }
+  }
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -132,7 +244,7 @@ a {
   transition: 0.25s ease-in;
 }
 a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 h1,
@@ -197,7 +309,7 @@ h6 {
   margin-bottom: 20px;
 }
 .title-decor span {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .title-decor:before {
   content: "";
@@ -207,7 +319,7 @@ h6 {
   transform: translateX(-50%);
   width: 45px;
   height: 4px;
-  background-color: #fad437;
+  background-color: var(--color-accent);
 }
 
 .slogan {
@@ -310,7 +422,7 @@ body.page-loaded .preloader-cover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   animation: cube-loader 2.76s infinite linear both;
   transform-origin: 100% 100%;
 }
@@ -394,7 +506,7 @@ header:before {
   left: -100%;
   width: 100%;
   height: 100vh;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   transition: none;
   z-index: 1;
 }
@@ -449,16 +561,16 @@ header:after {
   color: #fff;
 }
 .nav-list li a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .nav-list li a i {
   margin-left: 5px;
 }
 .nav-list li.menu-active a {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .nav-list li.menu-active a i {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .nav-list li.dropdown ul {
   min-width: 100%;
@@ -478,10 +590,10 @@ header:after {
   padding: 5px 15px 5px 25px;
 }
 .nav-list li.dropdown ul li a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .nav-list li.dropdown ul li.active a {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 @media (min-width: 768px) {
@@ -506,7 +618,7 @@ header:after {
     max-height: none;
   }
   .nav-list > li {
-    border-right: 1px solid #474747;
+    border-right: 1px solid var(--color-border);
   }
   .nav-list > li:last-child {
     border: none;
@@ -595,7 +707,7 @@ header:after {
 
 .header-logo {
   text-align: center;
-  border-top: 1px solid #474747;
+  border-top: 1px solid var(--color-border);
   margin-top: 2px;
   padding: 20px 0 19px;
 }
@@ -632,7 +744,7 @@ header:after {
   width: 60px;
   height: 40px;
   border: none;
-  border-bottom: 1px solid #fad437;
+  border-bottom: 1px solid var(--color-accent);
   background-color: transparent;
   border-color: transparent;
   font-family: "Righteous";
@@ -647,7 +759,7 @@ header:after {
 .header-right .search-form__field:focus {
   width: 270px;
   border-color: transparent;
-  border-bottom-color: #fad437;
+  border-bottom-color: var(--color-accent);
 }
 .header-right .search-form__submit {
   padding: 5px;
@@ -655,13 +767,13 @@ header:after {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  color: #fad437;
+  color: var(--color-accent);
   position: relative;
   z-index: 2;
   border: none;
 }
 .header-right .search-form__submit:hover {
-  background-color: #fad437;
+  background-color: var(--color-accent);
   color: #fff;
 }
 
@@ -684,7 +796,7 @@ header:after {
 .header-cont li i {
   margin-right: 15px;
   font-size: 14px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /*--------------------- HEADER-FITNESS ---------------------*/
@@ -708,7 +820,7 @@ header:after {
   color: #9f9f9f;
 }
 .header-fitness .top-panel-row .header-cont a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .header-fitness .top-panel-center {
   justify-content: center;
@@ -734,7 +846,7 @@ header:after {
   height: 1px;
   width: calc(100% - 30px);
   transform: translateX(-50%);
-  background-color: #474747;
+  background-color: var(--color-border);
 }
 .header-fitness .header-menu .header-logo {
   border: none;
@@ -965,7 +1077,7 @@ textarea {
   font-family: "Black Ops One", sans-serif;
   background-color: #272a31;
   border: 2px solid transparent;
-  border-bottom-color: #fad437;
+  border-bottom-color: var(--color-accent);
   color: #fff;
   font-weight: 400;
   transition: 0.25s ease-in;
@@ -976,7 +1088,7 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=search]:focus,
 textarea:focus {
-  border-color: #fad437;
+  border-color: var(--color-accent);
 }
 
 textarea {
@@ -1052,15 +1164,15 @@ textarea::placeholder {
   height: 40px;
   text-align: center;
   color: #fff;
-  border: 2px solid #fad437;
+  border: 2px solid var(--color-accent);
   flex: 0 0 auto;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   font-size: 14px;
 }
 .search-form .btn-form:hover,
 .subscribe-form .btn-form:hover {
   background-color: transparent;
-  color: #fad437;
+  color: var(--color-accent);
 }
 .search-form .inp-form::-moz-placeholder,
 .subscribe-form .inp-form::-moz-placeholder {
@@ -1111,14 +1223,14 @@ textarea::placeholder {
 .checkbox-cover p {
   position: relative;
   padding-left: 44px;
-  color: #bebebe;
+  color: var(--color-text-secondary);
   font-family: "Black Ops One", sans-serif;
 }
 
 .checkbox-cover p:before {
   content: "";
   display: inline-block;
-  border: 1px solid #fad437;
+  border: 1px solid var(--color-accent);
   width: 26px;
   height: 26px;
   line-height: 24px;
@@ -1128,7 +1240,7 @@ textarea::placeholder {
   top: -2px;
   left: 0;
   text-align: center;
-  color: #fad437;
+  color: var(--color-accent);
   border-radius: 5px;
 }
 
@@ -1145,7 +1257,7 @@ textarea::placeholder {
 
 .checkbox-cover input:checked + p:before {
   content: "\f00c";
-  background-color: #fad437;
+  background-color: var(--color-accent);
   color: #fff;
 }
 
@@ -1170,7 +1282,7 @@ textarea::placeholder {
 }
 
 #message .error_message {
-  color: #fad437;
+  color: var(--color-accent);
   font-weight: 500;
   font-size: 18px;
 }
@@ -1279,7 +1391,7 @@ footer .social-list li {
   margin-right: 0;
 }
 .footer-menu li.active a {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .footer-menu li a {
   font-family: "Black Ops One", sans-serif;
@@ -1333,7 +1445,7 @@ footer .social-list li {
   justify-content: center;
 }
 .footer-fitness .footer-bottom .copyright a {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .footer-fitness .footer-bottom .copyright a:hover {
   color: #fff;
@@ -1451,8 +1563,8 @@ footer .social-list li {
 .btn {
   font-size: 16px;
   padding: 11px 40px 10px;
-  border: 2px solid #fad437;
-  background-color: #fad437;
+  border: 2px solid var(--color-accent);
+  background-color: var(--color-accent);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -1464,7 +1576,7 @@ footer .social-list li {
 }
 .btn:hover {
   background-color: transparent;
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /*--------------------- SOCIAL LIST ---------------------*/
@@ -1485,7 +1597,7 @@ footer .social-list li {
   font-size: 18px;
 }
 .social-list a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /*----------------------- TO-TOP -----------------------*/
@@ -1504,7 +1616,7 @@ footer .social-list li {
   background-color: #272a31;
 }
 .to-top:hover {
-  background-color: #fad437;
+  background-color: var(--color-accent);
   color: #fff;
 }
 .to-top.active {
@@ -1570,7 +1682,7 @@ footer .social-list li {
   transition: background-color 0.3s ease, width 0.3s ease;
 }
 .slider-navigation .slick-dots li.slick-active button {
-  background-color: #fad437;
+  background-color: var(--color-accent);
   width: 42px;
 }
 .slider-navigation .slick-dots li:hover button {
@@ -1645,7 +1757,7 @@ footer .social-list li {
   width: 100%;
 }
 .crossfit-slide .title span {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .crossfit-slide p {
   max-width: 660px;
@@ -1670,7 +1782,7 @@ footer .social-list li {
 }
 
 .crossfit-slider-lite .crossfit-slide .title span {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .scene {
@@ -1753,7 +1865,7 @@ footer .social-list li {
   font-size: 16px;
   margin-right: 10px;
   margin-top: -2px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 .post-item-cover .meta .post-by a {
   margin-right: 5px;
@@ -1780,7 +1892,7 @@ footer .social-list li {
   display: none;
 }
 .post-item-cover .text {
-  color: #bebebe;
+  color: var(--color-text-secondary);
 }
 .post-item-cover .post-footer {
   margin-top: 29px;
@@ -1827,7 +1939,7 @@ blockquote:before {
   top: 30px;
   left: 30px;
   font-family: "FontAwesome";
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /*------------------------ WIDGET ------------------------*/
@@ -1854,7 +1966,7 @@ blockquote:before {
   text-transform: capitalize;
   padding-bottom: 22px;
   margin-bottom: 22px;
-  border-bottom: 1px solid #474747;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .widget-newsletter .title, .widget-instagram .title, .widget-search .title {
@@ -1874,7 +1986,7 @@ blockquote:before {
   margin-top: 10px;
 }
 .widget-tags ul li a {
-  border: 2px solid #fad437;
+  border: 2px solid var(--color-accent);
   box-sizing: border-box;
   border-radius: 0;
   font-size: 14px;
@@ -1901,7 +2013,7 @@ blockquote:before {
 }
 .widget-archive li a:hover,
 .widget-categories li a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .widget-archive li a:before,
@@ -1909,7 +2021,7 @@ blockquote:before {
   content: "\f105";
   font-family: "FontAwesome";
   margin-right: 10px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /* WIDGET-RECENT-POSTS */
@@ -1921,7 +2033,7 @@ blockquote:before {
   font-weight: 600;
 }
 .widget-recent-posts li a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .widget-recent-posts li .date {
@@ -1932,7 +2044,7 @@ blockquote:before {
 .widget-recent-posts li .date i {
   margin-right: 8px;
   font-size: 16px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /* WIDGET-INSTAGRAM */
@@ -1961,7 +2073,7 @@ blockquote:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: #fad437;
+  color: var(--color-accent);
   z-index: 2;
   font-weight: 500;
   font-size: 20px;
@@ -2032,8 +2144,8 @@ blockquote:before {
 }
 
 .pagination-item.active a {
-  border-color: #fad437;
-  background-color: #fad437;
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
 }
 
 .pagination-item.active {
@@ -2041,7 +2153,7 @@ blockquote:before {
 }
 
 .pagination-item:hover a {
-  border-color: #fad437;
+  border-color: var(--color-accent);
 }
 
 /*--------------------- S-SINGLE-NEWS ---------------------*/
@@ -2052,8 +2164,8 @@ blockquote:before {
 /* AUTOR-COVER */
 .autor-cover {
   margin: 53px 0 37px;
-  border-top: 1px solid #474747;
-  border-bottom: 1px solid #474747;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   padding: 40px 0;
   display: flex;
   align-items: center;
@@ -2070,7 +2182,7 @@ blockquote:before {
 .autor-cover .name {
   font-weight: 400;
   font-size: 20px;
-  color: #fad437;
+  color: var(--color-accent);
   margin-bottom: 6px;
   font-family: "Black Ops One", sans-serif;
 }
@@ -2084,7 +2196,7 @@ blockquote:before {
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
-  border-bottom: 1px solid #474747;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .navigation-item {
@@ -2138,7 +2250,7 @@ blockquote:before {
 }
 
 .navigation-item:hover .title {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /*----------------------- REVIEWS -----------------------*/
@@ -2202,7 +2314,7 @@ blockquote:before {
 .review-content .date i {
   font-size: 16px;
   margin-right: 8px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .faq-cover li:not(:last-child) {
@@ -2223,10 +2335,10 @@ blockquote:before {
   transition: 0.25s ease-in;
 }
 .review-btn:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .review-btn:hover i {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /*----------------- S-RELATED-POSTS -----------------*/
@@ -2273,7 +2385,7 @@ blockquote:before {
   right: 15px;
   z-index: 2;
   text-transform: uppercase;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   text-align: center;
   font-weight: 600;
   min-width: 120px;
@@ -2321,7 +2433,7 @@ blockquote:before {
 
 .contact-item-left {
   width: 40%;
-  border-right: 2px solid #fad437;
+  border-right: 2px solid var(--color-accent);
 }
 .contact-item-left h4 {
   text-transform: uppercase;
@@ -2333,13 +2445,13 @@ blockquote:before {
   padding: 15px;
 }
 .contact-item-right li {
-  color: #bebebe;
+  color: var(--color-text-secondary);
 }
 .contact-item-right a {
-  color: #bebebe;
+  color: var(--color-text-secondary);
 }
 .contact-item-right a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /*-------------------- S-CROSSFIT --------------------*/
@@ -2381,7 +2493,7 @@ blockquote:before {
   opacity: 0;
   margin-top: 40px;
   transform: translate(-50%, -50%);
-  border: 7px solid #fad437;
+  border: 7px solid var(--color-accent);
   transition: 0.4s ease-in-out;
   pointer-events: none;
 }
@@ -2394,7 +2506,7 @@ blockquote:before {
   margin: 25px 0 6px;
 }
 .crossfit-item p {
-  color: #bebebe;
+  color: var(--color-text-secondary);
   font-size: 16px;
   margin-top: 30px;
 }
@@ -2535,7 +2647,7 @@ blockquote:before {
 .program-item .program-item-back:before {
   content: "";
   position: absolute;
-  border: 5px solid #fad437;
+  border: 5px solid var(--color-accent);
   top: -14px;
   bottom: -14px;
   left: 50%;
@@ -2604,7 +2716,7 @@ blockquote:before {
   margin-top: 40px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 7px solid #fad437;
+  border: 7px solid var(--color-accent);
   transition: 0.4s ease-in-out;
   pointer-events: none;
 }
@@ -2628,7 +2740,7 @@ blockquote:before {
   transform: translateX(-50%);
   width: 45px;
   height: 4px;
-  background-color: #fad437;
+  background-color: var(--color-accent);
 }
 .club-card-item .price-cover .price {
   font-size: 72px;
@@ -2642,7 +2754,7 @@ blockquote:before {
 }
 .club-card-item .price-cover .date span {
   margin-left: -2px;
-  color: #fad437;
+  color: var(--color-accent);
   display: block;
   line-height: 0.9;
   font-size: 36px;
@@ -2653,7 +2765,7 @@ blockquote:before {
   padding: 20px 0 42px;
 }
 .club-card-item .list li {
-  border-bottom: 1px solid #474747;
+  border-bottom: 1px solid var(--color-border);
   padding: 11px 0;
 }
 .club-card-item .list li:last-child {
@@ -2679,10 +2791,10 @@ blockquote:before {
   justify-content: center;
   align-items: center;
   margin-bottom: 19px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 .club-cards-lite .club-card-item .price-cover .price span {
-  color: #fad437;
+  color: var(--color-accent);
   font-size: 36px;
   line-height: 0.75;
   position: relative;
@@ -2694,7 +2806,7 @@ blockquote:before {
 .club-cards-lite .club-card-item .club-card-text {
   max-width: 330px;
   text-align: center;
-  color: #bebebe;
+  color: var(--color-text-secondary);
   margin: 30px auto 0px;
 }
 
@@ -2708,7 +2820,7 @@ blockquote:before {
 /*----------------- S-CROSSFIT-BANNER -----------------*/
 .s-crossfit-banner {
   position: relative;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   display: flex;
   justify-content: space-between;
 }
@@ -2803,7 +2915,7 @@ blockquote:before {
 }
 .crossfit-banner-right .text-bottom a {
   font-weight: 700;
-  color: #fad437;
+  color: var(--color-accent);
   position: relative;
 }
 .crossfit-banner-right .text-bottom a:before {
@@ -2813,7 +2925,7 @@ blockquote:before {
   bottom: -1px;
   left: 0;
   transition: 0.3s ease;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   height: 2px;
   width: 100%;
 }
@@ -2839,7 +2951,7 @@ blockquote:before {
 }
 
 .training-schedule-top {
-  border-top: 1px solid #fad437;
+  border-top: 1px solid var(--color-accent);
   background-color: #272a31;
   line-height: 41px;
 }
@@ -2883,7 +2995,7 @@ blockquote:before {
 .training-schedule-table td .date {
   font-weight: 700;
   margin-top: 2px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 .training-schedule-table td .name {
   text-transform: capitalize;
@@ -2967,7 +3079,7 @@ blockquote:before {
   left: 0;
 }
 .about-info-cover .text a {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .about-info-cover .text a:hover {
   color: #fff;
@@ -2989,7 +3101,7 @@ blockquote:before {
   font-size: 23px;
 }
 .about-info-cover .social-list a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .about-cont {
@@ -3008,7 +3120,7 @@ blockquote:before {
   font-size: 18px;
 }
 .about-cont li a {
-  color: #fad437;
+  color: var(--color-accent);
   font-size: 17px;
 }
 .about-cont li a:hover {
@@ -3032,7 +3144,7 @@ blockquote:before {
   font-family: "Black Ops One", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  border-right: 2px solid #fad437;
+  border-right: 2px solid var(--color-accent);
   width: 38%;
   padding: 5px 0;
 }
@@ -3046,7 +3158,7 @@ blockquote:before {
 .about-bottom-info {
   width: 62%;
   padding: 16px 15px 16px 20px;
-  color: #bebebe;
+  color: var(--color-text-secondary);
   font-size: 15px;
 }
 
@@ -3100,7 +3212,7 @@ blockquote:before {
 }
 
 .our-trainer-info .name {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .our-trainer-info .prof {
   font-weight: 600;
@@ -3170,7 +3282,7 @@ blockquote:before {
   display: block;
   margin: 0 auto 21px;
   font-size: 48px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 .trainer-award-col h3 {
   margin-bottom: 5px;
@@ -3247,12 +3359,12 @@ blockquote:before {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #bebebe;
+  background-color: var(--color-text-secondary);
   margin-right: 8px;
   transition: 0.25s ease-in;
 }
 .testimonials-slider .slick-dots li:hover, .testimonials-slider .slick-dots li.slick-active {
-  background-color: #fad437;
+  background-color: var(--color-accent);
 }
 .testimonials-slider .slick-dots li:last-child {
   margin-right: 0;
@@ -3282,7 +3394,7 @@ blockquote:before {
 }
 .testimonial-slide .name {
   text-transform: uppercase;
-  color: #fad437;
+  color: var(--color-accent);
 }
 .testimonial-slide .prof {
   text-transform: uppercase;
@@ -3299,7 +3411,7 @@ blockquote:before {
 }
 
 .testimonials-border .testimonials-slider {
-  border: 7px solid #fad437;
+  border: 7px solid var(--color-accent);
   padding: 47px 0;
 }
 .testimonials-border .testimonials-slider .slick-dots {
@@ -3341,7 +3453,7 @@ blockquote:before {
   height: calc(100% - 20px);
   width: calc(100% - 40px);
   margin-top: 40px;
-  border: 7px solid #fad437;
+  border: 7px solid var(--color-accent);
   pointer-events: none;
   transition: 0.4s ease;
   z-index: 2;
@@ -3380,14 +3492,14 @@ blockquote:before {
 }
 .best-trainer-slide .name {
   line-height: 1.2;
-  color: #fad437;
+  color: var(--color-accent);
   padding: 0 40px;
   transition: 0.4s ease;
   opacity: 0;
 }
 .best-trainer-slide .surname {
   line-height: 1.2;
-  color: #fad437;
+  color: var(--color-accent);
   padding: 0 40px;
   transition: 0.4s ease;
   opacity: 0;
@@ -3470,7 +3582,7 @@ blockquote:before {
   line-height: 0.75;
   font-family: "Black Ops One", sans-serif;
   position: relative;
-  color: #fad437;
+  color: var(--color-accent);
   padding-bottom: 26px;
 }
 .about-info-row .about-info-col .number:before {
@@ -3481,7 +3593,7 @@ blockquote:before {
   transform: translate(-50%, 0);
   width: 46px;
   height: 4px;
-  background-color: #fad437;
+  background-color: var(--color-accent);
 }
 .about-info-row .about-info-col h3 {
   text-transform: uppercase;
@@ -3517,7 +3629,7 @@ blockquote:before {
   color: #000;
 }
 .out-trainer-item:hover h3 a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .out-trainer-item:hover p {
   color: #4d4d4d;
@@ -3526,7 +3638,7 @@ blockquote:before {
   color: #000;
 }
 .out-trainer-item:hover .social-list li a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .out-trainer-img {
@@ -3557,12 +3669,12 @@ blockquote:before {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  color: #fad437;
+  color: var(--color-accent);
   transition: 0.25s ease-in;
   font-weight: 500;
 }
 .out-trainer-info p {
-  color: #bebebe;
+  color: var(--color-text-secondary);
   margin-bottom: 17px;
   transition: 0.25s ease-in;
 }
@@ -3631,7 +3743,7 @@ blockquote:before {
   background-color: #fff;
 }
 .s-counter .subscribe-form .inp-form:focus {
-  border-color: #fad437;
+  border-color: var(--color-accent);
 }
 
 #clockdiv {
@@ -3650,7 +3762,7 @@ blockquote:before {
 #clockdiv .clock-item span {
   display: block;
   font-size: 96px;
-  color: #fad437;
+  color: var(--color-accent);
   line-height: 0.75;
   margin-bottom: 10px;
 }
@@ -3706,7 +3818,7 @@ blockquote:before {
   right: -15px;
   height: 100%;
   width: calc(100% + 94px);
-  border: 7px solid #fad437;
+  border: 7px solid var(--color-accent);
   z-index: 1;
   pointer-events: none;
 }
@@ -3761,7 +3873,7 @@ blockquote:before {
   fill: #000;
 }
 .s-fitness-slider .slider-navigation .slick-dots li:hover button, .s-fitness-slider .slider-navigation .slick-dots li.slick-active button {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .s-fitness-slider .slider-navigation .slick-dots li button {
   color: #000;
@@ -3843,7 +3955,7 @@ blockquote:before {
   top: 0;
   height: 47px;
   width: 4px;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   transform: translateY(30%);
   transition: 0.2s ease-out;
   transition-delay: 0.8s;
@@ -3851,7 +3963,7 @@ blockquote:before {
 }
 .fitness-slide .fitness-slide-cover .title span {
   display: block;
-  color: #fad437;
+  color: var(--color-accent);
   margin-top: 32px;
   transform: translateX(-10%);
   transition: 0.2s ease-out;
@@ -3972,7 +4084,7 @@ blockquote:before {
 .fitness-program-item-front .fitness-program-item-inner {
   position: relative;
   z-index: 1;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   color: #fff;
   text-align: center;
   width: 100%;
@@ -3986,7 +4098,7 @@ blockquote:before {
   bottom: 100%;
   width: 100%;
   height: 30px;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   z-index: 2;
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
@@ -4012,7 +4124,7 @@ blockquote:before {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 7px solid #fad437;
+  border: 7px solid var(--color-accent);
   color: #fff;
   text-transform: uppercase;
   padding: 20px;
@@ -4094,7 +4206,7 @@ blockquote:before {
   right: -15px;
   left: -113px;
   height: 100%;
-  border: 7px solid #fad437;
+  border: 7px solid var(--color-accent);
   pointer-events: none;
 }
 .fitness-banner-right h2 {
@@ -4103,7 +4215,7 @@ blockquote:before {
 }
 .fitness-banner-right h2 span {
   display: block;
-  color: #fad437;
+  color: var(--color-accent);
 }
 .fitness-banner-right p {
   font-size: 25px;
@@ -4111,7 +4223,7 @@ blockquote:before {
 }
 .fitness-banner-right p a {
   position: relative;
-  color: #fad437;
+  color: var(--color-accent);
 }
 .fitness-banner-right p a:before {
   content: "";
@@ -4120,7 +4232,7 @@ blockquote:before {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #fad437;
+  background-color: var(--color-accent);
   transition: 0.25s ease-in;
 }
 .fitness-banner-right p a:hover:before {
@@ -4149,7 +4261,7 @@ blockquote:before {
   padding: 0px 0px 40px 0px;
 }
 .fitness-post-col .post-item-cover .post-header {
-  background-color: #fad437;
+  background-color: var(--color-accent);
   padding: 42px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -4176,7 +4288,7 @@ blockquote:before {
   color: #000;
 }
 .fitness-post-col .post-content .title a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 .fitness-post-col .post-footer {
   padding: 0 38px;
@@ -4208,7 +4320,7 @@ blockquote:before {
   color: #4d4d4d;
 }
 .fitness-post-col .post-footer .meta a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 /*----------------- S-FITNESS-GALLERY -----------------*/
@@ -4261,7 +4373,7 @@ blockquote:before {
   opacity: 0;
   margin-top: 40px;
   transform: translate(-50%, -50%);
-  border: 7px solid #fad437;
+  border: 7px solid var(--color-accent);
   transition: 0.4s ease-in-out;
   pointer-events: none;
   z-index: 3;
@@ -5557,5 +5669,3 @@ blockquote:before {
     height: 100px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

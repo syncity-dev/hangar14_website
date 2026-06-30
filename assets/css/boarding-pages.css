@@ -17,7 +17,7 @@
   border-radius: 999px;
   background: rgba(13, 13, 13, 0.68);
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.26);
-  color: #fad437;
+  color: var(--color-accent);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -37,11 +37,11 @@
 }
 
 .boarding-hero-note-accent {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .brand-accent {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .boarding-hero-actions {
@@ -227,7 +227,7 @@
   .ui-contact-list li:focus-within i,
   .boarding-footer-links.ui-contact-list li:hover i,
   .boarding-footer-links.ui-contact-list li:focus-within i {
-    color: #fad437;
+    color: var(--color-accent);
     transform: translateY(-1px);
   }
 
@@ -241,19 +241,19 @@
   .boarding-footer-links.ui-contact-list li:focus-within > span,
   .boarding-footer-links.ui-contact-list li:hover a span,
   .boarding-footer-links.ui-contact-list li:focus-within a span {
-    color: #fad437;
+    color: var(--color-accent);
   }
 
   .ui-social-links a:hover,
   .ui-social-links a:focus-visible,
   .ui-page-links a:hover,
   .ui-page-links a:focus-visible {
-    color: #fad437;
+    color: var(--color-accent);
   }
 
   .ui-social-links a:hover i,
   .ui-social-links a:focus-visible i {
-    color: #fad437;
+    color: var(--color-accent);
     transform: translateY(-1px);
   }
 }
@@ -289,7 +289,7 @@
   .ui-hover-card:hover,
   .ui-hover-card:focus-within {
     transform: translateY(-8px);
-    border-color: #fad437;
+    border-color: var(--color-accent);
     box-shadow:
       0 20px 44px rgba(0, 0, 0, 0.32),
       0 0 0 1px rgba(250, 212, 55, 0.22);
@@ -297,7 +297,7 @@
 
   .ui-hover-card--pricing:hover,
   .ui-hover-card--pricing:focus-within {
-    border-color: #fad437;
+    border-color: var(--color-accent);
     box-shadow:
       0 24px 48px rgba(0, 0, 0, 0.34),
       0 0 0 1px rgba(250, 212, 55, 0.42);
@@ -441,11 +441,11 @@
 }
 
 .boarding-subtitle .subtitle-accent {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .boarding-intro .subtitle-accent {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .boarding-section {
@@ -554,7 +554,7 @@
   min-height: 54px;
   padding: 12px 30px;
   border-radius: 999px;
-  border: 2px solid #fad437;
+  border: 2px solid var(--color-accent);
   background: transparent;
   color: #fff;
   font-size: 15px;
@@ -566,11 +566,11 @@
 
 .boarding-final-btn i {
   margin-right: 10px;
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .boarding-final-btn:hover {
-  background: #fad437;
+  background: var(--color-accent);
   color: #202020;
 }
 
@@ -656,7 +656,7 @@
 }
 
 .boarding-social-links a:hover {
-  color: #fad437;
+  color: var(--color-accent);
 }
 
 .boarding-social-links i {
