@@ -20,8 +20,8 @@ Live at: [hangar14.fit](https://hangar14.fit)
 
 ## Tech Stack
 
-- **HTML5 / CSS3 / Vanilla JS** — no framework, no build pipeline beyond SASS
-- **SASS** — source in `assets/scss/`, compiled to `assets/css/style.css`
+- **HTML5 / CSS3 / Vanilla JS** — no framework, no build pipeline
+- **Vanilla CSS** — plain `.css` files edited directly; color via CSS custom-property design tokens (Radix-style yellow + sand scales) in `style.css`
 - **jQuery 2.2.4** — DOM manipulation and plugin dependencies
 - **Slick.js** — hero image carousel and content sliders
 - **Parallax.js** — section parallax scrolling
@@ -46,21 +46,12 @@ hangar14_website/
 ├── qr.html
 ├── CNAME                        # GitHub Pages custom domain
 ├── assets/
-│   ├── css/                     # Compiled stylesheets (do not edit directly)
-│   │   ├── style.css            # Main compiled CSS
+│   ├── css/                     # Vanilla stylesheets (edit directly)
+│   │   ├── style.css            # Global CSS + design tokens (:root)
 │   │   ├── index-page.css       # Homepage-specific styles
 │   │   ├── boarding-pages.css   # Shared boarding/B2B/trainer styles
 │   │   ├── b2b-page.css
 │   │   └── gabrijela-page.css
-│   ├── scss/                    # SASS source (edit these)
-│   │   ├── style.scss           # Entry point — imports all partials
-│   │   ├── _structure.scss
-│   │   ├── _normalize.scss
-│   │   ├── _typography.scss
-│   │   ├── _header.scss
-│   │   ├── _forms.scss
-│   │   ├── _footer.scss
-│   │   └── _site.scss
 │   ├── js/
 │   │   ├── scripts.js           # Custom JS (navigation, sliders, map, forms)
 │   │   └── [vendor libs]
@@ -75,15 +66,9 @@ hangar14_website/
 
 ## Local Development
 
-No npm or build tools required beyond SASS.
+No npm, build tools, or compile step. Edit the `.css` files directly.
 
-**1. Compile SASS (watch mode)**
-
-```bash
-sass --watch assets/scss/style.scss:assets/css/style.css
-```
-
-**2. Serve locally**
+**Serve locally**
 
 Open any HTML file directly in a browser, or use a simple local server:
 
