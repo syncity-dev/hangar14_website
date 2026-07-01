@@ -161,7 +161,7 @@ footer#contact {
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #141414 !important;
+  color: var(--accent-fg) !important;
   background: var(--accent);
   padding: 18px 34px;
   border-radius: 999px;
@@ -175,7 +175,7 @@ footer#contact {
 
 .hero-btn-primary:hover {
   background: #f0c41a;
-  color: #141414 !important;
+  color: var(--accent-fg) !important;
 }
 
 .hero-btn-secondary {
@@ -199,7 +199,7 @@ footer#contact {
 .hero-btn-secondary:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: #141414 !important;
+  color: var(--accent-fg) !important;
 }
 
 /* =====================================================
@@ -255,7 +255,7 @@ footer#contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #141414;
+  color: var(--accent-fg);
   flex: none;
   font-size: 22px;
 }
@@ -294,7 +294,7 @@ footer#contact {
 
 .program-cta-title {
   font-size: 21px;
-  color: #141414;
+  color: var(--accent-fg);
   margin: 0 0 12px;
   line-height: 1.15;
 }
@@ -313,7 +313,7 @@ footer#contact {
   letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--accent);
-  background: #141414;
+  background: var(--surface-sunken);
   padding: 14px 18px;
   border-radius: 8px;
   text-decoration: none;
@@ -497,7 +497,7 @@ footer#contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #141414;
+  color: var(--accent-fg);
   flex: none;
   font-size: 22px;
 }
@@ -543,7 +543,7 @@ footer#contact {
 }
 
 .path-card-btn--primary {
-  color: #141414;
+  color: var(--accent-fg);
   background: var(--accent);
   border-color: var(--accent);
 }
@@ -775,7 +775,7 @@ footer#contact {
 
 .schedule-full-body {
   background: var(--accent) !important;
-  color: #141414 !important;
+  color: var(--accent-fg) !important;
 }
 
 /* =====================================================
@@ -936,7 +936,7 @@ footer#contact {
   font-size: 13px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: #141414;
+  color: var(--accent-fg);
   background: var(--accent);
   padding: 15px 22px;
   border-radius: 999px;
@@ -952,7 +952,7 @@ footer#contact {
 }
 
 .float-cta:hover {
-  color: #141414;
+  color: var(--accent-fg);
   background: #f5ca00;
 }
 

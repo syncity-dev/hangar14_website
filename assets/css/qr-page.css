@@ -108,7 +108,7 @@
 
 .qr-cta-card--primary .qr-cta-icon {
   background: rgba(0, 0, 0, 0.12);
-  color: #141414;
+  color: var(--accent-fg);
 }
 
 .qr-cta-label {
@@ -131,7 +131,7 @@
 }
 
 .qr-cta-card--primary .qr-cta-title {
-  color: #141414;
+  color: var(--accent-fg);
 }
 
 .qr-cta-desc {
