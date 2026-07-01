@@ -9,25 +9,25 @@
 
 /* ---- Section backgrounds ---- */
 #b2b-includes {
-  background-color: #202020;
+  background-color: var(--background);
 }
 #b2b-why {
-  background-color: #1a1a1c;
+  background-color: var(--surface);
 }
 #b2b-process {
-  background-color: #202020;
+  background-color: var(--background);
 }
 #b2b-kome {
-  background-color: #1a1a1c;
+  background-color: var(--surface);
 }
 #b2b-hof {
-  background-color: #202020;
+  background-color: var(--background);
 }
 #b2b-next {
-  background-color: #1a1a1c;
+  background-color: var(--surface);
 }
 #b2b-closing {
-  background-color: #202020;
+  background-color: var(--background);
 }
 
 /* ---- 4-column grid for the two feature sections ---- */
@@ -66,7 +66,7 @@
 }
 
 .b2b-hero-accent {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .b2b-hero-desc {
@@ -79,7 +79,7 @@
 }
 
 .b2b-hero-desc strong {
-  color: var(--color-accent);
+  color: var(--accent);
   font-weight: 400;
 }
 
@@ -98,11 +98,11 @@
   display: flex;
   gap: 22px;
   align-items: flex-start;
-  background: #16171b;
+  background: var(--surface);
   border: 2px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 26px 30px;
-  box-shadow: inset 3px 0 0 0 var(--color-accent);
+  box-shadow: inset 3px 0 0 0 var(--accent);
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
@@ -111,13 +111,13 @@
 
 .b2b-process-row:hover {
   transform: translateX(4px);
-  border-color: var(--color-accent);
+  border-color: var(--accent);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .b2b-process-num {
   font-size: 30px;
-  color: var(--color-accent);
+  color: var(--accent);
   line-height: 1;
   flex: none;
   min-width: 28px;
@@ -143,7 +143,7 @@
    HALL OF FAME — single panel with bullet points
    ===================================================== */
 .b2b-hof-panel {
-  background: #16171b;
+  background: var(--surface);
   border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   padding: 40px 44px;
@@ -162,7 +162,7 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: var(--color-accent);
+  background: var(--accent);
   flex: none;
 }
 
@@ -175,7 +175,7 @@
 
 /* ---- Active nav link ---- */
 .footer-nav--current {
-  color: var(--color-accent) !important;
+  color: var(--accent) !important;
 }
 
 /* =====================================================

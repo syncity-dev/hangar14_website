@@ -17,7 +17,7 @@
   border-radius: 999px;
   background: rgba(13, 13, 13, 0.68);
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.26);
-  color: var(--color-accent);
+  color: var(--accent);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -37,11 +37,11 @@
 }
 
 .boarding-hero-note-accent {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .brand-accent {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .boarding-hero-actions {
@@ -227,7 +227,7 @@
   .ui-contact-list li:focus-within i,
   .boarding-footer-links.ui-contact-list li:hover i,
   .boarding-footer-links.ui-contact-list li:focus-within i {
-    color: var(--color-accent);
+    color: var(--accent);
     transform: translateY(-1px);
   }
 
@@ -241,19 +241,19 @@
   .boarding-footer-links.ui-contact-list li:focus-within > span,
   .boarding-footer-links.ui-contact-list li:hover a span,
   .boarding-footer-links.ui-contact-list li:focus-within a span {
-    color: var(--color-accent);
+    color: var(--accent);
   }
 
   .ui-social-links a:hover,
   .ui-social-links a:focus-visible,
   .ui-page-links a:hover,
   .ui-page-links a:focus-visible {
-    color: var(--color-accent);
+    color: var(--accent);
   }
 
   .ui-social-links a:hover i,
   .ui-social-links a:focus-visible i {
-    color: var(--color-accent);
+    color: var(--accent);
     transform: translateY(-1px);
   }
 }
@@ -289,7 +289,7 @@
   .ui-hover-card:hover,
   .ui-hover-card:focus-within {
     transform: translateY(-8px);
-    border-color: var(--color-accent);
+    border-color: var(--accent);
     box-shadow:
       0 20px 44px rgba(0, 0, 0, 0.32),
       0 0 0 1px rgba(250, 212, 55, 0.22);
@@ -297,7 +297,7 @@
 
   .ui-hover-card--pricing:hover,
   .ui-hover-card--pricing:focus-within {
-    border-color: var(--color-accent);
+    border-color: var(--accent);
     box-shadow:
       0 24px 48px rgba(0, 0, 0, 0.34),
       0 0 0 1px rgba(250, 212, 55, 0.42);
@@ -441,11 +441,11 @@
 }
 
 .boarding-subtitle .subtitle-accent {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .boarding-intro .subtitle-accent {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .boarding-section {
@@ -475,7 +475,7 @@
   height: 100%;
   width: 100%;
   padding: 24px 20px;
-  background: #272a31;
+  background: var(--surface-raised);
   border-radius: 22px;
   text-align: center;
   display: flex;
@@ -492,12 +492,12 @@
   margin: 0 auto 12px;
   border-radius: 50%;
   background: #f9b701;
-  color: #202020;
+  color: var(--accent-fg);
   font-size: 1.1rem;
 }
 
 .boarding-next-card .boarding-next-number i {
-  color: #202020;
+  color: var(--accent-fg);
   font-size: 1.2rem;
 }
 
@@ -554,7 +554,7 @@
   min-height: 54px;
   padding: 12px 30px;
   border-radius: 999px;
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--accent);
   background: transparent;
   color: #fff;
   font-size: 15px;
@@ -566,16 +566,16 @@
 
 .boarding-final-btn i {
   margin-right: 10px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .boarding-final-btn:hover {
-  background: var(--color-accent);
-  color: #202020;
+  background: var(--accent);
+  color: var(--accent-fg);
 }
 
 .boarding-final-btn:hover i {
-  color: #202020;
+  color: var(--accent-fg);
 }
 
 .boarding-bottom-wrap {
@@ -656,7 +656,7 @@
 }
 
 .boarding-social-links a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .boarding-social-links i {

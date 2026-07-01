@@ -9,7 +9,7 @@
 
 /* ---- Section backgrounds ---- */
 #qr-cta {
-  background-color: #202020;
+  background-color: var(--background);
 }
 #qr-contact {
   background-color: #000;
@@ -40,7 +40,7 @@
 }
 
 .qr-hero-accent {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .qr-hero-desc {
@@ -62,7 +62,7 @@
 }
 
 .qr-cta-card {
-  background: #16171b;
+  background: var(--surface);
   border: 2px solid rgba(255, 255, 255, 0.06);
   border-radius: 14px;
   padding: 32px 28px;
@@ -78,13 +78,13 @@
 
 .qr-cta-card:hover {
   transform: translateY(-5px);
-  border-color: var(--color-accent);
+  border-color: var(--accent);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 .qr-cta-card--primary {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .qr-cta-card--primary:hover {
@@ -101,7 +101,7 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: var(--color-accent);
+  color: var(--accent);
   margin-bottom: 20px;
   flex: none;
 }
@@ -114,7 +114,7 @@
 .qr-cta-label {
   font-size: 12px;
   letter-spacing: 2px;
-  color: var(--color-accent);
+  color: var(--accent);
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -148,7 +148,7 @@
 
 /* ---- Active nav link ---- */
 .footer-nav--current {
-  color: var(--color-accent) !important;
+  color: var(--accent) !important;
 }
 
 /* =====================================================

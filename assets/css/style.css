@@ -24,7 +24,7 @@ Version: 1.0
    Yellow + Sand are Radix-style 12-step scales. Semantic aliases
    at the bottom are what page CSS should reference. */
 :root {
-  /* Yellow (brand accent) — yellow-9 (var(--color-accent)) is the brand color */
+  /* Yellow (brand accent) — yellow-9 (var(--accent)) is the brand color */
   --yellow-1: #222019;
   --yellow-2: #28251c;
   --yellow-3: #372f14;
@@ -83,13 +83,30 @@ Version: 1.0
   --sand-a11: #fffcf4b0;
   --sand-a12: #fffffded;
 
-  /* Semantic aliases (replace the old SCSS $variables) */
-  --color-accent: var(--yellow-9);
-  --color-accent-hover: var(--yellow-10);
-  --color-text: #fff;
-  --color-text-secondary: var(--sand-11);
-  --color-text-muted: var(--sand-11);
-  --color-border: var(--sand-7);
+  /* ── Semantic role tokens ──
+     Reference these from component CSS, not the raw scales above.
+     Names describe purpose (role), not value, so a retheme touches
+     only this block. */
+
+  /* Surfaces (elevation: sunken < surface < background < raised) */
+  --background: var(--sand-3);      /* page base */
+  --surface: var(--sand-2);         /* cards, panels (recede) */
+  --surface-raised: var(--sand-4);  /* callout / testimonial blocks (pop) */
+  --surface-sunken: var(--sand-1);  /* deepest wells */
+
+  /* Foreground */
+  --foreground: #fff;
+  --foreground-muted: var(--sand-11);
+  --foreground-subtle: var(--sand-10);
+
+  /* Borders */
+  --border: var(--sand-7);
+  --border-subtle: var(--sand-6);
+
+  /* Accent */
+  --accent: var(--yellow-9);
+  --accent-hover: var(--yellow-10);
+  --accent-fg: var(--yellow-contrast);  /* dark text/icons ON accent */
 }
 
 /* Wide-gamut (P3) refinement of the yellow scale */
@@ -202,7 +219,7 @@ body {
   position: relative;
   overflow-x: hidden;
   color: #fff;
-  background-color: #202020;
+  background-color: var(--background);
   font-weight: 400;
 }
 @media (max-width: 1199px) {
@@ -244,7 +261,7 @@ a {
   transition: 0.25s ease-in;
 }
 a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 h1,
@@ -309,7 +326,7 @@ h6 {
   margin-bottom: 20px;
 }
 .title-decor span {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .title-decor:before {
   content: "";
@@ -319,7 +336,7 @@ h6 {
   transform: translateX(-50%);
   width: 45px;
   height: 4px;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
 }
 
 .slogan {
@@ -381,7 +398,7 @@ body.page-loaded .preloader-cover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #202020;
+  background-color: var(--background);
   opacity: 1;
 }
 
@@ -422,7 +439,7 @@ body.page-loaded .preloader-cover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   animation: cube-loader 2.76s infinite linear both;
   transform-origin: 100% 100%;
 }
@@ -489,7 +506,7 @@ header {
   opacity: 0;
   top: 0;
   z-index: 3;
-  background-color: #202020;
+  background-color: var(--background);
   position: absolute;
   transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -506,7 +523,7 @@ header:before {
   left: -100%;
   width: 100%;
   height: 100vh;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   transition: none;
   z-index: 1;
 }
@@ -561,20 +578,20 @@ header:after {
   color: #fff;
 }
 .nav-list li a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .nav-list li a i {
   margin-left: 5px;
 }
 .nav-list li.menu-active a {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .nav-list li.menu-active a i {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .nav-list li.dropdown ul {
   min-width: 100%;
-  background: #272a31;
+  background: var(--surface-raised);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   display: none;
   padding-top: 8px;
@@ -590,10 +607,10 @@ header:after {
   padding: 5px 15px 5px 25px;
 }
 .nav-list li.dropdown ul li a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .nav-list li.dropdown ul li.active a {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 @media (min-width: 768px) {
@@ -618,7 +635,7 @@ header:after {
     max-height: none;
   }
   .nav-list > li {
-    border-right: 1px solid var(--color-border);
+    border-right: 1px solid var(--border);
   }
   .nav-list > li:last-child {
     border: none;
@@ -707,7 +724,7 @@ header:after {
 
 .header-logo {
   text-align: center;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--border);
   margin-top: 2px;
   padding: 20px 0 19px;
 }
@@ -744,7 +761,7 @@ header:after {
   width: 60px;
   height: 40px;
   border: none;
-  border-bottom: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--accent);
   background-color: transparent;
   border-color: transparent;
   font-family: "Righteous";
@@ -754,12 +771,12 @@ header:after {
   z-index: 1;
   right: 40px;
   font-size: 12px;
-  background-color: #202020;
+  background-color: var(--background);
 }
 .header-right .search-form__field:focus {
   width: 270px;
   border-color: transparent;
-  border-bottom-color: var(--color-accent);
+  border-bottom-color: var(--accent);
 }
 .header-right .search-form__submit {
   padding: 5px;
@@ -767,13 +784,13 @@ header:after {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  color: var(--color-accent);
+  color: var(--accent);
   position: relative;
   z-index: 2;
   border: none;
 }
 .header-right .search-form__submit:hover {
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   color: #fff;
 }
 
@@ -796,7 +813,7 @@ header:after {
 .header-cont li i {
   margin-right: 15px;
   font-size: 14px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /*--------------------- HEADER-FITNESS ---------------------*/
@@ -820,7 +837,7 @@ header:after {
   color: #9f9f9f;
 }
 .header-fitness .top-panel-row .header-cont a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .header-fitness .top-panel-center {
   justify-content: center;
@@ -846,7 +863,7 @@ header:after {
   height: 1px;
   width: calc(100% - 30px);
   transform: translateX(-50%);
-  background-color: var(--color-border);
+  background-color: var(--border);
 }
 .header-fitness .header-menu .header-logo {
   border: none;
@@ -1075,9 +1092,9 @@ textarea {
   height: 44px;
   padding: 0 10px;
   font-family: "Black Ops One", sans-serif;
-  background-color: #272a31;
+  background-color: var(--surface-raised);
   border: 2px solid transparent;
-  border-bottom-color: var(--color-accent);
+  border-bottom-color: var(--accent);
   color: #fff;
   font-weight: 400;
   transition: 0.25s ease-in;
@@ -1088,7 +1105,7 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=search]:focus,
 textarea:focus {
-  border-color: var(--color-accent);
+  border-color: var(--accent);
 }
 
 textarea {
@@ -1164,15 +1181,15 @@ textarea::placeholder {
   height: 40px;
   text-align: center;
   color: #fff;
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--accent);
   flex: 0 0 auto;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   font-size: 14px;
 }
 .search-form .btn-form:hover,
 .subscribe-form .btn-form:hover {
   background-color: transparent;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .search-form .inp-form::-moz-placeholder,
 .subscribe-form .inp-form::-moz-placeholder {
@@ -1223,14 +1240,14 @@ textarea::placeholder {
 .checkbox-cover p {
   position: relative;
   padding-left: 44px;
-  color: var(--color-text-secondary);
+  color: var(--foreground-muted);
   font-family: "Black Ops One", sans-serif;
 }
 
 .checkbox-cover p:before {
   content: "";
   display: inline-block;
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--accent);
   width: 26px;
   height: 26px;
   line-height: 24px;
@@ -1240,7 +1257,7 @@ textarea::placeholder {
   top: -2px;
   left: 0;
   text-align: center;
-  color: var(--color-accent);
+  color: var(--accent);
   border-radius: 5px;
 }
 
@@ -1257,7 +1274,7 @@ textarea::placeholder {
 
 .checkbox-cover input:checked + p:before {
   content: "\f00c";
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   color: #fff;
 }
 
@@ -1282,7 +1299,7 @@ textarea::placeholder {
 }
 
 #message .error_message {
-  color: var(--color-accent);
+  color: var(--accent);
   font-weight: 500;
   font-size: 18px;
 }
@@ -1391,7 +1408,7 @@ footer .social-list li {
   margin-right: 0;
 }
 .footer-menu li.active a {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .footer-menu li a {
   font-family: "Black Ops One", sans-serif;
@@ -1445,7 +1462,7 @@ footer .social-list li {
   justify-content: center;
 }
 .footer-fitness .footer-bottom .copyright a {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .footer-fitness .footer-bottom .copyright a:hover {
   color: #fff;
@@ -1563,8 +1580,8 @@ footer .social-list li {
 .btn {
   font-size: 16px;
   padding: 11px 40px 10px;
-  border: 2px solid var(--color-accent);
-  background-color: var(--color-accent);
+  border: 2px solid var(--accent);
+  background-color: var(--accent);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -1576,7 +1593,7 @@ footer .social-list li {
 }
 .btn:hover {
   background-color: transparent;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /*--------------------- SOCIAL LIST ---------------------*/
@@ -1597,7 +1614,7 @@ footer .social-list li {
   font-size: 18px;
 }
 .social-list a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /*----------------------- TO-TOP -----------------------*/
@@ -1613,10 +1630,10 @@ footer .social-list li {
   line-height: 50px;
   text-align: center;
   color: #fff;
-  background-color: #272a31;
+  background-color: var(--surface-raised);
 }
 .to-top:hover {
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   color: #fff;
 }
 .to-top.active {
@@ -1634,7 +1651,7 @@ footer .social-list li {
   left: 0;
   width: 100%;
   height: 66px;
-  background-color: #202020;
+  background-color: var(--background);
   z-index: 4;
   pointer-events: none;
   bottom: -1px;
@@ -1682,7 +1699,7 @@ footer .social-list li {
   transition: background-color 0.3s ease, width 0.3s ease;
 }
 .slider-navigation .slick-dots li.slick-active button {
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   width: 42px;
 }
 .slider-navigation .slick-dots li:hover button {
@@ -1757,7 +1774,7 @@ footer .social-list li {
   width: 100%;
 }
 .crossfit-slide .title span {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .crossfit-slide p {
   max-width: 660px;
@@ -1782,7 +1799,7 @@ footer .social-list li {
 }
 
 .crossfit-slider-lite .crossfit-slide .title span {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .scene {
@@ -1865,7 +1882,7 @@ footer .social-list li {
   font-size: 16px;
   margin-right: 10px;
   margin-top: -2px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .post-item-cover .meta .post-by a {
   margin-right: 5px;
@@ -1892,7 +1909,7 @@ footer .social-list li {
   display: none;
 }
 .post-item-cover .text {
-  color: var(--color-text-secondary);
+  color: var(--foreground-muted);
 }
 .post-item-cover .post-footer {
   margin-top: 29px;
@@ -1906,7 +1923,7 @@ blockquote {
   padding: 30px 78px 30px 105px;
   position: relative;
   border-radius: 0;
-  background-color: #272a31;
+  background-color: var(--surface-raised);
 }
 
 blockquote p {
@@ -1939,7 +1956,7 @@ blockquote:before {
   top: 30px;
   left: 30px;
   font-family: "FontAwesome";
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /*------------------------ WIDGET ------------------------*/
@@ -1966,7 +1983,7 @@ blockquote:before {
   text-transform: capitalize;
   padding-bottom: 22px;
   margin-bottom: 22px;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .widget-newsletter .title, .widget-instagram .title, .widget-search .title {
@@ -1986,7 +2003,7 @@ blockquote:before {
   margin-top: 10px;
 }
 .widget-tags ul li a {
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--accent);
   box-sizing: border-box;
   border-radius: 0;
   font-size: 14px;
@@ -2013,7 +2030,7 @@ blockquote:before {
 }
 .widget-archive li a:hover,
 .widget-categories li a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .widget-archive li a:before,
@@ -2021,7 +2038,7 @@ blockquote:before {
   content: "\f105";
   font-family: "FontAwesome";
   margin-right: 10px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /* WIDGET-RECENT-POSTS */
@@ -2033,7 +2050,7 @@ blockquote:before {
   font-weight: 600;
 }
 .widget-recent-posts li a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .widget-recent-posts li .date {
@@ -2044,7 +2061,7 @@ blockquote:before {
 .widget-recent-posts li .date i {
   margin-right: 8px;
   font-size: 16px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /* WIDGET-INSTAGRAM */
@@ -2073,7 +2090,7 @@ blockquote:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: var(--color-accent);
+  color: var(--accent);
   z-index: 2;
   font-weight: 500;
   font-size: 20px;
@@ -2144,8 +2161,8 @@ blockquote:before {
 }
 
 .pagination-item.active a {
-  border-color: var(--color-accent);
-  background-color: var(--color-accent);
+  border-color: var(--accent);
+  background-color: var(--accent);
 }
 
 .pagination-item.active {
@@ -2153,7 +2170,7 @@ blockquote:before {
 }
 
 .pagination-item:hover a {
-  border-color: var(--color-accent);
+  border-color: var(--accent);
 }
 
 /*--------------------- S-SINGLE-NEWS ---------------------*/
@@ -2164,8 +2181,8 @@ blockquote:before {
 /* AUTOR-COVER */
 .autor-cover {
   margin: 53px 0 37px;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   padding: 40px 0;
   display: flex;
   align-items: center;
@@ -2182,7 +2199,7 @@ blockquote:before {
 .autor-cover .name {
   font-weight: 400;
   font-size: 20px;
-  color: var(--color-accent);
+  color: var(--accent);
   margin-bottom: 6px;
   font-family: "Black Ops One", sans-serif;
 }
@@ -2196,7 +2213,7 @@ blockquote:before {
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .navigation-item {
@@ -2250,7 +2267,7 @@ blockquote:before {
 }
 
 .navigation-item:hover .title {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /*----------------------- REVIEWS -----------------------*/
@@ -2280,7 +2297,7 @@ blockquote:before {
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
-  background-color: #272a31;
+  background-color: var(--surface-raised);
   padding: 15px;
 }
 
@@ -2314,7 +2331,7 @@ blockquote:before {
 .review-content .date i {
   font-size: 16px;
   margin-right: 8px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .faq-cover li:not(:last-child) {
@@ -2335,10 +2352,10 @@ blockquote:before {
   transition: 0.25s ease-in;
 }
 .review-btn:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .review-btn:hover i {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /*----------------- S-RELATED-POSTS -----------------*/
@@ -2356,7 +2373,7 @@ blockquote:before {
   margin-bottom: 30px;
 }
 .s-related-posts .post-item-cover {
-  background-color: #272a31;
+  background-color: var(--surface-raised);
   padding: 0 0 90px;
   min-height: 202px;
   position: relative;
@@ -2385,7 +2402,7 @@ blockquote:before {
   right: 15px;
   z-index: 2;
   text-transform: uppercase;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   text-align: center;
   font-weight: 600;
   min-width: 120px;
@@ -2422,7 +2439,7 @@ blockquote:before {
 }
 
 .contact-item {
-  background-color: #272a31;
+  background-color: var(--surface-raised);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2433,7 +2450,7 @@ blockquote:before {
 
 .contact-item-left {
   width: 40%;
-  border-right: 2px solid var(--color-accent);
+  border-right: 2px solid var(--accent);
 }
 .contact-item-left h4 {
   text-transform: uppercase;
@@ -2445,13 +2462,13 @@ blockquote:before {
   padding: 15px;
 }
 .contact-item-right li {
-  color: var(--color-text-secondary);
+  color: var(--foreground-muted);
 }
 .contact-item-right a {
-  color: var(--color-text-secondary);
+  color: var(--foreground-muted);
 }
 .contact-item-right a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /*-------------------- S-CROSSFIT --------------------*/
@@ -2480,7 +2497,7 @@ blockquote:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #272a31;
+  background-color: var(--surface-raised);
   position: relative;
 }
 .crossfit-item:before {
@@ -2493,7 +2510,7 @@ blockquote:before {
   opacity: 0;
   margin-top: 40px;
   transform: translate(-50%, -50%);
-  border: 7px solid var(--color-accent);
+  border: 7px solid var(--accent);
   transition: 0.4s ease-in-out;
   pointer-events: none;
 }
@@ -2506,7 +2523,7 @@ blockquote:before {
   margin: 25px 0 6px;
 }
 .crossfit-item p {
-  color: var(--color-text-secondary);
+  color: var(--foreground-muted);
   font-size: 16px;
   margin-top: 30px;
 }
@@ -2554,7 +2571,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 24px;
-  background-color: #202020;
+  background-color: var(--background);
   z-index: 2;
 }
 .s-our-programs:before {
@@ -2647,7 +2664,7 @@ blockquote:before {
 .program-item .program-item-back:before {
   content: "";
   position: absolute;
-  border: 5px solid var(--color-accent);
+  border: 5px solid var(--accent);
   top: -14px;
   bottom: -14px;
   left: 50%;
@@ -2698,7 +2715,7 @@ blockquote:before {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  background-color: #272a31;
+  background-color: var(--surface-raised);
   box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.15);
   background-position: center;
   background-repeat: no-repeat;
@@ -2716,7 +2733,7 @@ blockquote:before {
   margin-top: 40px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 7px solid var(--color-accent);
+  border: 7px solid var(--accent);
   transition: 0.4s ease-in-out;
   pointer-events: none;
 }
@@ -2740,7 +2757,7 @@ blockquote:before {
   transform: translateX(-50%);
   width: 45px;
   height: 4px;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
 }
 .club-card-item .price-cover .price {
   font-size: 72px;
@@ -2754,7 +2771,7 @@ blockquote:before {
 }
 .club-card-item .price-cover .date span {
   margin-left: -2px;
-  color: var(--color-accent);
+  color: var(--accent);
   display: block;
   line-height: 0.9;
   font-size: 36px;
@@ -2765,7 +2782,7 @@ blockquote:before {
   padding: 20px 0 42px;
 }
 .club-card-item .list li {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
   padding: 11px 0;
 }
 .club-card-item .list li:last-child {
@@ -2791,10 +2808,10 @@ blockquote:before {
   justify-content: center;
   align-items: center;
   margin-bottom: 19px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .club-cards-lite .club-card-item .price-cover .price span {
-  color: var(--color-accent);
+  color: var(--accent);
   font-size: 36px;
   line-height: 0.75;
   position: relative;
@@ -2806,7 +2823,7 @@ blockquote:before {
 .club-cards-lite .club-card-item .club-card-text {
   max-width: 330px;
   text-align: center;
-  color: var(--color-text-secondary);
+  color: var(--foreground-muted);
   margin: 30px auto 0px;
 }
 
@@ -2820,7 +2837,7 @@ blockquote:before {
 /*----------------- S-CROSSFIT-BANNER -----------------*/
 .s-crossfit-banner {
   position: relative;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   display: flex;
   justify-content: space-between;
 }
@@ -2830,7 +2847,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 24px;
-  background-color: #202020;
+  background-color: var(--background);
   z-index: 1;
   pointer-events: none;
 }
@@ -2915,7 +2932,7 @@ blockquote:before {
 }
 .crossfit-banner-right .text-bottom a {
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--accent);
   position: relative;
 }
 .crossfit-banner-right .text-bottom a:before {
@@ -2925,7 +2942,7 @@ blockquote:before {
   bottom: -1px;
   left: 0;
   transition: 0.3s ease;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   height: 2px;
   width: 100%;
 }
@@ -2951,8 +2968,8 @@ blockquote:before {
 }
 
 .training-schedule-top {
-  border-top: 1px solid var(--color-accent);
-  background-color: #272a31;
+  border-top: 1px solid var(--accent);
+  background-color: var(--surface-raised);
   line-height: 41px;
 }
 
@@ -2969,7 +2986,7 @@ blockquote:before {
 .training-schedule-table td {
   width: 12.5%;
   text-align: center;
-  border-right: 1px solid #3c3e4a;
+  border-right: 1px solid var(--border-subtle);
 }
 .training-schedule-table th:last-child,
 .training-schedule-table td:last-child {
@@ -2995,13 +3012,13 @@ blockquote:before {
 .training-schedule-table td .date {
   font-weight: 700;
   margin-top: 2px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .training-schedule-table td .name {
   text-transform: capitalize;
 }
 .training-schedule-table tr {
-  border-bottom: 1px solid #3c3e4a;
+  border-bottom: 1px solid var(--border-subtle);
 }
 .training-schedule-table tr:last-child {
   border-bottom: none;
@@ -3079,7 +3096,7 @@ blockquote:before {
   left: 0;
 }
 .about-info-cover .text a {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .about-info-cover .text a:hover {
   color: #fff;
@@ -3101,7 +3118,7 @@ blockquote:before {
   font-size: 23px;
 }
 .about-info-cover .social-list a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .about-cont {
@@ -3120,7 +3137,7 @@ blockquote:before {
   font-size: 18px;
 }
 .about-cont li a {
-  color: var(--color-accent);
+  color: var(--accent);
   font-size: 17px;
 }
 .about-cont li a:hover {
@@ -3136,7 +3153,7 @@ blockquote:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #272a31;
+  background-color: var(--surface-raised);
   padding: 20px 0;
   height: 100%;
 }
@@ -3144,7 +3161,7 @@ blockquote:before {
   font-family: "Black Ops One", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  border-right: 2px solid var(--color-accent);
+  border-right: 2px solid var(--accent);
   width: 38%;
   padding: 5px 0;
 }
@@ -3158,7 +3175,7 @@ blockquote:before {
 .about-bottom-info {
   width: 62%;
   padding: 16px 15px 16px 20px;
-  color: var(--color-text-secondary);
+  color: var(--foreground-muted);
   font-size: 15px;
 }
 
@@ -3212,7 +3229,7 @@ blockquote:before {
 }
 
 .our-trainer-info .name {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .our-trainer-info .prof {
   font-weight: 600;
@@ -3262,7 +3279,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 24px;
-  background-color: #202020;
+  background-color: var(--background);
   z-index: 1;
   pointer-events: none;
 }
@@ -3282,7 +3299,7 @@ blockquote:before {
   display: block;
   margin: 0 auto 21px;
   font-size: 48px;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .trainer-award-col h3 {
   margin-bottom: 5px;
@@ -3313,7 +3330,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 24px;
-  background-color: #202020;
+  background-color: var(--background);
   z-index: 2;
   pointer-events: none;
 }
@@ -3359,12 +3376,12 @@ blockquote:before {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: var(--color-text-secondary);
+  background-color: var(--foreground-muted);
   margin-right: 8px;
   transition: 0.25s ease-in;
 }
 .testimonials-slider .slick-dots li:hover, .testimonials-slider .slick-dots li.slick-active {
-  background-color: var(--color-accent);
+  background-color: var(--accent);
 }
 .testimonials-slider .slick-dots li:last-child {
   margin-right: 0;
@@ -3394,7 +3411,7 @@ blockquote:before {
 }
 .testimonial-slide .name {
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .testimonial-slide .prof {
   text-transform: uppercase;
@@ -3411,7 +3428,7 @@ blockquote:before {
 }
 
 .testimonials-border .testimonials-slider {
-  border: 7px solid var(--color-accent);
+  border: 7px solid var(--accent);
   padding: 47px 0;
 }
 .testimonials-border .testimonials-slider .slick-dots {
@@ -3453,7 +3470,7 @@ blockquote:before {
   height: calc(100% - 20px);
   width: calc(100% - 40px);
   margin-top: 40px;
-  border: 7px solid var(--color-accent);
+  border: 7px solid var(--accent);
   pointer-events: none;
   transition: 0.4s ease;
   z-index: 2;
@@ -3492,14 +3509,14 @@ blockquote:before {
 }
 .best-trainer-slide .name {
   line-height: 1.2;
-  color: var(--color-accent);
+  color: var(--accent);
   padding: 0 40px;
   transition: 0.4s ease;
   opacity: 0;
 }
 .best-trainer-slide .surname {
   line-height: 1.2;
-  color: var(--color-accent);
+  color: var(--accent);
   padding: 0 40px;
   transition: 0.4s ease;
   opacity: 0;
@@ -3549,7 +3566,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 24px;
-  background-color: #202020;
+  background-color: var(--background);
   z-index: 1;
   pointer-events: none;
 }
@@ -3582,7 +3599,7 @@ blockquote:before {
   line-height: 0.75;
   font-family: "Black Ops One", sans-serif;
   position: relative;
-  color: var(--color-accent);
+  color: var(--accent);
   padding-bottom: 26px;
 }
 .about-info-row .about-info-col .number:before {
@@ -3593,7 +3610,7 @@ blockquote:before {
   transform: translate(-50%, 0);
   width: 46px;
   height: 4px;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
 }
 .about-info-row .about-info-col h3 {
   text-transform: uppercase;
@@ -3618,7 +3635,7 @@ blockquote:before {
 .out-trainer-item {
   display: flex;
   justify-content: space-between;
-  background-color: #272a31;
+  background-color: var(--surface-raised);
   align-items: stretch;
   transition: 0.25s ease-in;
 }
@@ -3629,7 +3646,7 @@ blockquote:before {
   color: #000;
 }
 .out-trainer-item:hover h3 a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .out-trainer-item:hover p {
   color: #4d4d4d;
@@ -3638,7 +3655,7 @@ blockquote:before {
   color: #000;
 }
 .out-trainer-item:hover .social-list li a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .out-trainer-img {
@@ -3669,12 +3686,12 @@ blockquote:before {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  color: var(--color-accent);
+  color: var(--accent);
   transition: 0.25s ease-in;
   font-weight: 500;
 }
 .out-trainer-info p {
-  color: var(--color-text-secondary);
+  color: var(--foreground-muted);
   margin-bottom: 17px;
   transition: 0.25s ease-in;
 }
@@ -3743,7 +3760,7 @@ blockquote:before {
   background-color: #fff;
 }
 .s-counter .subscribe-form .inp-form:focus {
-  border-color: var(--color-accent);
+  border-color: var(--accent);
 }
 
 #clockdiv {
@@ -3762,7 +3779,7 @@ blockquote:before {
 #clockdiv .clock-item span {
   display: block;
   font-size: 96px;
-  color: var(--color-accent);
+  color: var(--accent);
   line-height: 0.75;
   margin-bottom: 10px;
 }
@@ -3818,7 +3835,7 @@ blockquote:before {
   right: -15px;
   height: 100%;
   width: calc(100% + 94px);
-  border: 7px solid var(--color-accent);
+  border: 7px solid var(--accent);
   z-index: 1;
   pointer-events: none;
 }
@@ -3873,7 +3890,7 @@ blockquote:before {
   fill: #000;
 }
 .s-fitness-slider .slider-navigation .slick-dots li:hover button, .s-fitness-slider .slider-navigation .slick-dots li.slick-active button {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .s-fitness-slider .slider-navigation .slick-dots li button {
   color: #000;
@@ -3955,7 +3972,7 @@ blockquote:before {
   top: 0;
   height: 47px;
   width: 4px;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   transform: translateY(30%);
   transition: 0.2s ease-out;
   transition-delay: 0.8s;
@@ -3963,7 +3980,7 @@ blockquote:before {
 }
 .fitness-slide .fitness-slide-cover .title span {
   display: block;
-  color: var(--color-accent);
+  color: var(--accent);
   margin-top: 32px;
   transform: translateX(-10%);
   transition: 0.2s ease-out;
@@ -4084,7 +4101,7 @@ blockquote:before {
 .fitness-program-item-front .fitness-program-item-inner {
   position: relative;
   z-index: 1;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   color: #fff;
   text-align: center;
   width: 100%;
@@ -4098,7 +4115,7 @@ blockquote:before {
   bottom: 100%;
   width: 100%;
   height: 30px;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   z-index: 2;
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
@@ -4124,7 +4141,7 @@ blockquote:before {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 7px solid var(--color-accent);
+  border: 7px solid var(--accent);
   color: #fff;
   text-transform: uppercase;
   padding: 20px;
@@ -4206,7 +4223,7 @@ blockquote:before {
   right: -15px;
   left: -113px;
   height: 100%;
-  border: 7px solid var(--color-accent);
+  border: 7px solid var(--accent);
   pointer-events: none;
 }
 .fitness-banner-right h2 {
@@ -4215,7 +4232,7 @@ blockquote:before {
 }
 .fitness-banner-right h2 span {
   display: block;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .fitness-banner-right p {
   font-size: 25px;
@@ -4223,7 +4240,7 @@ blockquote:before {
 }
 .fitness-banner-right p a {
   position: relative;
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .fitness-banner-right p a:before {
   content: "";
@@ -4232,7 +4249,7 @@ blockquote:before {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   transition: 0.25s ease-in;
 }
 .fitness-banner-right p a:hover:before {
@@ -4261,7 +4278,7 @@ blockquote:before {
   padding: 0px 0px 40px 0px;
 }
 .fitness-post-col .post-item-cover .post-header {
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   padding: 42px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -4288,7 +4305,7 @@ blockquote:before {
   color: #000;
 }
 .fitness-post-col .post-content .title a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 .fitness-post-col .post-footer {
   padding: 0 38px;
@@ -4320,7 +4337,7 @@ blockquote:before {
   color: #4d4d4d;
 }
 .fitness-post-col .post-footer .meta a:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /*----------------- S-FITNESS-GALLERY -----------------*/
@@ -4373,7 +4390,7 @@ blockquote:before {
   opacity: 0;
   margin-top: 40px;
   transform: translate(-50%, -50%);
-  border: 7px solid var(--color-accent);
+  border: 7px solid var(--accent);
   transition: 0.4s ease-in-out;
   pointer-events: none;
   z-index: 3;
