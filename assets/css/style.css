@@ -87,6 +87,33 @@ Version: 1.0
   --sand-a11: #fffcf4b0;
   --sand-a12: #fffffded;
 
+  /* Black / White alpha scales (for scrims, overlays, translucent text) */
+  --black-a1: rgba(0, 0, 0, 0.05);
+  --black-a2: rgba(0, 0, 0, 0.1);
+  --black-a3: rgba(0, 0, 0, 0.15);
+  --black-a4: rgba(0, 0, 0, 0.2);
+  --black-a5: rgba(0, 0, 0, 0.3);
+  --black-a6: rgba(0, 0, 0, 0.4);
+  --black-a7: rgba(0, 0, 0, 0.5);
+  --black-a8: rgba(0, 0, 0, 0.6);
+  --black-a9: rgba(0, 0, 0, 0.7);
+  --black-a10: rgba(0, 0, 0, 0.8);
+  --black-a11: rgba(0, 0, 0, 0.9);
+  --black-a12: rgba(0, 0, 0, 0.95);
+
+  --white-a1: rgba(255, 255, 255, 0.05);
+  --white-a2: rgba(255, 255, 255, 0.1);
+  --white-a3: rgba(255, 255, 255, 0.15);
+  --white-a4: rgba(255, 255, 255, 0.2);
+  --white-a5: rgba(255, 255, 255, 0.3);
+  --white-a6: rgba(255, 255, 255, 0.4);
+  --white-a7: rgba(255, 255, 255, 0.5);
+  --white-a8: rgba(255, 255, 255, 0.6);
+  --white-a9: rgba(255, 255, 255, 0.7);
+  --white-a10: rgba(255, 255, 255, 0.8);
+  --white-a11: rgba(255, 255, 255, 0.9);
+  --white-a12: rgba(255, 255, 255, 0.95);
+
   /* ── Semantic role tokens ──
      Reference these from component CSS, not the raw scales above.
      Names describe purpose (role), not value, so a retheme touches
@@ -115,6 +142,7 @@ Version: 1.0
   /* Status */
   --success: #30a46c;
   --success-fg: #0c130f; /* dark text ON success */
+  --error: #e5484d;
 
   /* Z-index — semantic layer scale (values adopted from typecraft).
      Local component stacking (0–4) stays as raw integers; these are
@@ -132,6 +160,15 @@ Version: 1.0
   --z-skip-link: 1600;
   --z-toast: 1700;
   --z-tooltip: 1800;
+
+  /* Elevation shadows — t-shirt scale, anchored on the most common
+     values so frequent shadows stay identical. --shadow-accent is
+     the brand-yellow glow. */
+  --shadow-sm: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 44px rgba(0, 0, 0, 0.45);
+  --shadow-accent: 0 18px 40px rgba(250, 212, 55, 0.25);
 }
 
 /* Wide-gamut (P3) refinement of the yellow scale */
@@ -315,7 +352,7 @@ html {
 * {
   box-sizing: border-box;
   outline: none !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 *:before,
@@ -327,7 +364,7 @@ html {
 /*-------------------- FONTS --------------------*/
 /*-------------------- DEFAULT STYLES --------------------*/
 *::selection {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--black-a5);
   color: var(--foreground);
 }
 
@@ -716,7 +753,7 @@ header:after {
 .nav-list li.dropdown ul {
   min-width: 100%;
   background: var(--surface-raised);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-sm);
   display: none;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1817,7 +1854,7 @@ footer .social-list li {
   width: 28px;
   height: 3px;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: var(--white-a5);
   border: none;
   padding: 0;
   font-size: 0;
@@ -1831,7 +1868,7 @@ footer .social-list li {
   width: 42px;
 }
 .slider-navigation .slick-dots li:hover button {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: var(--white-a9);
 }
 .slider-navigation .slick-arrow {
   display: none;
@@ -1864,7 +1901,7 @@ footer .social-list li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--black-a7);
   z-index: 1;
 }
 .crossfit-slide .crossfit-slide-bg {
@@ -1909,7 +1946,7 @@ footer .social-list li {
   margin: 8px auto 40px;
   padding: 15px 20px;
   line-height: 1.7;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--black-a7);
   font-weight: 400;
 }
 
@@ -2233,7 +2270,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--black-a7);
   z-index: 1;
   transition: 0.25s ease-in;
   opacity: 0;
@@ -2278,7 +2315,7 @@ blockquote:before {
   line-height: 41px;
   width: 44px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--white-a10);
   color: var(--foreground);
   display: block;
   border-radius: 5px;
@@ -2724,7 +2761,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--black-a9);
   pointer-events: none;
 }
 
@@ -2847,7 +2884,7 @@ blockquote:before {
   align-items: center;
   height: 100%;
   background-color: var(--surface-raised);
-  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-sm);
   background-position: center;
   background-repeat: no-repeat;
   padding: 48px 20px 50px;
@@ -2920,7 +2957,7 @@ blockquote:before {
   border-bottom: none;
 }
 .club-card-item .list li.item-excluded {
-  color: rgba(190, 190, 190, 0.66);
+  color: var(--foreground-muted);
 }
 
 .club-cards-lite .club-card-item {
@@ -3009,7 +3046,7 @@ blockquote:before {
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--black-a7);
 }
 
 .crossfit-banner-right {
@@ -3636,7 +3673,7 @@ blockquote:before {
   width: 100%;
   height: 100%;
   transition: 0.3s ease-in;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--black-a8);
 }
 .best-trainer-slide img {
   width: 100%;
@@ -4236,7 +4273,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--black-a8);
 }
 .fitness-program-item-front .fitness-program-item-inner {
   position: relative;
@@ -4286,7 +4323,7 @@ blockquote:before {
   text-transform: uppercase;
   padding: 20px;
   backface-visibility: hidden;
-  background-color: rgba(242, 56, 73, 0.5);
+  background-color: var(--error);
 }
 .fitness-program-item-back .fitness-program-item-inner .date {
   font-weight: 300;
@@ -4415,7 +4452,7 @@ blockquote:before {
 }
 .fitness-post-col .post-item-cover {
   background-color: var(--white);
-  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-sm);
   padding: 0px 0px 40px 0px;
 }
 .fitness-post-col .post-item-cover .post-header {
@@ -4510,7 +4547,7 @@ blockquote:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--black-a7);
   opacity: 0;
   z-index: 1;
   color: var(--foreground);
@@ -4567,7 +4604,7 @@ blockquote:before {
   z-index: 2;
   background-image: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0) 0%,
+    transparent 0%,
     #000000 64%
   );
   padding: 20px 20px 15px 20px;
@@ -5802,7 +5839,7 @@ blockquote:before {
   }
   .fitness-slide .fitness-slide-cover .title {
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--black-a9);
     color: var(--foreground);
   }
   .fitness-slide .fitness-slide-cover .title:before {

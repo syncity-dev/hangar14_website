@@ -46,7 +46,7 @@
 .qr-hero-desc {
   font-size: 18px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--white-a11);
   max-width: 520px;
   margin: 0 0 32px;
   font-weight: 400;
@@ -63,7 +63,7 @@
 
 .qr-cta-card {
   background: var(--surface);
-  border: 2px solid rgba(255, 255, 255, 0.06);
+  border: 2px solid var(--white-a1);
   border-radius: 14px;
   padding: 32px 28px;
   display: flex;
@@ -79,7 +79,7 @@
 .qr-cta-card:hover {
   transform: translateY(-5px);
   border-color: var(--accent);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--shadow-lg);
 }
 
 .qr-cta-card--primary {
@@ -89,14 +89,14 @@
 
 .qr-cta-card--primary:hover {
   border-color: var(--accent-hover);
-  box-shadow: 0 18px 40px rgba(250, 212, 55, 0.25);
+  box-shadow: var(--shadow-accent);
 }
 
 .qr-cta-icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--white-a2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,7 +107,7 @@
 }
 
 .qr-cta-card--primary .qr-cta-icon {
-  background: rgba(0, 0, 0, 0.12);
+  background: var(--black-a2);
   color: var(--accent-fg);
 }
 
@@ -120,7 +120,7 @@
 }
 
 .qr-cta-card--primary .qr-cta-label {
-  color: rgba(20, 20, 20, 0.6);
+  color: var(--black-a8);
 }
 
 .qr-cta-title {
@@ -137,13 +137,13 @@
 .qr-cta-desc {
   font-size: 14px;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--white-a9);
   margin: 0;
   font-weight: 400;
 }
 
 .qr-cta-card--primary .qr-cta-desc {
-  color: rgba(20, 20, 20, 0.7);
+  color: var(--black-a9);
 }
 
 /* ---- Active nav link ---- */
