@@ -235,9 +235,13 @@ footer#contact {
   top: 14px;
   right: 16px;
   font-size: 100px;
-  color: var(--white-a1);
+  color: var(--sand-5);
   line-height: 1;
   pointer-events: none;
+}
+
+.program-card-num::before {
+  content: attr(data-num);
 }
 
 .program-card-header {
