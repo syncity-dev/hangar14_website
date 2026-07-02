@@ -174,7 +174,7 @@ footer#contact {
 }
 
 .hero-btn-primary:hover {
-  background: #f0c41a;
+  background: var(--accent-hover);
   color: var(--accent-fg) !important;
 }
 
@@ -277,7 +277,7 @@ footer#contact {
 }
 
 .program-card--cta {
-  background: linear-gradient(135deg, #e8c430, #d4ae18);
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
   border-color: transparent;
   display: flex;
   flex-direction: column;
@@ -302,7 +302,7 @@ footer#contact {
 .program-cta-desc {
   font-size: 15px;
   line-height: 1.85;
-  color: #2a2204;
+  color: var(--accent-fg);
   margin: 0 0 22px;
   font-weight: 400;
 }
@@ -662,7 +662,7 @@ footer#contact {
   align-items: center;
   gap: 10px;
   min-height: 58px;
-  background: #191b1f;
+  background: var(--surface);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   padding: 12px 16px;
@@ -709,7 +709,7 @@ footer#contact {
   color: rgba(255, 255, 255, 0.58);
   text-align: center;
   text-transform: uppercase;
-  background: #141518;
+  background: var(--surface);
   border-right: 1px solid rgba(255, 255, 255, 0.07);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   font-weight: 400;
@@ -748,7 +748,7 @@ footer#contact {
 }
 
 .schedule-time {
-  background: #1a1b1e !important;
+  background: var(--surface) !important;
   text-align: left !important;
   padding-left: 16px !important;
   padding-right: 16px !important;
@@ -769,8 +769,8 @@ footer#contact {
 }
 
 .schedule-girls-only {
-  background: #1f9d57 !important;
-  color: #0d1a11 !important;
+  background: var(--success) !important;
+  color: var(--success-fg) !important;
 }
 
 .schedule-full-body {
@@ -791,7 +791,7 @@ footer#contact {
    FOOTER / CONTACT
    ===================================================== */
 .homepage-contact-panel {
-  background: #0d0d0f;
+  background: var(--surface-sunken);
   border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   padding: 44px;
@@ -953,7 +953,7 @@ footer#contact {
 
 .float-cta:hover {
   color: var(--accent-fg);
-  background: #f5ca00;
+  background: var(--accent-hover);
 }
 
 html.show-cta .float-cta {

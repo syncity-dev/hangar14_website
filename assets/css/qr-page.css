@@ -88,7 +88,7 @@
 }
 
 .qr-cta-card--primary:hover {
-  border-color: #f0c41a;
+  border-color: var(--accent-hover);
   box-shadow: 0 18px 40px rgba(250, 212, 55, 0.25);
 }
 

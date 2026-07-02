@@ -111,7 +111,7 @@
 }
 
 .hero-btn-primary:hover {
-  background: #f0c41a;
+  background: var(--accent-hover);
   color: var(--accent-fg) !important;
 }
 
@@ -339,7 +339,7 @@
   overflow: hidden;
   border-radius: 12px;
   border: 2px solid rgba(250, 212, 55, 0.3);
-  background: #0d0e11;
+  background: var(--surface-sunken);
   padding: 52px 44px;
   display: flex;
   align-items: center;
@@ -413,7 +413,7 @@
 
 .float-cta:hover {
   color: var(--accent-fg);
-  background: #f5ca00;
+  background: var(--accent-hover);
 }
 
 html.show-cta .float-cta {
