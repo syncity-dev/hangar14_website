@@ -9,25 +9,25 @@
 
 /* ---- Section backgrounds ---- */
 #b2b-includes {
-  background-color: #202020;
+  background-color: var(--background);
 }
 #b2b-why {
-  background-color: #1a1a1c;
+  background-color: var(--surface);
 }
 #b2b-process {
-  background-color: #202020;
+  background-color: var(--background);
 }
 #b2b-kome {
-  background-color: #1a1a1c;
+  background-color: var(--surface);
 }
 #b2b-hof {
-  background-color: #202020;
+  background-color: var(--background);
 }
 #b2b-next {
-  background-color: #1a1a1c;
+  background-color: var(--surface);
 }
 #b2b-closing {
-  background-color: #202020;
+  background-color: var(--background);
 }
 
 /* ---- 4-column grid for the two feature sections ---- */
@@ -59,27 +59,27 @@
 
 .b2b-hero-title {
   font-size: clamp(40px, 8vw, 72px);
-  color: #fff;
+  color: var(--foreground);
   line-height: 1.04;
   margin: 0 0 24px;
   text-transform: uppercase;
 }
 
 .b2b-hero-accent {
-  color: #fad437;
+  color: var(--accent);
 }
 
 .b2b-hero-desc {
   font-size: 18px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--white-a11);
   max-width: 560px;
   margin: 0 0 32px;
   font-weight: 400;
 }
 
 .b2b-hero-desc strong {
-  color: #fad437;
+  color: var(--accent);
   font-weight: 400;
 }
 
@@ -98,11 +98,11 @@
   display: flex;
   gap: 22px;
   align-items: flex-start;
-  background: #16171b;
-  border: 2px solid rgba(255, 255, 255, 0.06);
+  background: var(--surface);
+  border: 2px solid var(--white-a1);
   border-radius: 12px;
   padding: 26px 30px;
-  box-shadow: inset 3px 0 0 0 #fad437;
+  box-shadow: inset 3px 0 0 0 var(--accent);
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
@@ -111,13 +111,13 @@
 
 .b2b-process-row:hover {
   transform: translateX(4px);
-  border-color: #fad437;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
 }
 
 .b2b-process-num {
   font-size: 30px;
-  color: #fad437;
+  color: var(--accent);
   line-height: 1;
   flex: none;
   min-width: 28px;
@@ -125,7 +125,7 @@
 
 .b2b-process-title {
   font-size: 18px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 8px;
   line-height: 1.2;
 }
@@ -134,7 +134,7 @@
   font-size: 15px;
   line-height: 1.9;
   letter-spacing: 0.4px;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--white-a9);
   margin: 0;
   font-weight: 400;
 }
@@ -143,8 +143,8 @@
    HALL OF FAME — single panel with bullet points
    ===================================================== */
 .b2b-hof-panel {
-  background: #16171b;
-  border: 2px solid rgba(255, 255, 255, 0.08);
+  background: var(--surface);
+  border: 2px solid var(--white-a2);
   border-radius: 12px;
   padding: 40px 44px;
   display: grid;
@@ -162,20 +162,20 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #fad437;
+  background: var(--accent);
   flex: none;
 }
 
 .b2b-hof-text {
   font-size: 14px;
   letter-spacing: 0.2px;
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--white-a11);
   font-weight: 400;
 }
 
 /* ---- Active nav link ---- */
 .footer-nav--current {
-  color: #fad437 !important;
+  color: var(--accent) !important;
 }
 
 /* =====================================================

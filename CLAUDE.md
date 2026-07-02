@@ -2,25 +2,29 @@
 
 ## Project overview
 
-Static marketing website for Hangar 14 gym (Zagreb, Croatia). Vanilla HTML/CSS/JS — no framework, no npm, no build pipeline beyond SASS. Deployed via GitHub Pages to `hangar14.fit`.
+Static marketing website for Hangar 14 gym (Zagreb, Croatia). Vanilla HTML/CSS/JS — no framework, no npm, no build pipeline. Deployed via GitHub Pages to `hangar14.fit`.
 
 ## Architecture
 
 - All pages are standalone HTML files at the root
 - CSS is split per-page: `style.css` (global) + `index-page.css`, `boarding-pages.css`, `b2b-page.css`, `gabrijela-page.css`
-- SASS source lives in `assets/scss/` — **always edit SCSS, never edit `style.css` directly**
+- All CSS is plain vanilla CSS, edited directly — there is no SASS/build step
 - Custom JS is in `assets/js/scripts.js` — vendor libraries (jQuery, Slick, etc.) are also in `assets/js/`
 - Images use WebP format wherever possible
 
 ## CSS workflow
 
-Edit SCSS files, then compile:
+Edit the `.css` files directly. No compile step.
 
-```bash
-sass --watch assets/scss/style.scss:assets/css/style.css
-```
+### Design tokens
 
-The page-specific CSS files (`index-page.css`, `boarding-pages.css`, etc.) are written directly — they are not compiled from SCSS.
+Color is driven by CSS custom properties defined in `:root` at the top of `style.css` (loaded on every page):
+
+- **Yellow** — Radix-style 12-step brand scale; `--yellow-9` (`#fad437`) is the brand accent. Includes a P3 wide-gamut `@supports` refinement.
+- **Sand** — Radix-style 12-step neutral scale (dark column).
+- **Semantic aliases** — reference these from page CSS, not the raw scales: `--color-accent`, `--color-accent-hover`, `--color-text`, `--color-text-secondary`, `--color-text-muted`, `--color-border`.
+
+Use `var(--color-accent)` for the brand yellow — never hardcode `#fad437`. Native CSS nesting and custom properties are available; no preprocessor needed.
 
 ## Content locations
 
@@ -60,7 +64,7 @@ Push to `main` → GitHub Actions deploys automatically to GitHub Pages → live
 
 ## What NOT to do
 
-- Do not edit `assets/css/style.css` directly — it is compiled from SCSS and will be overwritten
-- Do not add npm, package.json, or any build tooling — this project is intentionally dependency-free
+- Do not add npm, package.json, SASS, or any build tooling — this project is intentionally dependency-free
+- Do not hardcode brand colors — reference the design tokens (`var(--color-accent)`, etc.) in `style.css`
 - Do not remove the `CNAME` file
 - Do not add the Microsoft Clarity script to new pages if it's not already there — add it consistently or not at all
