@@ -31,7 +31,7 @@
   background-color: var(--surface);
 }
 footer#contact {
-  background-color: #000;
+  background-color: var(--black);
 }
 
 /* ---- Section padding ---- */
@@ -53,7 +53,7 @@ footer#contact {
 
 .homepage-section-title {
   font-size: clamp(27px, 6vw, 40px);
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 16px;
   text-align: left;
   padding-bottom: 0;
@@ -183,7 +183,7 @@ footer#contact {
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff !important;
+  color: var(--foreground) !important;
   background: rgba(0, 0, 0, 0.32);
   border: 2px solid rgba(255, 255, 255, 0.45);
   padding: 16px 32px;
@@ -262,7 +262,7 @@ footer#contact {
 
 .program-card-title {
   font-size: 19px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0;
   line-height: 1.15;
 }
@@ -322,7 +322,7 @@ footer#contact {
 }
 
 .program-cta-btn:hover {
-  background: #000;
+  background: var(--black);
   color: var(--accent);
 }
 
@@ -381,7 +381,7 @@ footer#contact {
 
 .trainer-name {
   font-size: 26px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 8px;
   letter-spacing: 0.5px;
 }
@@ -504,7 +504,7 @@ footer#contact {
 
 .path-card-title {
   font-size: 19px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0;
   line-height: 1.15;
 }
@@ -592,7 +592,7 @@ footer#contact {
 
 .homepage-pricing-price {
   font-size: 58px;
-  color: #fff;
+  color: var(--foreground);
   line-height: 1;
   margin-bottom: 16px;
 }
@@ -842,7 +842,7 @@ footer#contact {
 .homepage-contact-list span {
   font-size: 15px;
   line-height: 1.5;
-  color: #fff;
+  color: var(--foreground);
   font-weight: 400;
 }
 
@@ -865,7 +865,7 @@ footer#contact {
   align-items: center;
   gap: 10px;
   font-size: 16px;
-  color: #fff;
+  color: var(--foreground);
   text-decoration: none;
   font-weight: 400;
   transition: color 0.2s ease;
@@ -929,7 +929,7 @@ footer#contact {
   position: fixed;
   right: 22px;
   bottom: 22px;
-  z-index: 60;
+  z-index: var(--z-overlay);
   display: inline-flex;
   align-items: center;
   gap: 10px;

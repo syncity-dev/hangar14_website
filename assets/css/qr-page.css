@@ -12,7 +12,7 @@
   background-color: var(--background);
 }
 #qr-contact {
-  background-color: #000;
+  background-color: var(--black);
 }
 
 /* ---- Section padding ---- */
@@ -33,7 +33,7 @@
 
 .qr-hero-title {
   font-size: clamp(40px, 8vw, 72px);
-  color: #fff;
+  color: var(--foreground);
   line-height: 1.04;
   margin: 0 0 24px;
   text-transform: uppercase;
@@ -125,7 +125,7 @@
 
 .qr-cta-title {
   font-size: 19px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 10px;
   line-height: 1.2;
 }

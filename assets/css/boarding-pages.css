@@ -137,12 +137,12 @@
 }
 
 .boarding-footer-links li:first-child span {
-  color: #fff;
+  color: var(--foreground);
   font-size: 1rem;
 }
 
 .boarding-footer-links li:nth-child(2) a {
-  color: #fff;
+  color: var(--foreground);
 }
 
 .boarding-footer-links li:last-child span {
@@ -503,7 +503,7 @@
 
 .boarding-next-card h3 {
   margin-bottom: 8px;
-  color: #fff;
+  color: var(--foreground);
   font-size: 1.06rem;
 }
 
@@ -526,7 +526,7 @@
 
 .boarding-final-box h3 {
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--foreground);
   font-size: 1.28rem;
 }
 
@@ -556,7 +556,7 @@
   border-radius: 999px;
   border: 2px solid var(--accent);
   background: transparent;
-  color: #fff;
+  color: var(--foreground);
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -650,7 +650,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #fff;
+  color: var(--foreground);
   font-size: 0.94rem;
   font-weight: 700;
 }

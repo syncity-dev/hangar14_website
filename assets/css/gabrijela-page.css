@@ -98,7 +98,7 @@
 .gab-hero-title {
   font-size: clamp(30px, 6.5vw, 46px);
   line-height: 1.06;
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 16px;
 }
 
@@ -110,7 +110,7 @@
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.2px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 18px;
   font-weight: 400;
 }
@@ -150,7 +150,7 @@
 
 .gab-chip-title {
   font-size: 15px;
-  color: #fff;
+  color: var(--foreground);
   margin-bottom: 8px;
 }
 
@@ -176,7 +176,7 @@
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff !important;
+  color: var(--foreground) !important;
   background: transparent;
   border: 2px solid rgba(250, 212, 55, 0.55);
   padding: 16px 32px;
@@ -200,7 +200,7 @@
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff !important;
+  color: var(--foreground) !important;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.18);
   padding: 16px 32px;
@@ -245,7 +245,7 @@
 
 .gab-pricing-format {
   font-size: 34px;
-  color: #fff;
+  color: var(--foreground);
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -379,7 +379,7 @@
 
 .gab-pack-title {
   font-size: 19px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 10px;
   text-align: center;
   line-height: 1.2;
@@ -476,7 +476,7 @@
 
 .gab-process-title {
   font-size: 18px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 8px;
   line-height: 1.2;
 }

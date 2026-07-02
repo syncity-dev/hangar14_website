@@ -58,7 +58,7 @@
 
 .boarding-hero-title {
   font-size: clamp(40px, 8vw, 72px);
-  color: #fff;
+  color: var(--foreground);
   line-height: 1.04;
   margin: 0 0 24px;
   text-transform: uppercase;
@@ -122,7 +122,7 @@
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff !important;
+  color: var(--foreground) !important;
   background: rgba(0, 0, 0, 0.32);
   border: 2px solid rgba(255, 255, 255, 0.45);
   padding: 16px 32px;
@@ -150,7 +150,7 @@
 
 .bp-section-title {
   font-size: clamp(27px, 6vw, 40px);
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 16px;
 }
 
@@ -249,7 +249,7 @@
 
 .bp-card-title {
   font-size: 19px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0;
   line-height: 1.2;
 }
@@ -307,7 +307,7 @@
 
 .bp-step-title {
   font-size: 22px;
-  color: #fff;
+  color: var(--foreground);
   margin: 0;
   line-height: 1.15;
 }
@@ -355,7 +355,7 @@
 
 .bp-closing-cta-title {
   font-size: clamp(23px, 4.5vw, 30px);
-  color: #fff;
+  color: var(--foreground);
   margin: 0 0 14px;
   line-height: 1.1;
 }
@@ -389,7 +389,7 @@
   position: fixed;
   right: 22px;
   bottom: 22px;
-  z-index: 60;
+  z-index: var(--z-overlay);
   display: inline-flex;
   align-items: center;
   gap: 10px;
