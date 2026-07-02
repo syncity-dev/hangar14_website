@@ -4,6 +4,7 @@
     "includes": [
       "*.html",
       "qr.html",
+      "assets/css/style.css",
       "assets/css/b2b-page.css",
       "assets/css/boarding-page.css",
       "assets/css/boarding-pages.css",
